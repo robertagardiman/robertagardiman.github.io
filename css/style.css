@@ -2060,68 +2060,78 @@ header {
     }
     
     
-    /**************** FOOTER STUFF *****************/
+/**************** FOOTER STUFF *****************/
 
     .foot-container {
-        display: block;
-
-        margin-top: 30px;
-        margin-bottom: 30px;
-
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    
+    .foot-contacts {
+      position: relative;
+      display: block;
+      margin: 30px auto;
+      width: 100%;
+      padding-right: 10px;
+      text-align: right;
+      font-size: 12px;
     }
 
-    .foot-contacts {
-        position: relative;
-        display:block;
-        margin: 10px auto;
-        width: 100%;
-        padding-right: 30px;
-        
-        float: right;
-        text-align: right;
-        
-
+    .foot-text-list {
+      font-size: 12px;
+      text-align: center;
+      padding-left: 0;
+      position: relative;
+      margin: auto;
     }
 
     .foot-text-contacts {
-        width: auto;
-        font-size: 12px;
-        text-align: left;
-
+      width: auto;
+      display: block;
+      
+      text-align: center;
+      padding-left: 0;
+      position: relative;
+      margin: auto;
+      
+      font-size: 13px;
     }
 
     .logo-foot {
-        display: inline-block;
-        margin: 20px auto;
-        padding: 0;
-        padding-right: 10px;
-        border-right: 1px solid darkgrey;
-
-        width: 80px;
-
-        vertical-align: middle;
+      display: block;
+      margin: auto;
+      padding: 0;
+      border-right: 0;
+      width: 80px;
     }
 
     .copy {
-        display: none;
+      display: none;
     }
-    
+
     .foot-list-page {
-        position: relative;
-
-        max-width: 1280px;
-        width: 100%;
-
-        margin: 60px auto;
+      position: relative;
+      max-width: 1280px;
+      width: 100%;
+      margin: 60px auto;
     }
-    
+
     .logo-foot-list {
-        width: 85px;
+      width: 70px;
     }
-    
-    .foot-text-list {
-        padding-left: 5px;
-    }
+
+  
+  .linkedin-inside {
+    margin: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  
+  .medium {
+    font-size: 13px;
+  }
 
     
     
