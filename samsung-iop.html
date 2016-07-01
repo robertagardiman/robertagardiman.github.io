@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>RG | Samsung IOP</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    
+    
+  <link rel="stylesheet" href="css/sanitize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+    
+  <link href='https://fonts.googleapis.com/css?family=Raleway:200,500,300' rel='stylesheet' type='text/css'>
+    
+  <!-- JS -->
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+  <script>
+        $(document).ready(function(){
+            var contactLink = document.getElementById('contact-link');
+            var contactBox = document.getElementById('contact-box');
+            
+            $("#contact-link").click(function(){
+            
+                if(contactBox.classList.contains("animation-contact-box")){
+                    contactBox.classList.add("no-animation-contact-box");
+                    contactBox.classList.remove("animation-contact-box");
+                    
+                }else{
+                    //alert("dentro");
+                    contactBox.classList.add("animation-contact-box");
+                    contactBox.classList.remove("no-animation-contact-box");
+                }
+                
+            });
+            
+            
+           
+        });
+    </script>
+    
+     <link rel="icon" type="image/x-icon" href="http://robertagardiman.github.io/favicon.ico" />
+  
+</head>
+
+<body>
+    
+    
+    
+    <!-- wraps around the whole site -->
+    <div class="wrapper">
+    
+        <header>
+            
+            <div class="header-container">
+            
+                <!-- logo stuff -->
+                <a href="index.html" class="logo-container">
+                    <img class="logo" src="img/home/logo-bambolina.png" alt="Roberta Gardiman" />
+                    <h2 class="name">ROBERTA GARDIMAN</h2>
+                </a>
+
+                <!-- navigation -->
+                <nav>
+                    <ul class="home-list">
+                        <li><a class="home-projects projects" href="project-list.html">PROJECTS</a></li>
+                        <li><a class="home-projects" href="about.html">ABOUT</a></li>
+                        <li><a id="contact-link" class="home-projects contact-last" href="#">CONTACT</a></li>
+                    </ul>
+
+                    <!-- hamburger -->
+                    <a href="#" class="hamburger-container">
+                        <div class="hamburger extreme-top"></div>
+                        <div class="hamburger center"></div>
+                        <div class="hamburger extreme-bottom"></div>
+                    </a>
+
+                </nav>
+                
+            </div>
+                
+        </header>
+        
+        
+        <!-- CONTACT BOX stuff-->
+        <div id="contact-box" class="contact-box">
+            <div class="contact-invitation">
+                <div class="contact-intro">FEEL FREE TO CONTACT ME!</div>
+                
+                <a href="#" class="contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+                <br>
+                <a href="mailto:roberta.gardiman@gmail.com" class="contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a> 
+                <a class="linkedin-link-contact" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin-contact" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        
+        
+        
+        <!-- PROJECT stuff -->
+        
+        <h1 class="project-main-title">Samsung - IOP </h1>
+        
+        
+        <div class="project-wrapper">
+                
+            
+                    
+                    <div class="text-container">
+                    
+                    
+                    
+                        <h2 class="subtitle">BRIEF</h2>
+
+                        <p class="project-description">Creation of a digital
+experience for Samsung.
+The brand's goal was to
+create and design a more personal relationship
+between Samsung and its customers.</p>
+                        
+                        <!--<video id="osteria-example" src="img/samsung-iop/IOP-video(small).m4v" preload="auto" controls></video>-->
+                        
+                       <iframe id="video-embed" width="640" height="360" src="https://www.youtube.com/embed/Py6OubfRICs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        
+                        
+                        
+                        <h2 class="subtitle">CONCEPT</h2>
+                        
+                        
+                        
+                        <p class="project-description">After a deep analysis of the brand
+the concept is Internet Of People (IOP), an APP sponsored by Samsung.
+IOP means a way
+to create a community of users sharing their
+personal experiences and their emotions while
+interacting with Samsung.
+                        </p>
+                        
+                        <div class="img-container">
+                        <img class="iop-first-mockup" src="img/samsung-iop/samsung-first-mockup(small).jpg" alt="samsung first mockup">
+                    </div>
+                        
+                        
+                        <div class="iop-step step-border">
+                            <h4 class="detail-title">LOG-IN</h4>
+                            
+                            <!-- <img class="portrait-screen"  src="img/samsung-iop/login-post/samsung%20S6-01.jpg" alt="samsung login facebook"> -->
+                            
+                            <img class="portrait-screen screenlogin-details" src="img/samsung-iop/login-post/samsung-login-details.jpg" alt="samsung profile">
+                        </div>
+                        
+                        <div class="iop-step">
+                            <h4 class="detail-title">SELECT YOUR MOOD</h4>
+                            <p class="project-description step-description">The device becomes a personal filter to navigate
+Samsung universe, for this reason the user
+is invited to daily select his personal feeling
+between five emotional moods that will influence
+the way contents are displayed in the app.
+                        </p>
+                            <img class="osteria-first-mockup"  src="img/samsung-iop/selection.jpg" alt="samsung emotions selector">
+                        </div>
+                        
+                        <div class="iop-step">
+                            <h4 class="detail-title">PURE EMOTIONS</h4>
+                            <p class="project-description step-description">At this point the user is part of a community that,
+in the first section, shares the PURE EMOTIONS
+related to experiences and events promoted by
+Samsung IOP staff.
+                        </p>
+                            
+                            
+                            <img class="osteria-first-mockup"  src="img/samsung-iop/section1/pure-emotions-mockup.jpg" alt="samsung pure emotions">
+                        </div>
+                        
+                        <div class="iop-step">
+                            <h4 class="detail-title">IOP PRODUCTS</h4>
+                            <p class="project-description step-description productsection-description">The core section of IOP App focuses on the
+experiences and reactions that users have while using Samsung products in their everyday life.
+These are a new and effective kind of reviews that give a clear feedback about products in a more personal way using also photos and videos and overcoming the banal description of the specs that people can find everywhere.
+                        </p>
+                            
+                            <img class="portrait-screen product-screen"  src="img/samsung-iop/section2/product-screen.png" alt="samsung products">
+                           
+                        </div>
+                        
+                        <div class="iop-step">
+                            <h4 class="detail-title">THE STORE EXPERIENCE</h4>
+                            <p class="project-description step-description">As the user approach the store, a beacon
+triggers IOP app to open camera and, with augmented reality, let him see the every product in the color of the
+selected mood. 
+At this moment, the customer can point a specific product and feel all the related experiences of the "Products" section of IOP App about it.
+                        </p>
+                            
+                            <img class="portrait-screen store-screen"  src="img/samsung-iop/login-post/Store-1.png" alt="samsung store">
+                            
+                            <img class="portrait-screen store-screen store-screen-last "  src="img/samsung-iop/login-post/store-2.png" alt="samsung store">
+                           
+                        </div>
+                        
+                        <div class="iop-step">
+                            <h4 class="detail-title">IOP EVENTS</h4>
+                            <p class="project-description step-description">The third section focuses on the events that IOP
+selects (in different cities) and than proposes to users based on the mood they selected at the beginning.
+This section has the power to create a net of contacts and real interactions between people of IOP, inviting them to live some experience where they have the possibility to try for real Samsung products and, building a solid relation with the brand, be invited to fill the PURE and PRODUCT sections with the experiences that the EVENT section proposes.
+                        </p>
+                            
+                            <img class="portrait-screen event-screen"  src="img/samsung-iop/section3/samsung-events-1.jpg" alt="samsung events">
+                            
+                            <img class="portrait-screen event-screen"  src="img/samsung-iop/section3/samsung-events-2.jpg" alt="samsung events">
+                            
+                            <img class="portrait-screen event-screen event-screen-last"  src="img/samsung-iop/section3/samsung-events-3.jpg" alt="samsung events">
+                           
+                        </div>
+                        
+                        <div class="iop-step step-border">
+                            <h4 class="detail-title">PERSONAL CONTENTS</h4>
+                            <p class="project-description step-description">The design is trying to let emotions speak, for
+this reason the user’s contents have the majority of the space, the UI is minimalistic but carefully designed to guarantee an optimal UX and usability of the mobile screen.
+                        </p>
+                            
+                            <img class="osteria-first-mockup"  src="img/samsung-iop/login-post/samsung-post.jpg" alt="samsung personal content">
+                            
+                           
+                        </div>
+                        
+                            
+                         <div class="foot-container foot-list-page">
+                    <div class="foot-contacts">
+
+                            <img class="logo-foot logo-foot-list" src="img/osteria/logo-foot.png" alt="logo fine progetto">
+
+                        <div class="foot-text-contacts foot-text-list">
+
+                            <div class="foot-contact-intro">Feel free to contact me!</div>
+
+                            <a href="#" class="foot-contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+
+                            <br>
+
+                            <a href="mailto:roberta.gardiman@gmail.com" class="foot-contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a> 
+                            
+                            <a class="linkedin-link linkedin-inside" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin linkedin-inside" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="foot-links">
+                        <div class="follow">
+                            <p class="icon-label">Follow me on</p>
+
+                            <a class="linkedin-link linkedin-outside" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+                        </div>
+                        
+                        <p class="copy">Copyright &copy; Roberta Gardiman 2016</p>
+                    </div>
+                </div>
+                    
+                    </div>
+                
+
+            </div>
+        
+        
+        
+            <!-- BOTTOM BAR stuff -->
+        
+            <div class="bottom-bar">
+                    <div class="container-bottombar">
+                        <a href="osteria-francescana.html">
+                            <img class="icon-bottombar" src="img/bottom-bar/bottom-bar-icon-01.png" alt="icona previous project">
+                            <p class="previous-text-bar">PREVIOUS</p>
+                            <p class="text-bar previous-mobile">PREV</p>
+                        </a>
+                        <a href="project-list.html" class="center-icon"><p class="text-bar center-textbar">ALL</p></a>
+                        <a href="ATM-WebApp.html">
+                            <p class="text-bar">NEXT</p>
+                            <img class="icon-bottombar" src="img/bottom-bar/bottom-bar-icon-02.png" alt="icona next project">
+                        </a>
+                    </div>
+            </div>
+        
+    </div>
+    
+</body>
+
+</html>

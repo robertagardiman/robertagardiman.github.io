@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>RG | ATM WebApp</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    
+    
+  <link rel="stylesheet" href="css/sanitize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,500,300' rel='stylesheet' type='text/css'>
+    
+  
+    
+    
+  <!-- JS -->
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+  <script>
+        $(document).ready(function(){
+            var contactLink = document.getElementById('contact-link');
+            var contactBox = document.getElementById('contact-box');
+            
+            $("#contact-link").click(function(){
+            
+                if(contactBox.classList.contains("animation-contact-box")){
+                    contactBox.classList.add("no-animation-contact-box");
+                    contactBox.classList.remove("animation-contact-box");
+                    
+                }else{
+                    //alert("dentro");
+                    contactBox.classList.add("animation-contact-box");
+                    contactBox.classList.remove("no-animation-contact-box");
+                }
+                
+            });
+            
+            
+           
+        });
+    </script>
+    
+     <link rel="icon" type="image/x-icon" href="http://robertagardiman.github.io/favicon.ico" />
+  
+</head>
+
+<body>
+    
+    
+    
+    <!-- wraps around the whole site -->
+    <div class="wrapper">
+    
+        <header>
+            
+            <div class="header-container">
+            
+                <!-- logo stuff -->
+                <a href="index.html" class="logo-container">
+                    <img class="logo" src="img/home/logo-bambolina.png" alt="Roberta Gardiman" />
+                    <h2 class="name">ROBERTA GARDIMAN</h2>
+                </a>
+
+                <!-- navigation -->
+                <nav>
+                    <ul class="home-list">
+                        <li><a class="home-projects projects" href="project-list.html">PROJECTS</a></li>
+                        <li><a class="home-projects" href="about.html">ABOUT</a></li>
+                        <li><a id="contact-link" class="home-projects contact-last" href="#">CONTACT</a></li>
+                    </ul>
+
+                    <!-- hamburger -->
+                    <a href="#" class="hamburger-container">
+                        <div class="hamburger extreme-top"></div>
+                        <div class="hamburger center"></div>
+                        <div class="hamburger extreme-bottom"></div>
+                    </a>
+
+                </nav>
+                
+            </div>
+                
+        </header>
+        
+        
+        <!-- CONTACT BOX stuff-->
+        <div id="contact-box" class="contact-box">
+            <div class="contact-invitation">
+                <div class="contact-intro">FEEL FREE TO CONTACT ME!</div>
+                
+                <a href="#" class="contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+                <br>
+                <a href="mailto:roberta.gardiman@gmail.com" class="contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a> 
+                <a class="linkedin-link-contact" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin-contact" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        
+        
+        
+        <!-- PROJECT stuff -->
+        
+        <h1 id="title" class="project-main-title">ATM Web App</h1>
+        
+        
+        <div class="project-wrapper">
+                
+            
+                    
+                    <div class="text-container">
+                    
+                    
+                    
+                        <h2 class="subtitle">BRIEF</h2>
+
+                        <p class="project-description">Creation of a new responsive webapp For atm Milano, including new Services with a strong focus on User Experience.</p>
+                        
+                       <div class="img-container">
+                            <img class="osteria-first-mockup" src="img/ATM-webapp/mockup-atm%20copia.jpg" alt="atm mockup">
+                        </div>
+                        
+                        
+                        
+                        <h2 class="subtitle">CONCEPT</h2>
+                        
+                        
+                        
+                        <p class="project-description">The Project started with a deep analisys on ATM vending machines that begun with interviews, the creation of personas and also from their inputs the aim of the Project was to simplify the structure of the whole purchasing system. The last step has been evolving the project into a responsive webapp usign the features of desktop and mobile phones in particular ( such as camera and geolocalisation ) to offer a better service For People.
+                        </p>
+                        
+                        <div class="img-container">
+                            <img class="osteria-first-mockup" src="img/ATM-webapp/atm-first-mockup.png" alt="atm responsive mockup">
+                        </div>
+                        
+                        
+                        <div class="iop-step step-border">
+                            <h4 class="detail-title">MAP TOOL</h4>
+                            
+                            <img class="osteria-first-mockup" src="img/ATM-webapp/atm-map-tool-mockup.jpg" alt="atm responsive mockup">
+                            
+                            <p class="project-description atm-description">
+                                The map tool is always visible
+to prevent errors. It suggests the way for you to reach any place, speeding up the ticket purchase. The search bar helps increasing the efficiency of the service. It also give the possibility to save the ticket and use it when it is necessary. Finally the Login comes after the map tool to allow to use the webapp also just for quick infos, giving immediate feedback to the user.
+                            </p>
+                            
+                            <video id="atm-video" src="img/ATM-webapp/video-atm/iphone-atmvideo-1-mute(convertito).m4v" preload="auto" loop autoplay controls></video>
+                            
+                        </div> 
+                        
+                        
+                        <div class="iop-step step-border">
+                            <h4 class="detail-title">TICKET PURCHASE</h4>
+                            
+                            <img class="osteria-first-mockup" src="img/ATM-webapp/desktop-one-way.jpg" alt="atm responsive mockup">
+                            
+                            <p class="project-description atm-description">
+                                The template is fixed to focus the user and rassure him without scrolling. There are no differences between city areas and it's added the possibility to save the ticket for later usage.
+
+                            </p>
+                            
+                            <video id="atm-video" src="img/ATM-webapp/video-atm/iphone-atm-2-mute%20(convertito).m4v" preload="auto" loop autoplay controls></video>
+                        </div>
+                        
+                        <div class="iop-step step-border">
+                            <h4 class="detail-title">URBAN TICKET SHORTCUT</h4>
+                            
+                            <img class="osteria-first-mockup" src="img/ATM-webapp/shortcut-ipad-atm.jpg" alt="atm responsive mockup">
+                            
+                            <p class="project-description atm-description">
+                                Researches done in the Milan Area pointed out that the majority of people
+search for €1,50 ticket. For this reason it has been introduced a new function that, saving clicks, allows users to purchase the urban ticket very fast from the main menu of the app. Since this is a new feature and people have to get used to it, the app has a brief description next to the call to action to prevent any error.
+
+                            </p>
+                            
+                            <video id="atm-video" src="img/ATM-webapp/video-atm/iphone-atm-3-mute%20(convertito).m4v" preload="auto" loop autoplay controls></video>
+                            
+                        </div>
+                        
+                        <div class="iop-step step-border">
+                            <h4 class="detail-title">TRAVEL CARD</h4>
+                            
+                            <img class="osteria-first-mockup" src="img/ATM-webapp/iphone-card-recharge.jpg" alt="atm responsive mockup">
+                            
+                            <p class="project-description atm-description">
+                                This particular funtion represented a problem for mobile users that have to fill in a crowded form, to make it easier, exploiting the features of a common smartphone, it has been introduced the possibility to scan card's data with the camera; this is a way, together with inline validation, to prevent errors. Another problem occurred while choosing between a list of contracts that in the mobile was too crowded to tap the one that suites for the users' needs. For this reason it has been added a shortcut to recharge the last contract the user did (which is quite often the choice he selects), giving him a clear resume and the possibility to find a totem where he can activate the card. 
+                                 
+                            </p>
+                            
+                            <video id="atm-video" src="img/ATM-webapp/video-atm/iphone-atm-4-mute%20(convertito).m4v" preload="auto" loop autoplay controls></video>
+                        </div>
+                        
+                        
+                        
+                            
+                         <div class="foot-container foot-list-page">
+                    <div class="foot-contacts">
+
+                            <img class="logo-foot logo-foot-list" src="img/osteria/logo-foot.png" alt="logo fine progetto">
+
+                        <div class="foot-text-contacts foot-text-list">
+
+                            <div class="foot-contact-intro">Feel free to contact me!</div>
+
+                            <a href="#" class="foot-contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+
+                            <br>
+
+                            <a href="mailto:roberta.gardiman@gmail.com" class="foot-contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a> 
+                            
+                            <a class="linkedin-link linkedin-inside" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin linkedin-inside" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="foot-links">
+                        <div class="follow">
+                            <p class="icon-label">Follow me on</p>
+
+                            <a class="linkedin-link linkedin-outside" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+                        </div>
+                        
+                        <p class="copy">Copyright &copy; Roberta Gardiman 2016</p>
+                    </div>
+                </div>
+                    
+                    </div>
+                
+
+            </div>
+        
+        
+        
+            <!-- BOTTOM BAR stuff -->
+        
+            <div class="bottom-bar">
+                    <div class="container-bottombar">
+                        <a href="samsung-iop.html">
+                            <img class="icon-bottombar" src="img/bottom-bar/bottom-bar-icon-01.png" alt="icona previous project">
+                            <p class="previous-text-bar">PREVIOUS</p>
+                            <p class="text-bar previous-mobile">PREV</p>
+                        </a>
+                        <a href="project-list.html" class="center-icon"><p class="text-bar center-textbar">ALL</p></a>
+                        <a href="flora.html">
+                            <p class="text-bar">NEXT</p>
+                            <img class="icon-bottombar" src="img/bottom-bar/bottom-bar-icon-02.png" alt="icona next project">
+                        </a>
+                    </div>
+            </div>
+        
+    </div>
+    
+    <script src="script.js" type="text/javascript"></script>
+    
+</body>
+
+</html>

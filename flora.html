@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>RG | Flora</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    
+    
+  <link rel="stylesheet" href="css/sanitize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+    
+  <link href='https://fonts.googleapis.com/css?family=Raleway:200,500,300' rel='stylesheet' type='text/css'>
+    
+  <!-- JS -->
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+  <script>
+        $(document).ready(function(){
+            var contactLink = document.getElementById('contact-link');
+            var contactBox = document.getElementById('contact-box');
+            
+            $("#contact-link").click(function(){
+            
+                if(contactBox.classList.contains("animation-contact-box")){
+                    contactBox.classList.add("no-animation-contact-box");
+                    contactBox.classList.remove("animation-contact-box");
+                    
+                }else{
+                    //alert("dentro");
+                    contactBox.classList.add("animation-contact-box");
+                    contactBox.classList.remove("no-animation-contact-box");
+                }
+                
+            });
+            
+            
+           
+        });
+    </script>
+    
+     <link rel="icon" type="image/x-icon" href="http://robertagardiman.github.io/favicon.ico" />
+  
+</head>
+
+<body>
+    
+    
+    
+    <!-- wraps around the whole site -->
+    <div class="wrapper">
+    
+        <header>
+            
+            <div class="header-container">
+            
+                <!-- logo stuff -->
+                <a href="index.html" class="logo-container">
+                    <img class="logo" src="img/home/logo-bambolina.png" alt="Roberta Gardiman" />
+                    <h2 class="name">ROBERTA GARDIMAN</h2>
+                </a>
+
+                <!-- navigation -->
+                <nav>
+                    <ul class="home-list">
+                        <li><a class="home-projects projects" href="project-list.html">PROJECTS</a></li>
+                        <li><a class="home-projects" href="about.html">ABOUT</a></li>
+                        <li><a id="contact-link" class="home-projects contact-last" href="#">CONTACT</a></li>
+                    </ul>
+
+                    <!-- hamburger -->
+                    <a href="#" class="hamburger-container">
+                        <div class="hamburger extreme-top"></div>
+                        <div class="hamburger center"></div>
+                        <div class="hamburger extreme-bottom"></div>
+                    </a>
+
+                </nav>
+                
+            </div>
+                
+        </header>
+        
+        
+        <!-- CONTACT BOX stuff-->
+        <div id="contact-box" class="contact-box">
+            <div class="contact-invitation">
+                <div class="contact-intro">FEEL FREE TO CONTACT ME!</div>
+                
+                <a href="#" class="contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+                <br>
+                <a href="mailto:roberta.gardiman@gmail.com" class="contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a> 
+                <a class="linkedin-link-contact" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin-contact" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        
+        
+        
+        <!-- PROJECT stuff -->
+        
+        <h1 class="project-main-title">Flora Magazine</h1>
+        
+        
+        <div class="project-wrapper">
+                
+            
+                    
+                    <div class="text-container">
+                    
+                    
+                    
+                        <h2 class="subtitle">BRIEF</h2>
+
+                        <p class="project-description flora-firstline">Creation of a typographic magazine with a strong focus on graphic design, typography in particular.</p>
+                        
+                       <div class="img-container">
+                            <img class="osteria-first-mockup flora-gif" src="img/flora/Flora-logo.gif" alt="flora gif">
+                        </div>
+                        
+                        
+                        
+                        <h2 class="subtitle">CONCEPT</h2>
+                        
+                        
+                        
+                        <p class="project-description">The Project's aim is to create an elegant, fresh and girly magazine for IPad. I was given a word - Flora - to work on in order to end with: a typographic logo, a cover page, and a text format consistent with the brief. To give an elegant and feminine look and feel to the magazine.
+                        </p>
+                        
+                        <div class="img-container">
+                            <img class="osteria-first-mockup" src="img/flora/ipad-typography.png" alt="flora ipad cover">
+                        </div>
+                        
+                        
+                        <div class="iop-step step-border">
+                            <h4 class="detail-title">LOGO DESIGN</h4>
+                            
+                            <img class="osteria-first-mockup" src="img/flora/flora-logo-details.jpg" alt="logo design details">
+                        </div> 
+                        
+                        <div class="iop-step step-border">
+                            <h4 class="detail-title">DEVELOPMENT</h4>
+                            
+                            <video id="flora-video" src="img/flora/flora-video-slow%20(convertito).m4v" preload="auto" loop controls></video>
+                        </div> 
+                        
+                        
+                        
+                        <div class="foot-container foot-list-page">
+                    <div class="foot-contacts">
+
+                            <img class="logo-foot logo-foot-list" src="img/osteria/logo-foot.png" alt="logo fine progetto">
+
+                        <div class="foot-text-contacts foot-text-list">
+
+                            <div class="foot-contact-intro">Feel free to contact me!</div>
+
+                            <a href="#" class="foot-contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+
+                            <br>
+
+                            <a href="mailto:roberta.gardiman@gmail.com" class="foot-contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a> 
+                            
+                            <a class="linkedin-link linkedin-inside" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin linkedin-inside" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="foot-links">
+                        <div class="follow">
+                            <p class="icon-label">Follow me on</p>
+
+                            <a class="linkedin-link linkedin-outside" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+                        </div>
+                        
+                        <p class="copy">Copyright &copy; Roberta Gardiman 2016</p>
+                    </div>
+                </div>
+                    
+                    </div>
+                
+
+            </div>
+        
+        
+        
+            <!-- BOTTOM BAR stuff -->
+        
+            <div class="bottom-bar">
+                    <div class="container-bottombar">
+                        <a href="ATM-WebApp.html">
+                            <img class="icon-bottombar" src="img/bottom-bar/bottom-bar-icon-01.png" alt="icona previous project">
+                            <p class="previous-text-bar">PREVIOUS</p>
+                            <p class="text-bar previous-mobile">PREV</p>
+                        </a>
+                        <a href="project-list.html" class="center-icon"><p class="text-bar center-textbar">ALL</p></a>
+                        <a href="#">
+                            <p class="text-bar">NEXT</p>
+                            <img class="icon-bottombar" src="img/bottom-bar/bottom-bar-icon-02.png" alt="icona next project">
+                        </a>
+                    </div>
+            </div>
+        
+    </div>
+    
+</body>
+
+</html>
