@@ -2244,6 +2244,7 @@ header {
         display: block;
         margin: 15px auto;
         top: 25px;
+        left: 0;
         
     }
     
@@ -2251,8 +2252,8 @@ header {
         position: relative;
         display: block;
         margin: 0 auto; 
-        margin-bottom: 10px;
-        width: 90%;
+        margin-bottom: 40px;
+        width: 100%;
     }
     
     .atm-punto-elenco {
