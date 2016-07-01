@@ -2246,12 +2246,12 @@ header {
 
     .bottom-bar {
         width: 100%;
-        height: 50px;
+        height: 40px;
     }
 
     .container-bottombar {
         width: 100%;
-        height: 50px; 
+        height: 40px; 
     }
 
     .icon-bottombar {
@@ -2263,7 +2263,7 @@ header {
         position: relative;
         display: none;
         font-family: 'Raleway', 'sans-serif';
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 100;
         margin: 0 10px;
     }
@@ -2273,7 +2273,7 @@ header {
         position: relative;
         display: inline-block;
         font-family: 'Raleway', 'sans-serif';
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 100;
         margin: 0 10px;
     }
@@ -2286,8 +2286,10 @@ header {
     .center-icon {
         width: 30px;
         height: 30px;
+        
 
-        border: 1px solid rgba(244, 98, 77, 1);
+        border-top: 0;
+        border-bottom: 0;
 
         position: relative;
         
@@ -2298,75 +2300,82 @@ header {
         margin: 0 auto;
         position: relative;
         
-        
-        width: 28px;
-        line-height: 28px;
+        line-height: 33px;
+        vertical-align: middle;
         text-align: center;
     }
     
-     /**************** FOOTER STUFF *****************/
+/**************** FOOTER STUFF *****************/
 
     .foot-container {
-        display: block;
-
-        margin-top: 30px;
-        margin-bottom: 30px;
-
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    
+    .foot-contacts {
+      position: relative;
+      display: block;
+      margin: 30px auto;
+      width: 100%;
+      padding-right: 10px;
+      text-align: right;
+      font-size: 12px;
     }
 
-    .foot-contacts {
-        position: relative;
-        display:block;
-        margin: 10px auto;
-        width: 100%;
-        padding-right: 10px;
-        
-        
-        text-align: right;
-        font-size: 12px;
-        
-
+    .foot-text-list {
+      font-size: 12px;
+      text-align: center;
+      padding-left: 0;
+      position: relative;
+      margin: auto;
     }
 
     .foot-text-contacts {
-        width: auto;
-        font-size: 12px;
-        text-align: left;
-
+      width: auto;
+      display: block;
+      
+      text-align: center;
+      padding-left: 0;
+      position: relative;
+      margin: auto;
+      
+      font-size: 13px;
     }
 
     .logo-foot {
-        display: inline-block;
-        margin: 20px auto;
-        padding: 0;
-        padding-right: 10px;
-        border-right: 1px solid darkgrey;
-
-        width: 80px;
-
-        vertical-align: middle;
+      display: block;
+      margin: auto;
+      padding: 0;
+      border-right: 0;
+      width: 80px;
     }
 
     .copy {
-        display: none;
+      display: none;
     }
-    
+
     .foot-list-page {
-        position: relative;
-
-        max-width: 1280px;
-        width: 100%;
-
-        margin: 60px auto;
+      position: relative;
+      max-width: 1280px;
+      width: 100%;
+      margin: 60px auto;
     }
-    
+
     .logo-foot-list {
-        width: 75px;
+      width: 70px;
     }
-    
-    .foot-text-list {
-        padding-left: 5px;
-    }
-    
+
+  
+  .linkedin-inside {
+    margin: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  
+  .medium {
+    font-size: 13px;
+  }
     
 }
