@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>RG | About</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    
+    
+  <link rel="stylesheet" href="css/sanitize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+    
+<link href='https://fonts.googleapis.com/css?family=Raleway:200,500,300' rel='stylesheet' type='text/css'>
+    
+  <!-- JS -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var contactLink = document.getElementById('contact-link');
+            var contactBox = document.getElementById('contact-box');
+            
+            $("#contact-link").click(function(){
+            
+                if(contactBox.classList.contains("animation-contact-box")){
+                    contactBox.classList.add("no-animation-contact-box");
+                    contactBox.classList.remove("animation-contact-box");
+                    
+                }else{
+                    //alert("dentro");
+                    contactBox.classList.add("animation-contact-box");
+                    contactBox.classList.remove("no-animation-contact-box");
+                }
+                
+            });
+            
+            
+           
+        });
+    </script>
+    
+     <link rel="icon" type="image/x-icon" href="http://robertagardiman.github.io/favicon.ico" />
+  
+</head>
+
+<body>
+    
+    
+    
+    <!-- wraps around the whole site -->
+    <div class="about-wrapper">
+    
+        <header>
+            
+            <div class="header-container">
+            
+                <!-- logo stuff -->
+                <a href="index.html" class="logo-container">
+                    <img class="logo" src="img/home/logo-bambolina.png" alt="Roberta Gardiman" />
+                    <h2 class="name">ROBERTA GARDIMAN</h2>
+                </a>
+
+                <!-- navigation -->
+                <nav>
+                    <ul class="home-list">
+                        <li><a class="home-projects" href="project-list.html">PROJECTS</a></li>
+                        <li><a class="home-projects about" href="#">ABOUT</a></li>
+                        <li><a id="contact-link" class="home-projects contact-last" href="#">CONTACT</a></li>
+                    </ul>
+
+                    <!-- hamburger -->
+                    <a href="#" class="hamburger-container">
+                        <div class="hamburger extreme-top"></div>
+                        <div class="hamburger center"></div>
+                        <div class="hamburger extreme-bottom"></div>
+                    </a>
+
+                </nav>
+                
+            </div>
+                
+        </header>
+        
+        <!-- CONTACT BOX stuff-->
+        <div id="contact-box" class="contact-box">
+            <div class="contact-invitation">
+                <div class="contact-intro">FEEL FREE TO CONTACT ME!</div>
+                
+                <a href="#" class="contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+                <br>
+                <a href="mailto:roberta.gardiman@gmail.com" class="contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a> 
+                <a class="linkedin-link-contact" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin-contact" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        
+
+        <!-- about stuff -->
+        <section id="about-container">
+                <div class="about-content">
+                    <h1 class="about-title">Hi! I'm Roberta.</h1>
+                    <p class="about-text">I'm a creative thinker specializing in Web and Experience Design based in Milan.</p> <p class="about-text">I enjoy turning complex problems into simple, beautiful and intuitive interface designs. </p>
+
+   <p class="about-text"> When I’m not working you'll find me running in the park or hanging 
+    around riding my light-blue Vespa.</p>
+                    
+                    <h2 class="about-skills">Skills:</h2>
+                    
+                    <div class="programs-container">
+                        <img class="icon-program" src="img/icone-about/icone-ombre-01.png" alt="icona illustrator">
+                        <img class="icon-program" src="img/icone-about/icone-ombre-02.png" alt="icona photoshop">
+                        <img class="icon-program" src="img/icone-about/icone-ombre-03.png" alt="icona indesign">
+                        <img class="icon-program" src="img/icone-about/icone-ombre-04.png" alt="icona aftereffects">
+                        <img class="icon-program" src="img/icone-about/icone-ombre-05.png" alt="icona html">
+                        <img class="icon-program" src="img/icone-about/icone-ombre-06.png" alt="icona css">
+                        <img class="icon-program" src="img/icone-about/icone-ombre-07.png" alt="icona js">
+                        <img class="icon-program last" src="img/icone-about/icone-ombre-08.png" alt="icona sketch">
+                    </div>
+                    
+                    <!-- language stuff -->
+                    <h2 class="about-skills">Languages:</h2>
+                    
+                    <p class="language">//ENGLISH <span class="level">FCE Level B2-C1</span></p>
+                    <p class="language">//SPANISH  <span class="level">DELE Level B2-C1</span></p>
+                    <p class="language">//FRENCH  <span class="level">Level B2</span></p>
+                </div>
+
+                <a class="resume-link" href="img/icone-about/CV_Gardiman_Roberta.pdf" target="_blank" >//Download my CV</a>
+                
+            </section>
+        
+        
+    </div>
+    
+</body>
+
+</html>
