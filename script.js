@@ -17,3 +17,17 @@ window.onscroll = function (e) {
   // predi posizione per dopo
   pageOffset2 = window.pageYOffset;
 };
+
+
+//click contact appear the box
+
+var contactbox = document.getElementById("contact-box");
+var contactlink = document.getElementById("contact-link");
+
+contactlink.addEventListener("click", openContactBox);
+
+function openContactBox() {
+  
+  contactbox.classList.toggle("animation-contact-box");
+  
+}
