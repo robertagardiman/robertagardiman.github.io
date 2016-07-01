@@ -2159,6 +2159,8 @@ header {
     width: 100%;
     left: 0;
     margin-left: 0;
+    padding: 30px 10px;
+    padding-bottom: 0;
   }
     
 /*********** ABOUT PAGE ***********/
