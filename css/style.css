@@ -2154,6 +2154,12 @@ header {
     padding-right: 0;
   }
 
+  
+  .filter-selection {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
     
 /*********** ABOUT PAGE ***********/
     
