@@ -1,0 +1,2356 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+/********************** HOME PAGE **********************/
+.home-wrapper {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    
+    background-image: url(../img/home/foto-home-white-80.jpg);
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    
+    display: -webkit-box;
+    
+    display: -webkit-flex;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(255,255,255,1);
+    
+    padding: 7px 30px;
+    
+    z-index: 20;
+}
+
+.header-container {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.name {
+    margin: 0 30px;
+    margin-left: 15px;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 23px;
+    letter-spacing: 2px;
+    
+    line-height: 29px;
+    
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.home-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.home-projects {
+    font-family: Raleway;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    
+    padding: 7px 17px;
+    
+}
+
+.home-projects:hover {
+    color: rgba(244, 98, 77, 1);
+}
+
+.contact-last {
+    margin-right: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+.personality {
+    position: relative;
+    top: 20%;
+    display: visible;
+    
+    max-width: 80%;
+    height: 60%;
+    
+    opacity: 0;
+    
+    -webkit-transition: opacity 1s;
+    
+    transition: opacity 1s;
+    
+}
+
+.personality:hover {
+    opacity: 1;
+}
+
+
+
+
+/********************** HOME FRAME STUFF ***********************/
+
+
+.home-frame {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 22%;
+    
+    max-width: 35%;
+    min-width: 25%;
+    width: 35%;
+    height: 90%;
+    
+    z-index: 3; 
+    
+    
+    overflow: hidden;
+}
+
+.border-bottom {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    
+    width: 0%;
+    height: 3px;
+    background-color: rgba(244, 98, 77, 1);
+    
+    transition: width .7s;
+    
+}
+
+.personality:hover .border-bottom{
+    width: 100%;
+}
+
+
+.border-top {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    
+    width: 0%;
+    height: 3px;
+    background-color: rgba(244, 98, 77, 1);
+    
+    transition: width .7s;
+}
+
+.personality:hover .border-top{
+    width: 100%;
+}
+
+.border-left {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    
+    width: 3px;
+    height: 0;
+    background-color: rgba(244, 98, 77, 1);
+    
+    transition: height .7s;
+  
+}
+
+.personality:hover .border-left{
+    height: 100%;
+}
+
+.border-right {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    
+    width: 3px;
+    height: 0;
+    background-color: rgba(244, 98, 77, 1);
+    
+    transition: height .7s;
+}
+
+.personality:hover .border-right{
+    height: 100%;
+}
+
+
+
+
+.home-quote {
+    opacity: 1;
+    
+    width: 48%;
+    
+    padding: 5%;
+    
+    position: relative;
+    top: 20%;
+    left: 60%;
+    
+    margin-right: 0%;
+    
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    
+}
+
+.home-slash {
+    display: none;
+    color: rgba(244, 98, 77, 1);
+    padding-left: 10px;
+}
+
+.walt-disney {
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-top: 30px;
+    
+    font-size: 11px;
+    font-weight: 500;
+    
+}
+
+
+
+
+
+
+
+/********************** CONTACT BOX **********************/
+
+.contact-box {
+    
+    position: absolute;
+    top: 64px;
+    right: 94px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    
+    background-color: white;
+    
+    width: 315px;
+    height: 0;
+    overflow: hidden;
+    
+    padding: 0px 30px;
+    border-top: 1px solid rgba(244, 98, 77, 1);
+    box-shadow: 0px 0px 10px lightgrey;
+    
+    opacity: 0;
+    
+    z-index: 15;
+    display: block;
+  
+}
+
+.animation-contact-box {
+    
+    display: flex;
+    
+    -webkit-animation-name: contact;
+    animation-name: contact;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.no-animation-contact-box {
+    display: block;
+    -webkit-animation-name: no-contact;
+    animation-name: no-contact;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+}
+
+
+
+@keyframes contact {
+    0% {opacity: 0; height: 0; padding: 0 30px;}
+    100% {opacity: 1; height: 170px; padding: 20px 30px;}
+}
+
+
+@keyframes no-contact {
+    0% {opacity: 1; height: 170px; padding: 20px 30px;/*display: flex; right: 0;*/}
+    100% {opacity: 0; height: 0; padding: 0 30px;/*display: none; right: -400px;*/}
+}
+
+.contact-intro {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300; 
+    
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-medium {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 100; 
+    
+    margin-bottom: 20px;
+}
+
+.medium {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    font-weight: 100; 
+    
+    color: rgba(244, 98, 77, 1);
+}
+
+.medium:hover {
+    text-decoration: line-through;
+}
+
+.phone {
+    letter-spacing: 1.3px;
+}
+
+.linkedin-link-contact {
+    display: block;
+}
+
+.icon-linkedin-contact {
+    width: 20px;
+    margin-top: 7px;
+}
+
+
+
+/********************** LIST PROJECT PAGE **********************/
+
+.header-projects {
+    background-color: white;
+    
+    z-index: 4;
+}
+
+.projects {
+    color: rgba(244, 98, 77, 1);
+}
+
+.name {
+    font-weight: 300;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    
+    height: 100vh;
+}
+
+
+
+/************ FILTERS SELECTION *************/
+
+.filter-selection {
+    
+    position: fixed;
+    margin: 0 auto;
+    padding: 40px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    top: 60px;
+    width: 1280px; 
+    left: 50%; 
+    margin-left: -640px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+    background-color: white;
+    z-index: 3;
+}
+
+.filter {
+    display: inline-block;
+    
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 15px;
+    font-weight: 200;
+    padding: 8px 25px;
+    margin: 0 1%;
+}
+
+.filter-effect {
+    color: black;
+} 
+
+.filter-effect:hover {
+    text-decoration: line-through;
+    color: rgba(244, 98, 77, 1);
+}
+
+.all {
+    color: rgba(244, 98, 77, 1);
+    text-decoration: none;
+}
+
+/************ COVERS *************/
+
+
+.cover-container {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 38px;
+    
+    opacity: 1;
+    
+    -webkit-transition: opacity 0.5s;
+    
+    transition: opacity 0.5s;
+}
+
+.list-projects {
+    max-width: 1280px;
+    width: 95%;
+    margin: 0 auto;
+    
+    position: relative;
+    top: 180px;
+    
+    display: -webkit-box;
+    
+    display: -webkit-flex;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+
+}
+
+.project-cover {
+    position: relative;
+    width: 100%;  
+    
+}
+
+.cover-container:hover .overlay {
+    opacity: 1;
+ 
+}
+
+.overlay {
+    position: absolute;
+    margin: auto;
+    top: 2.5%;
+    left: 2.5%;
+    width: 95%;
+    height: 95%;
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    
+    -webkit-transition: opacity 1s;
+    
+    transition: opacity 1s;
+}
+
+.project-title {
+    position: relative;
+    top: 40%;
+    left: 6%;
+    font-family: Raleway;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.category-label {
+    position: absolute;
+    top: 55%;
+    left: 6%;
+    font-family: Raleway;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.category-inside {
+    color: rgba(244, 98, 77, 1);
+    margin-right: 10px;
+}
+
+.graphic {
+    right: 15%;
+    margin-right: 10px;
+}
+
+/*.view-more {
+    position: absolute;
+    top: 75%;
+    left: 6%;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 1em;
+    font-weight: 200;
+    
+    padding: 3px 20px;
+    background-color: white;
+    color: rgba(244, 98, 77, 1);
+    outline: 1px solid rgba(244, 98, 77, 1);
+    
+    -webkit-transition: 0.5s;
+    
+    transition: 0.5s;
+
+}
+
+.view-more:hover {
+    background-color: rgba(244, 98, 77, 1);
+    color: white;
+}*/
+
+
+
+/********************** ABOUT PAGE **********************/
+
+.about-wrapper {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    
+    background-image: url(../img/home/foto-home-white-80.jpg);
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;   
+}
+
+.about {
+    color: rgba(244, 98, 77, 1);
+}
+
+
+#about-container {
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    height: 75%;
+    
+    margin: 0;
+    margin-right: 20px;
+    
+
+    width: 50%;
+    min-width: 300px;
+    
+}
+
+.about-content {
+    position: relative;
+    height: 100%;
+    
+   
+    padding: 30px;
+    
+    border: 2px solid rgba(244, 98, 77, 1);
+    
+    width: 100%;
+    min-width: 300px;
+    
+    overflow: scroll;   
+}
+
+.about-title {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 4em;
+    font-weight: 100;
+    color: rgba(244, 98, 77, 1);
+    
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 18px;
+    font-weight: 100;
+    
+    line-height: 28px;
+}
+
+.about-skills {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 2em;
+    font-weight: 100;
+    color: rgba(244, 98, 77, 1);
+    
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.programs-container {
+    width: 100%;
+    position: relative;  
+}
+
+.icon-program {
+    width: 70px;
+    
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    
+    box-shadow: 2px 2px 10px lightgrey; 
+}
+
+.last {
+    margin-right: 0;
+}
+
+.language {
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 18px; 
+    
+    color: rgba(244, 98, 77, 1);
+}
+
+.level {
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 0;
+    font-size: 16px; 
+    color: rgba(0, 0, 0, 1); 
+}
+
+.resume-link {
+    position: absolute;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 100;
+    font-size: 14px;
+    
+    bottom: -30px;
+    right: 0;
+    
+    color: rgba(244, 98, 77, 1);  
+    color: rgba(0, 0, 0, 1);  
+}
+
+.resume-link:hover {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+/**************** FOOTER STUFF *****************/
+.foot-container {
+    
+    position: relative;
+    bottom: 0;
+    
+    width: 100%;
+    height: 150px;
+    
+    border-top: 1.9px solid lightgrey;
+    
+    
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    margin-top: 30px;
+    margin-bottom: 80px;
+
+}
+
+.foot-contacts {
+    display: inline-block;
+    padding: 0;
+    
+}
+
+.foot-text-contacts {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    
+    font-family: raleway;
+    font-weight: 100;
+}
+
+.logo-foot {
+    display: inline-block;
+    margin: 20px auto;
+    padding-right: 10px;
+    border-right: 1px solid darkgrey;
+    
+    width: 90px;
+    
+    vertical-align: middle;
+}
+
+.foot-links {
+    position: relative;
+    display: block;
+    
+    bottom: 22px;
+    
+}
+
+.copy {
+    display: block;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 100;
+    font-size: 13px;
+
+    position: relative;
+    
+ 
+}
+
+.foot-list-page {
+    position: relative;
+    
+    max-width: 1280px;
+    width: 97%;
+    
+    margin: 60px auto;
+    
+}
+
+.linkedin-link {
+    display: block;
+}
+
+.follow {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-label {
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 100;
+    font-size: 16px;
+
+    position: relative;
+    display: none;
+}
+
+.icon-linkedin {
+    display: inline-block;
+    width: 25px;
+    display: block;
+    margin: 10px;
+    margin-right: 0;
+    
+    
+}
+
+.linkedin-inside {
+    display: none;
+}
+
+
+
+
+
+/**************** SINGLE PROJECT PAGE *****************/
+
+.project-main-title {
+    position: fixed;
+    
+    top: 20px;
+    background-color: white;
+    max-width: 1260px;
+    width: 1280px; 
+    
+    left: 50%; 
+    margin-left: -640px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+    
+    font-family: Raleway;
+    font-size: 44px;
+    letter-spacing: 2px;
+    font-weight: 300;
+   
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 0;
+    border-bottom: 1.5px solid rgba(244, 98, 77, 1);
+    
+    z-index: 1;  
+    
+    transition: 300ms ease-in-out;
+}
+
+.collapsed {
+   height: 0;
+   padding-top: 0;
+   overflow: hidden;
+   
+  transition: 300ms ease-in-out;
+}
+
+
+
+.project-wrapper {
+    position: relative;
+    top: 190px;
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-container {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    position: relative;
+    display: block;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: rgba(244, 98, 77, 1);
+    
+    padding: 20px 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.project-description {
+    display: block;
+    position: relative;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.4em;
+    
+    width: 100%;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.img-container {
+    position: relative;
+    
+    
+    width: 100%;
+    margin: 20px 0;
+    
+   /* background-image: url(links/PROJECTS-links/osteria/osteria-first-mockup.png);
+    background-size: 110%;
+    background-position: 0px -30px;
+    background-repeat: no-repeat;*/
+}
+
+
+.osteria-first-mockup {
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+.osteria-gif {
+    position: relative;
+    width: 100%;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#osteria-example {
+    width: 100%;
+    margin: 50px 0;  
+}
+
+
+
+
+
+
+
+
+
+/********************** SAMSUNG PAGE **********************/
+
+.iop-step {
+    width: 100%;
+    margin-top: 50px;
+    
+    text-align: left;
+    
+}
+
+#video-embed {
+    width: 640px;
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    margin-top: 40px;
+}
+
+
+.iop-first-mockup {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 650px;
+}
+
+
+.step-border {
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+}
+
+.detail-title {
+    position: relative;
+    display: block;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: rgba(244, 98, 77, 1);
+    
+    padding: 20px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.step-description {
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+.productsection-description {
+    width: 60%;
+    display: inline-block;
+}
+
+.product-screen {
+    margin-left: 40px;
+    
+}
+
+.portrait-screen {
+    width: 200px;
+    display: inline-block;
+}
+
+.screenlogin-details {
+    width: 70%;
+    margin: 0;
+    margin-left: 17%;
+}
+
+.store-screen {
+    display: inline-block;
+    position: relative;
+    width: 49.2%;
+    padding: 0;
+    height: 450px;
+    margin: 0 auto;
+    margin-right:1%;
+    margin-top: 30px;
+    min-width: 180px;
+}
+
+.store-screen-last {
+    margin-right: 0;
+}
+
+.event-screen {
+    width: 30%;
+    min-width: 100px;
+    margin-top: 20px;
+    margin-right: 3%;
+    
+    box-shadow: 5px 5px 10px 1px lightgrey;
+    
+}
+
+.event-screen-last {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+/**************** ATM PAGE *****************/
+
+.atm-description {
+    position: relative;
+    display: inline-block;
+    
+    width: 60%;
+    padding: 0;
+    /* border-left: 1px dashed lightgrey; */
+    top: 40px;
+    
+    margin-left: 0;
+}
+
+
+
+#atm-video {
+    position: relative;
+    display: inline-block;
+    left: 50px;
+    width: 320px;
+    
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/************ FLORA PAGE *************/
+
+#flora-video {
+    width: 350px;
+    position: relative;
+    display: block;
+    
+    margin: 0 auto;
+}
+
+.flora-firstline {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/************ BOTTOM BAR *************/
+
+.bottom-bar {
+    position: fixed;
+    
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+    
+    bottom: 0;
+}
+
+.down {
+    height: 0;
+    overflow: hidden;
+}
+
+.container-bottombar {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    height: 40px;
+    
+    
+    
+    display: -webkit-box;
+    
+    display: -webkit-flex;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;  
+}
+
+.icon-bottombar {
+    width: 15px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-bar {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-align: right;
+}
+
+.center-icon {
+    width: 35px;
+    height: 30px;
+    
+    border-top: 1px solid rgba(244, 98, 77, 1);
+    border-bottom: 1px solid rgba(244, 98, 77, 1);
+    
+    position: relative;
+}
+
+
+.center-textbar {
+    position: relative;
+    margin: 0 auto;
+    width: 35px;
+    
+    text-align: center;
+    
+    line-height: 30px;
+}
+
+.previous-text-bar {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 10px;
+}
+
+
+.previous-mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ 1920px IMAC ************/
+@media(min-width: 1920px) {
+    .home-quote {
+        font-size: 25px;
+    }
+}
+
+
+
+/************ 1413px ************/
+@media(max-width: 1413px) {
+    #atm-video {
+        position: relative;
+        display: inline-block;
+        margin-top: 5%;
+        width: 35%;
+       
+        
+        
+    }
+    
+    .atm-description {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto; 
+        margin-bottom: 10px;
+        width: 55%;
+    }
+    
+   
+    
+      .contact-box {
+        right: 47px;
+    }
+}
+
+
+
+
+
+
+
+
+/************ 1300px ************/
+@media(max-width: 1300px) {
+    .productsection-description {
+        display: block;
+        width: 100%;
+    }
+    
+    .product-screen {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .contact-box {
+        right: 47px;
+    }
+}
+
+
+
+
+
+
+
+/************ 1048px IPAD ************/
+@media(max-width: 1048px) {
+    .personality {
+        display: none;
+    }
+    
+    .cover-container {
+        margin-top: 30px;
+    }
+    
+    .overlay {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 70px;
+
+        background-color: rgba(255, 255, 255, 1);
+        opacity: 1;
+
+        -webkit-transition: opacity 1s;
+
+        transition: opacity 1s;
+    }
+    
+    .project-title {
+        position: absolute;
+        top: 17%;
+        left: 6%;
+        font-family: 'Raleway', 'sans-serif';
+        font-size: 1.1em;
+        padding-bottom: 6px;
+        /*border-bottom: 1px solid rgba(244, 98, 77, 1);*/
+    }
+    
+    .category-label {
+        display: block;
+        position: absolute;
+        top: 63%;
+        left: 6%;
+        font-family: 'Raleway', 'sans-serif';
+        font-size: 0.7em;
+        color: black;
+
+    }
+
+
+    .view-more {
+        display: none;
+
+    }
+    
+     .productsection-description {
+        width: 100%;
+    }
+    
+    
+    .contact-box {
+        right: 47px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/************ 940px IPAD ************/
+
+@media(max-width: 940px) {
+    
+    header {
+        padding: 10px 20px;
+        
+    }
+    
+    .header-container {
+        position: relative;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home-projects {
+        font-family: Raleway;
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 300;
+
+        padding: 1px 12px;
+        border-right: 0px solid #e0e0e0;
+
+    }
+    
+    .home-list {
+       display: flex;
+    }
+    
+    .name {
+        display: none;
+    }
+    
+    .contact-last {
+        padding-right: 0;
+        border-right: 0;
+    }
+    
+    .contact-box {
+        display: block;
+        width: 100%;
+        right: 0;
+        top: 70px;
+        text-align: center;
+        
+        border-top: 1px solid rgba(244, 98, 77, 1);
+    }
+    
+   
+    /**************** ATM PAGE *****************/
+
+    .atm-description {
+        position: relative;
+        display: inline-block;
+
+        width: 57%;
+        padding: 0;
+        /* border-left: 1px dashed lightgrey; */
+        top: 40px;
+
+        margin-left: 0;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+
+
+    #atm-video {
+        position: relative;
+        display: inline-block;
+        left: 30px;
+        width: 40%;
+
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
+    
+    /*********** HAMBURGER **********/
+
+   /* .hamburger-container {
+        width: 35px;
+        height: 30px;
+
+        display: -webkit-box;
+
+        display: -webkit-flex;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .hamburger {
+        width: 35px;
+        height: 1px;
+
+        background-color: black;
+    }
+
+    .center {
+        display: block;
+        opacity: 1;
+
+        -webkit-animation-name: middle;
+
+        animation-name: middle;
+        -webkit-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .extreme-top {
+        display: block;
+        position: relative;
+
+        -webkit-animation-name: top;
+
+        animation-name: top;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .extreme-bottom {
+        display: block;
+        position: relative;
+
+        -webkit-animation-name: bottom;
+
+        animation-name: bottom;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    @-webkit-keyframes top{
+        0% {
+            top: 0;
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+
+        }
+        100% {
+            top: 15px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+
+    @keyframes top{
+        0% {
+            top: 0;
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+
+        }
+        100% {
+            top: 15px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+
+    @-webkit-keyframes bottom{
+        0% {
+            bottom: 0;
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+
+        }
+        100% {
+            bottom: 14px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+
+    @keyframes bottom{
+        0% {
+            bottom: 0;
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+
+        }
+        100% {
+            bottom: 14px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+
+    @-webkit-keyframes middle{
+        0% {
+            opacity: 1;
+
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes middle{
+        0% {
+            opacity: 1;
+
+        }
+        100% {
+            opacity: 0;
+        }
+    } */
+    
+    
+    
+    
+    
+    /*********** HAMBURGER CONTENT **********/
+    
+   /* #menu-mobile {
+        display: block;
+        background-color: white;
+        
+        width: 100%;
+        height: 100vh;
+        
+        display: -webkit-box;
+        
+        display: -webkit-flex;
+        
+        display: -ms-flexbox;
+        
+        display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+    }
+    
+    .mobile-menu {
+        font-family: Raleway;
+        font-size: 25px;
+        letter-spacing: 2px;
+        font-weight: 200;
+        
+        width: 200px;
+        padding: 10px 20px;
+        
+        display: -webkit-box;
+        
+        display: -webkit-flex;
+        
+        display: -ms-flexbox;
+        
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        
+        border-bottom: 1px solid rgba(244, 98, 77, 1);
+    }
+    
+    .mobile-menu-contacts {
+       margin-top: 30px;  
+    } */
+
+    
+    
+    /************ PROJECT PAGE ********/
+    
+    .cover-container {
+        position: relative;
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    
+    .overlay {
+        
+        margin-top: 10px;
+        left: 0;
+    }
+    
+    .twinings-last {
+        margin-left: 18.406px;
+    }
+    
+    .project-title {
+        font-size: 1.1em;
+    }
+    
+    
+    /*********** SINGLE PROJECT PAGE *************/
+    
+    .text-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        position: relative;
+        width: 85%;
+    }
+    
+    
+    /**************** FOOTER STUFF *****************/
+
+    .foot-container {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .foot-contacts {
+        position: relative;
+        display:block;
+        margin: 10px auto;
+        width: auto;
+        padding: 0;
+        
+        float: right;
+
+    }
+
+    .foot-text-contacts {
+        position: relative;
+        width: 250px;
+        font-size: 12px;
+        vertical-align: top;
+        top: 20px;
+
+    }
+    
+    .foot-contact-intro {
+        display: none;
+    }
+
+    .logo-foot {
+        display: inline-block;
+        margin: 20px auto;
+        padding-right: 10px;
+        border-right: 1px solid darkgrey;
+
+        width: 80px;
+
+        vertical-align: middle;
+    }
+
+    .copy {
+        display: none;
+    }
+    
+    .linkedin-outside {
+        display: none;
+    }
+    
+    .linkedin-inside {
+        display: block;
+        position: relative;
+        margin-left: 0;
+        margin-top: 5px;
+        width: 20px
+    }
+
+    
+}
+
+
+
+
+/************ 768px IPAD ************/
+
+@media(max-width: 768px) {
+  /**************** ATM PAGE *****************/
+
+    .atm-description {
+        position: relative;
+        display: block;
+
+        width: 100%;
+        padding: 0;
+        /* border-left: 1px dashed lightgrey; */
+        top: 40px;
+
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+
+
+    #atm-video {
+        position: relative;
+        display: block;
+        
+        width: 60%;
+        
+        margin: 50px auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/************ 568px IPhone6 ************/
+
+@media(max-width: 568px) {
+    
+    .home-wrapper {
+        background-position: -320px 0;
+    }
+    
+    .name {
+        display: none;
+        width: 55px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .filter-selection {
+        position: relative;
+        width: 540px; 
+        left: 50%; 
+        margin-left: -270px;
+        
+        font-size: 0.9em;
+        padding: 50px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .filter {
+        padding: 8px 15px;
+    }
+    
+    .list-projects { 
+        top: 60px;
+    }
+    
+    .cover-container {
+        position: relative;
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 10px;
+ 
+    }
+    
+    .overlay {
+        display: none;
+        position: absolute;
+        width: 95%;
+        height: 70px;
+        
+        top: auto;
+        bottom: 2.5%;
+        
+        left: 2.5%;
+
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 1;
+        
+    }
+    
+    .project-title {
+        font-size: 18px;
+    }
+    
+    
+    
+    
+    /************ ABOUT PAGE ********/
+    
+    .about-content {
+        background-color: rgba(255,255,255,0.7);   
+    }
+    
+    .icon-program {
+        width: 99px;
+        display: inline-block;
+        margin-right: 1.0em;
+        margin-bottom: 1.0em;
+        box-shadow: 2px 2px 10px lightgrey;
+    }
+    
+    #about-container {
+        position: absolute;
+        bottom: 7%;
+        right: 3%;
+        height: 75%;
+        margin: 0;
+        /* margin-right: 20px; */
+        width: 50%;
+        min-width: 300px;
+    }
+    
+    
+    /************ SINGLE PROJECT PAGE *****************/
+    
+    .project-main-title {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .project-wrapper{
+        width: 100%;
+    }
+    
+    .text-container {
+        top: -40px;
+        width: 100%;
+    }
+    
+    .img-container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .project-description {
+        width: 100%;
+        margin: auto;
+        
+        padding: 0 20px;
+    }
+    
+    .step-description {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+        padding: 0 20px;
+        
+    }
+    
+    
+    
+
+    .logo-foot {
+        display: block;
+        margin: 20px auto;
+        margin-bottom: 0;
+        width: 150px;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    
+    
+    
+    .previous-text-bar {
+        
+        display: none;
+        
+    }
+    
+    
+    .text-bar {
+        position: relative;
+        display: inline-block;
+        font-family: 'Raleway', 'sans-serif';
+        font-size: 15px;
+        width: auto;
+        font-weight: 100;
+        margin: 0 10px;
+    }
+    
+    .previous-mobile {
+        display: inline-block;
+        font-size: 15px;
+        width: auto;
+        font-weight: 100;
+        margin: 0 10px;
+    }
+    
+    .center-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+
+        border-top: 1px solid rgba(244, 98, 77, 1);
+        border-bottom: 1px solid rgba(244, 98, 77, 1);
+
+        position: relative;
+        
+    }
+
+
+    .center-textbar {
+        margin: 0 auto;
+        position: relative;
+        
+        
+        width: 28px;
+        line-height: 28px;
+        text-align: center;
+    }
+    
+    
+    
+    .store-screen {
+        position: relative;
+        display: block;
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 10px;
+        min-width: 200px;
+    }
+    
+    
+    /**************** FOOTER STUFF *****************/
+
+    .foot-container {
+        display: block;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .foot-contacts {
+        position: relative;
+        display:block;
+        margin: 10px auto;
+        width: 100%;
+        padding-right: 30px;
+        
+        float: right;
+        text-align: right;
+        
+
+    }
+
+    .foot-text-contacts {
+        width: auto;
+        font-size: 12px;
+        text-align: left;
+
+    }
+
+    .logo-foot {
+        display: inline-block;
+        margin: 20px auto;
+        padding: 0;
+        padding-right: 10px;
+        border-right: 1px solid darkgrey;
+
+        width: 80px;
+
+        vertical-align: middle;
+    }
+
+    .copy {
+        display: none;
+    }
+    
+    .foot-list-page {
+        position: relative;
+
+        max-width: 1280px;
+        width: 100%;
+
+        margin: 60px auto;
+    }
+    
+    .logo-foot-list {
+        width: 85px;
+    }
+    
+    .foot-text-list {
+        padding-left: 5px;
+    }
+
+    
+    
+}
+
+
+
+
+/************ 320px IPhone6 ************/
+
+@media(max-width: 320px) {
+    .name {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    
+    /*********** ABOUT PAGE ***********/
+    
+    .icon-program {
+        width: 99px;
+        display: inline-block;
+        margin-right: 1.0em;
+        margin-bottom: 1.0em;
+        box-shadow: 2px 2px 10px lightgrey;
+    }
+    
+    #about-container {
+        position: absolute;
+        bottom: 7%;
+        right: 3%;
+        height: 70%;
+        margin: 0;
+        /* margin-right: 20px; */
+        width: 50%;
+        min-width: 300px;
+    }
+    
+    .project-main-title {
+        font-size: 18px;
+    }
+    
+    .language {
+        font-size: 16px; 
+    }
+
+    .level {
+        font-size: 14px;  
+    }
+    
+    
+    
+    .event-screen {
+        width: 29%;
+        min-width: 70px;
+        margin-top: 20px;
+        margin-right: 2%;
+        margin-left: 1%;
+
+    }
+    
+    #atm-video {
+        position: relative;
+        display: block;
+        margin: 15px auto;
+        top: 25px;
+        
+    }
+    
+    .atm-description {
+        position: relative;
+        display: block;
+        margin: 0 auto; 
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    .atm-punto-elenco {
+        text-align: right;
+        margin-right: 20px;
+        display: block;
+        margin: 0 auto; 
+        width: 90%;
+        font-size: 11px;
+
+    }
+
+    .atm-left {
+        margin-right: 0;
+        margin: 0 auto;
+
+        font-size: 11px;
+
+
+        border-left: 0;
+        text-align: left;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    /************ BOTTOM BAR *************/
+
+    .bottom-bar {
+        width: 100%;
+        height: 50px;
+    }
+
+    .container-bottombar {
+        width: 100%;
+        height: 50px; 
+    }
+
+    .icon-bottombar {
+        width: 10px;
+    }
+
+    
+    .previous-text-bar {
+        position: relative;
+        display: none;
+        font-family: 'Raleway', 'sans-serif';
+        font-size: 15px;
+        font-weight: 100;
+        margin: 0 10px;
+    }
+    
+    
+    .text-bar {
+        position: relative;
+        display: inline-block;
+        font-family: 'Raleway', 'sans-serif';
+        font-size: 15px;
+        font-weight: 100;
+        margin: 0 10px;
+    }
+    
+    .previous-mobile {
+        display: inline;
+    }
+
+
+    .center-icon {
+        width: 30px;
+        height: 30px;
+
+        border: 1px solid rgba(244, 98, 77, 1);
+
+        position: relative;
+        
+    }
+
+
+    .center-textbar {
+        margin: 0 auto;
+        position: relative;
+        
+        
+        width: 28px;
+        line-height: 28px;
+        text-align: center;
+    }
+    
+     /**************** FOOTER STUFF *****************/
+
+    .foot-container {
+        display: block;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .foot-contacts {
+        position: relative;
+        display:block;
+        margin: 10px auto;
+        width: 100%;
+        padding-right: 10px;
+        
+        
+        text-align: right;
+        font-size: 12px;
+        
+
+    }
+
+    .foot-text-contacts {
+        width: auto;
+        font-size: 12px;
+        text-align: left;
+
+    }
+
+    .logo-foot {
+        display: inline-block;
+        margin: 20px auto;
+        padding: 0;
+        padding-right: 10px;
+        border-right: 1px solid darkgrey;
+
+        width: 80px;
+
+        vertical-align: middle;
+    }
+
+    .copy {
+        display: none;
+    }
+    
+    .foot-list-page {
+        position: relative;
+
+        max-width: 1280px;
+        width: 100%;
+
+        margin: 60px auto;
+    }
+    
+    .logo-foot-list {
+        width: 75px;
+    }
+    
+    .foot-text-list {
+        padding-left: 5px;
+    }
+    
+    
+}

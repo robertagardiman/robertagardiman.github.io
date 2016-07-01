@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Roberta Gardiman | Portfolio</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    
+    
+  <link rel="stylesheet" href="css/sanitize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+    
+  <link href='https://fonts.googleapis.com/css?family=Raleway:200,500,300' rel='stylesheet' type='text/css'>
+    
+    
+    
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            //var contactLink = document.getElementById('contact-link');
+            var contactBox = document.getElementById('contact-box');
+            
+            $("#contact-link").click(function(){
+            
+                if(contactBox.classList.contains("animation-contact-box")){
+                    contactBox.classList.add("no-animation-contact-box");
+                    contactBox.classList.remove("animation-contact-box");
+                    
+                }else{
+                    //alert("dentro");
+                    contactBox.classList.add("animation-contact-box");
+                    contactBox.classList.remove("no-animation-contact-box");
+                }
+                
+            });
+            
+            
+           
+        });
+    </script>
+    
+    
+    
+    <link rel="icon" type="image/x-icon" href="http://robertagardiman.github.io/favicon.ico" />
+  
+</head>
+
+<body>
+    
+    
+    
+    <!-- wraps around the whole site -->
+    <div class="home-wrapper">
+    
+        <header>
+            
+            <div class="header-container">
+            
+                <!-- logo stuff -->
+                <a href="/" class="logo-container">
+                    <img class="logo" src="img/home/logo-bambolina.png" alt="Roberta Gardiman" />
+                    <h2 class="name">ROBERTA GARDIMAN</h2>
+                </a>
+
+                <!-- navigation -->
+                <nav>
+                    <ul class="home-list">
+                        <li><a class="home-projects" href="project-list.html">PROJECTS</a></li>
+                        <li><a class="home-projects" href="about.html">ABOUT</a></li>
+                        <li><a id="contact-link" class="home-projects contact-last" href="#">CONTACT</a></li>
+                    </ul>
+
+                    <!-- hamburger -->
+                    <a href="#" class="hamburger-container">
+                        <div class="hamburger extreme-top"></div>
+                        <div class="hamburger center"></div>
+                        <div class="hamburger extreme-bottom"></div>
+                    </a>
+
+                </nav>
+                
+            </div>
+            
+        </header>
+        
+        
+        <!-- FRAME stuff -->
+        <div class="personality">
+                <div class="home-frame">
+                    
+                    <div class="border-bottom"></div>
+                    <div class="border-left"></div>
+                    <div class="border-top"></div>
+                    <div class="border-right"></div>
+
+                </div>
+
+
+                <p class="home-quote">Keep moving forward, opening up new doors and doing new things, because curiosity keeps leading us down new paths. 
+    <span class="home-slash">//</span><span class="walt-disney">― WALT DISNEY COMPANY.</span></p>
+                
+            </div>
+        
+        
+        <!-- CONTACT BOX stuff-->
+        <div id="contact-box" class="contact-box">
+            <div class="contact-invitation">
+                <div class="contact-intro">FEEL FREE TO CONTACT ME!</div>
+                
+                <a href="#" class="contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+                <br>
+                <a href="mailto:roberta.gardiman@gmail.com" class="contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a> 
+                <a class="linkedin-link-contact" href="https://it.linkedin.com/in/robertagardiman" target="_blank"><img class="icon-linkedin-contact" src="img/icone-about/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        
+        <!-- MENU MOBILE stuff-->
+        
+        <div id="menu-mobile">
+            <a class="mobile-menu" href="project-list.html">PROJECTS</a>
+            <a class="mobile-menu" href="about.html">ABOUT</a>
+            <div class="mobile-menu-contacts">
+                <div class="contact-intro">Feel free to contact me!</div>
+                
+                <a href="#" class="contact-medium">Mob: <span class="medium phone">+39 3463063216</span></a>
+                <br>
+                <a href="mailto:roberta.gardiman@gmail.com" class="contact-medium">Mail: <span class="medium">roberta.gardiman@gmail.com</span></a>   
+            </div>
+        </div>
+        
+        
+    </div>
+    
+
+    
+</body>
+
+</html>
