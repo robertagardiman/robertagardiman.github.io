@@ -2133,12 +2133,28 @@ header {
 /************ 320px IPhone6 ************/
 
 @media(max-width: 320px) {
-    .name {
-        font-size: 18px;
-        margin-left: 10px;
-    }
+ 
+  header {
+   padding: 5px 15px;
+   box-shadow: 0px 0px 5px lightgrey;
+  }
+  
+  .logo {
+    width: 40px;
+  }
+
+  .home-projects {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 7px 10px;
+  }
+
+  .contact-last {
+    padding-right: 0;
+  }
+
     
-    /*********** ABOUT PAGE ***********/
+/*********** ABOUT PAGE ***********/
     
     .icon-program {
         width: 99px;
