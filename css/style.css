@@ -291,7 +291,7 @@ header {
 .contact-box {
     
     position: absolute;
-    top: 64px;
+    top: 60px;
     right: 94px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -313,7 +313,7 @@ header {
     
     opacity: 0;
     
-    z-index: 15;
+    z-index: 24;
     display: block;
   
 }
@@ -1454,10 +1454,11 @@ header {
         display: block;
         width: 100%;
         right: 0;
-        top: 70px;
+        top: 60px;
         text-align: center;
         
         border-top: 1px solid rgba(244, 98, 77, 1);
+        z-index: 24;
     }
     
    
