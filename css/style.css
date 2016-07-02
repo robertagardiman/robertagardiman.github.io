@@ -437,14 +437,14 @@ header {
 .filter-selection {
     
     position: fixed;
+    display: block;
     margin: 0 auto;
-    padding: 40px;
+    
     padding-top: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     top: 60px;
-    width: 1280px; 
-    left: 50%; 
-    margin-left: -640px;
+    width: 100%;
+    left: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1874,13 +1874,16 @@ header {
     
     .filter-selection {
         position: relative;
-        width: 540px; 
-        left: 50%; 
-        margin-left: -270px;
-        
+        display: block;
+        width: 100%; 
+        top: 0;
+        left: 0; 
+        margin-left: 0;
+        margin: 0 auto;
         font-size: 0.9em;
-        padding: 50px;
+        padding: 50px 0;
         padding-bottom: 10px;
+        text-align: center;
         
     }
     
