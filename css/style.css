@@ -574,7 +574,55 @@ header {
 }
 
 
+.cv {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 170px;
+  height: 35px;
+  
+  z-index: 35;
+  
+  font-size: 14px;
+  font-family: 'Raleway', 'sans-serif';
+  letter-spacing: 1px;
+  font-weight: 300;
+  
+  top: 40px;
+  background-color: #fafafa;
+  box-shadow: 2px 2px 5px lightgrey;
+  overflow: hidden;
+  
+}
 
+.cta-cv {
+  z-index: 40;
+  color: black;
+  
+  transition: all .5s;
+}
+
+.background-inside {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  bottom: 0;
+  left: -100%;
+  background-color: rgba(244, 98, 77, 1);
+  
+  transition: all .5s;
+}
+
+.cv:hover .background-inside {
+  left: 0;
+}
+
+.cv:hover .cta-cv {
+  color: white;
+}
 
 /********************** HOME QUOTE STUFF ***********************/
 
@@ -909,7 +957,7 @@ header {
 }
 
 .key-draw {
-  background-color: #fafafa;
+  background-color: transparent;
   
   transition: all .5s;
 }
@@ -932,7 +980,7 @@ header {
 }
 
 .key-run {
-  background-color: #fafafa;
+  background-color: transparent;
   
   transition: all .5s;
 }
@@ -954,7 +1002,7 @@ header {
 }
 
 .key-vespa {
-  background-color: #fafafa;
+  background-color: transparent;
   
   transition: all .5s;
 }
@@ -976,7 +1024,7 @@ header {
 }
 
 .key-choco {
-  background-color: #fafafa;
+  background-color: transparent;
   
   transition: all .5s;
 }
@@ -2011,33 +2059,27 @@ header {
       display: none;
     }
 
-      .home-quote {
-        font-size: 13px;
-        padding: 2% 0;
+    .home-quote {
+      font-size: 13px;
+      padding: 2% 0;
     }
 
+    .walt-disney {
+      left: 28%;
+      margin-top: 20px;
+      padding-top: 10px;
+      font-size: 10px;
+    }
 
-  .walt-disney {
-    left: 28%;
-        margin-top: 20px;
-
-        padding-top: 10px;
-
-        font-size: 10px;
-  }
-  
     .cta {
-        left: 8%;
-        margin-top: 20px;
-
-        padding-top: 10px;
-
-        font-size: 10px;
+      left: 8%;
+      margin-top: 20px;
+      padding-top: 10px;
+      font-size: 10px;
     }
   
   
     .about-content {
-      
       right: 2%;
       top: 150%;
       width: 65%;
@@ -2051,8 +2093,8 @@ header {
     .about-title {
       font-family: Raleway;
       font-weight: 300;
-      font-size: 44px;
-      line-height: 50px;
+      font-size: 30px;
+      line-height: 35px;
     }
   
     .container-skill-box {
@@ -2087,6 +2129,154 @@ header {
     .group-skills {
       margin-bottom: 20px;
     }
+  
+  
+  
+  /**************** LAST LEVEL *****************/
+
+.last-container {
+  width: 95%;
+  top: 40px;
+  
+}
+
+.last-level {
+  display: block;
+  position: relative;
+  top: 800px;
+  
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 300;
+  letter-spacing: .2px;
+}
+
+.key-description {
+  margin: 0;
+  margin-right: 30px;
+  font-size: 13px;
+  
+}
+
+.keyword {
+  font-weight: 500;
+  color: black;
+  font-size: 15px;
+}
+
+.draw {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+
+.key-draw {
+  background-color: transparent;
+  
+  transition: all .5s;
+}
+
+.draw:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.draw:hover .key-draw{
+  color: rgba(244, 98, 77, 1);
+  
+}
+  
+.road {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+  
+.key-road {
+  background-color: transparent;
+  
+  transition: all .5s;
+}
+  
+.road:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.road:hover .key-road{
+  color: rgba(244, 98, 77, 1);
+  
+}
+
+.run {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+
+.key-run {
+  background-color: transparent;
+  margin-left: -20px;
+  
+  transition: all .5s;
+}
+
+.run:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.run:hover .key-run{
+  color: rgba(244, 98, 77, 1);
+}
+
+.vespa {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+
+.key-vespa {
+  background-color: transparent;
+  
+  transition: all .5s;
+}
+
+.vespa:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.vespa:hover .key-vespa{
+  color: rgba(244, 98, 77, 1);
+}
+
+.choco {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+
+.key-choco {
+  background-color: transparent;
+  
+  transition: all .5s;
+}
+
+.choco:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.choco:hover .key-choco{
+  color: rgba(244, 98, 77, 1);
+}
+  
+  
     
     /*** SINGLE PROJECT PAGE *******************************************/
     
@@ -2337,12 +2527,7 @@ header {
   
 
     
-/*** ABOUT PAGE *************************************/
-    
-   
-    
-  
-  
+
   
     .project-main-title {
         font-size: 22px;
