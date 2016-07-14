@@ -13,6 +13,8 @@
     
   <link href='https://fonts.googleapis.com/css?family=Raleway:200,500,300' rel='stylesheet' type='text/css'>
     
+ 
+    
   <link rel="icon" type="image/x-icon" href="http://robertagardiman.github.io/favicon.ico" />
   
 </head>
@@ -22,14 +24,14 @@
     
     
     <!-- wraps around the whole site -->
-    <div class="home-wrapper">
     
-        <header>
+    
+        <header class="header-home">
             
             <div class="header-container">
             
                 <!-- logo stuff -->
-                <a href="/" class="logo-container">
+                <a href="index.html" class="logo-container">
                     <img class="logo" src="img/home/logo-bambolina.png" alt="Roberta Gardiman" />
                     <h2 class="name">ROBERTA GARDIMAN</h2>
                 </a>
@@ -37,8 +39,9 @@
                 <!-- navigation -->
                 <nav>
                     <ul class="home-list">
+                        <li><a class="home-projects about-selected" href="#">ABOUT</a></li>
                         <li><a class="home-projects" href="project-list.html">PROJECTS</a></li>
-                        <li><a class="home-projects" href="about.html">ABOUT</a></li>
+                        
                         <li><a id="contact-link" class="home-projects contact-last" href="#">CONTACT</a></li>
                     </ul>
 
@@ -52,29 +55,12 @@
                 </nav>
                 
             </div>
-            
+                
         </header>
         
         
-        <!-- FRAME stuff -->
-        <div class="personality">
-                <div class="home-frame">
-                    
-                    <div class="border-bottom"></div>
-                    <div class="border-left"></div>
-                    <div class="border-top"></div>
-                    <div class="border-right"></div>
-
-                </div>
-
-
-                <p class="home-quote">Keep moving forward, opening up new doors and doing new things, because curiosity keeps leading us down new paths. 
-    <span class="home-slash">//</span><span class="walt-disney">― WALT DISNEY COMPANY.</span></p>
-                
-            </div>
-        
-        
-        <!-- CONTACT BOX stuff-->
+  
+   <!-- CONTACT BOX stuff-->
         <div id="contact-box" class="contact-box">
             <div class="contact-invitation">
                 <div class="contact-intro">FEEL FREE TO CONTACT ME!</div>
@@ -100,11 +86,114 @@
             </div>
         </div>
         
-        
-    </div>
-    
+
+        <!-- about stuff -->
+        <div class="wrapper">
+          
+          <div class="about-overlay"></div>
+          
+          <div id="blurred-image-container">
+              <div class="img-about"></div>
+              <div class="img-about not-blurred-image"></div>
+          </div>
+          
+          <div class="personality">
+
+                <p class="home-quote">Keep moving forward, opening up new doors and doing new things, because curiosity keeps leading us down new paths. 
+    <span class="home-slash">//</span><span class="walt-disney">WALT DISNEY COMPANY.</span><span class="cta">BE CURIOUS, SCROLL TO SHARPEN THE PHOTO.</span></p>
+                
+                <div class="go-down"><div  class="go-down-element"></div> </div>
+              
+            </div>
+          
+          <div class="about-content">
+              <div class="about-level first-level">
+                <h1 class="about-title">HI! I'M ROBERTA.</h1>
+                <span class="orange-rule"></span>
+                <p class="about-description">I'm a creative thinker specialising in Web and Digital Design, based in Milan.
+                I've always been curious about design in all its shapes and I'm determined to make a job out of my passion.</p>
+                
+                
+              </div>
+            
+              <div id="skills" class="about-level second-level">
+                <h2 class="about-title">SKILLS</h2>
+                <div class="orange-rule"></div>
+                <div class="skill-general-container">
+                  
+                  <div class="group-skills">
+                    
+                    <h2 class="group-title">DESIGN</h2>
+                  
+                    <div class="container-skill-box">
+                      <div id="skill-ai" class="level-skill"></div>
+                      <p class="skill-name">Ai</p>
+                    </div>
+
+                    <div class="container-skill-box">
+                      <div class="level-skill"></div>
+                      <p class="skill-name">Ps</p>
+                    </div>
+
+                    <div class="container-skill-box">
+                      <div class="level-skill"></div>
+                      <p class="skill-name">Id</p>
+                    </div>
+
+                    <div class="container-skill-box">
+                      <div class="level-skill"></div>
+                      <p class="skill-name">Ae</p>
+                    </div>
+                  
+                  </div>
+                  
+                  <div class="group-skills">
+                    
+                    <h2 class="group-title">CODE</h2>
+                    
+                    <div class="container-skill-box">
+                      <div class="level-skill"></div>
+                      <p class="skill-name html-name">HTML</p>
+                    </div>
+
+                    <div class="container-skill-box">
+                      <div class="level-skill"></div>
+                      <p class="skill-name css-name">CSS</p>
+                    </div>
+
+                    <div class="container-skill-box">
+                      <div class="level-skill"></div>
+                      <p class="skill-name">JS</p>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="group-skills">
+                    
+                    <h2 class="group-title">PROTOTYPE</h2>
+                    
+                    <div class="container-skill-box">
+                      <div class="level-skill"></div>
+                      <p class="skill-name">In</p>
+                    </div> 
+                    
+                    <div class="container-skill-box">
+                      <div class="level-skill"></div>
+                      <p class="skill-name">Mv</p>
+                    </div>
+                  
+                  </div>
+                  
+                </div>
+                
+              </div>
+          </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
     <script src="script.js" type="text/javascript"></script>
-    
+  
 </body>
 
 </html>

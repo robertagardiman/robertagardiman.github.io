@@ -31,3 +31,41 @@ function openContactBox() {
   contactbox.classList.toggle("animation-contact-box");
   
 }
+
+$(document).ready(function() {
+  
+    $(window).scroll(function(e) {
+        var s = $(window).scrollTop(),
+            opacityVal = (s / 2500);
+        console.log(opacityVal);
+        $('.not-blurred-image').css('opacity', opacityVal);
+    });
+});
+
+// Attach a listener to the window
+window.onscroll = function(e) {
+  
+  // Get the pageYOffset
+  var pageOffset = window.pageYOffset;
+  var heightSkills = document.getElementById("skills").clientHeight - 350;
+  var skillAi = document.getElementById("skill-ai");
+  
+  var levelSkills = document.getElementsByClassName("level-skill");
+  
+  console.log(heightSkills);
+  console.log(pageOffset);
+  console.log(levelSkills);
+  console.log(levelSkills.length);
+  
+  if(pageOffset > heightSkills) {
+    levelSkills[0].classList.add("skill-ai"); //illustrator
+    levelSkills[1].classList.add("skill-ai"); // ps
+    levelSkills[2].classList.add("skill-ai"); // id
+    levelSkills[3].classList.add("skill-ae"); // ae
+    levelSkills[4].classList.add("skill-ai"); // html
+    levelSkills[5].classList.add("skill-ai"); // css
+    levelSkills[6].classList.add("skill-js"); // js
+    levelSkills[7].classList.add("skill-ai"); // marvel
+    levelSkills[8].classList.add("skill-ai"); // invision
+  }
+}
