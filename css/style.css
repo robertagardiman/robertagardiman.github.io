@@ -595,11 +595,6 @@ header {
     
 }
 
-.home-slash {
-    display: none;
-    color: rgba(244, 98, 77, 1);
-    padding-left: 10px;
-}
 
 .walt-disney {
     display: block;
@@ -1471,7 +1466,7 @@ header {
 
 /************ 1048px IPAD ************/
 @media(max-width: 1048px) {
-    
+ 
     
     .cover-container {
         margin-top: 30px;
@@ -1596,6 +1591,41 @@ header {
         border-top: 1px solid rgba(244, 98, 77, 1);
         z-index: 24;
     }
+  
+  
+  .personality {
+    display: block;
+    width: 500px;
+    margin-left: -250px;
+  }
+  
+  .home-slash {
+    display: none;
+  }
+  
+    .home-quote {
+      font-size: 16px;
+  }
+
+
+  .cta {
+      display: block;
+      position: absolute;
+
+      left: 22%;
+      margin-top: 20px;
+
+      padding-top: 30px;
+
+      font-size: 11px;
+      font-weight: 500;
+
+      animation: CTA-appear 1s 6.6s;
+      animation-fill-mode: forwards;
+
+      opacity: 0;
+
+  }
     
    
     /**************** ATM PAGE *****************/
@@ -1856,24 +1886,94 @@ header {
     
     
     /*** ABOUT PAGE  ******************************************/
-
-   .personality {
-        display: block;
-        top: 40%;
-        left: 50%;
-        width: 350px;
-
-        margin: 0 auto;
-        margin-left: -175px;
-        opacity: 0;
-
-        z-index: 26;
-
-
-        animation: quote-appear 1.5s 1s;
-        animation-fill-mode: forwards;
-    }
     
+    .personality {
+      display: block;
+      width: 310px;
+      margin-left: -160px;
+    }
+
+    .home-slash {
+      display: none;
+    }
+
+      .home-quote {
+        font-size: 13px;
+        padding: 2% 0;
+    }
+
+
+  .walt-disney {
+    left: 28%;
+        margin-top: 20px;
+
+        padding-top: 10px;
+
+        font-size: 10px;
+  }
+  
+    .cta {
+        left: 8%;
+        margin-top: 20px;
+
+        padding-top: 10px;
+
+        font-size: 10px;
+    }
+  
+  
+  
+    .about-content {
+      
+      right: 2%;
+      top: 150%;
+      width: 65%;
+      
+    }
+  
+    .about-description {
+      font-size: 14px;
+    }
+  
+    .about-title {
+      font-family: Raleway;
+      font-weight: 300;
+      font-size: 44px;
+      line-height: 50px;
+    }
+  
+    .container-skill-box {
+      
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+  
+    .skill-name {
+      font-size: 20px;
+      top: 0;
+    }
+  
+    .html-name {
+      font-size: 15px;
+      left: 5px;
+      top: 0;
+    }
+
+    .css-name {
+      font-size: 15px;
+      left: 10px;
+      top: 0;
+    }
+  
+    .group-title {
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    .group-skills {
+      margin-bottom: 20px;
+    }
     
     /*** SINGLE PROJECT PAGE *******************************************/
     
@@ -2126,22 +2226,7 @@ header {
     
 /*** ABOUT PAGE *************************************/
     
-    .personality {
-        display: block;
-        top: 40%;
-        left: 50%;
-        width: 280px;
-
-        margin: 0 auto;
-        margin-left: -140px;
-        opacity: 0;
-
-        z-index: 26;
-
-
-        animation: quote-appear 1.5s 1s;
-        animation-fill-mode: forwards;
-    }
+   
     
   
   
