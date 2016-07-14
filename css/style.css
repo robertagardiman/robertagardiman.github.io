@@ -677,7 +677,7 @@ header {
   
   animation: down-animation 2.6s 7.3s ease-in-out;
   animation-fill-mode: forwards;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
 }
 
 @keyframes down-animation {
