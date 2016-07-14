@@ -771,7 +771,7 @@ header {
 }
 
 .skill-ai {
-  animation: grow-level 1s 6s;
+  animation: grow-level 1s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -781,7 +781,7 @@ header {
 }
 
 .skill-ps {
-  animation: grow-level 1s 6s;
+  animation: grow-level 1s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -791,12 +791,12 @@ header {
 }
 
 .skill-id {
-  animation: grow-level 1s 6s;
+  animation: grow-level 1s 3s;
   animation-fill-mode: forwards;
 }
 
 .skill-ae {
-  animation: grow-ae .6s 6s;
+  animation: grow-ae .6s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -806,7 +806,7 @@ header {
 }
 
 .skill-html {
-  animation: grow-html 1s 6s;
+  animation: grow-html 1s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -816,12 +816,12 @@ header {
 }
 
 .skill-css {
-  animation: grow-html 1s 6s;
+  animation: grow-html 1s 3s;
   animation-fill-mode: forwards;
 }
 
 .skill-js {
-  animation: grow-js 1s 6s;
+  animation: grow-js 1s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -872,9 +872,123 @@ header {
 }
 
 
+/**************** LAST LEVEL *****************/
 
+.last-container {
+  width: 70%;
+  position: relative;
+  top: 20px;
+}
 
+.last-level {
+  display: block;
+  position: relative;
+  top: 800px;
+  
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 300;
+  letter-spacing: .2px;
+}
 
+.key-description {
+  margin: 0;
+  margin-right: 5px;
+  
+}
+
+.keyword {
+  font-weight: 500;
+  color: black;
+}
+
+.draw {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+
+.key-draw {
+  background-color: #fafafa;
+  
+  transition: all .5s;
+}
+
+.draw:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.draw:hover .key-draw{
+  color: rgba(244, 98, 77, 1);
+  
+}
+
+.run {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+
+.key-run {
+  background-color: #fafafa;
+  
+  transition: all .5s;
+}
+
+.run:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.run:hover .key-run{
+  color: rgba(244, 98, 77, 1);
+}
+
+.vespa {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+
+.key-vespa {
+  background-color: #fafafa;
+  
+  transition: all .5s;
+}
+
+.vespa:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.vespa:hover .key-vespa{
+  color: rgba(244, 98, 77, 1);
+}
+
+.choco {
+  color: transparent;
+  background-color: transparent;
+  
+  transition: all .5s .5s;
+}
+
+.key-choco {
+  background-color: #fafafa;
+  
+  transition: all .5s;
+}
+
+.choco:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.choco:hover .key-choco{
+  color: rgba(244, 98, 77, 1);
+}
 
 /**************** FOOTER STUFF *****************/
 .foot-container {
