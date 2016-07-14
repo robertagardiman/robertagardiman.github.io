@@ -1890,7 +1890,7 @@ header {
     .personality {
       display: block;
       width: 310px;
-      margin-left: -160px;
+      margin-left: -155px;
     }
 
     .home-slash {
@@ -1920,7 +1920,6 @@ header {
 
         font-size: 10px;
     }
-  
   
   
     .about-content {
