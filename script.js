@@ -36,7 +36,7 @@ $(document).ready(function() {
   
     $(window).scroll(function(e) {
         var s = $(window).scrollTop(),
-            opacityVal = (s / 2500);
+            opacityVal = (s / 2000);
         console.log(opacityVal);
         $('.not-blurred-image').css('opacity', opacityVal);
     });
@@ -47,7 +47,7 @@ window.onscroll = function(e) {
   
   // Get the pageYOffset
   var pageOffset = window.pageYOffset;
-  var heightSkills = document.getElementById("skills").clientHeight - 350;
+  var heightSkills = document.getElementById("skills").clientHeight - 2050;
   var skillAi = document.getElementById("skill-ai");
   
   var levelSkills = document.getElementsByClassName("level-skill");
