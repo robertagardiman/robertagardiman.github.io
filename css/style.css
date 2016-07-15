@@ -1184,7 +1184,7 @@ header {
 
 
 .foot-home {
-  
+  position: absolute;
   display: flex;
   top: 5400px;
   width: 100%;
@@ -1192,7 +1192,8 @@ header {
   background-color: white;
   
   margin: 0 auto;
-
+  left: 50%;
+  margin-left: -640px;
   padding: 20px;
   padding-top: 0;
   padding-bottom: 20px;
@@ -1641,6 +1642,8 @@ header {
       .contact-box {
         right: 47px;
     }
+  
+  
 }
 
 
@@ -1665,6 +1668,11 @@ header {
     .contact-box {
         right: 47px;
     }
+  
+  .foot-home {
+    margin-left: 0;
+    left: 0;
+  }
 }
 
 
