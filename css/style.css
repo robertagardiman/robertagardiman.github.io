@@ -1,149 +1,144 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
+
+
+
+
+
+
+
+
 /********************** HOME PAGE **********************/
+
 .home-wrapper {
-    position: relative;
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    
-    background-image: url(../img/home/foto-home-white-80.jpg);
-    background-repeat: no-repeat;
-    
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../img/home/foto-home-white-80.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    width: 100%;
-    
-    display: -webkit-box;
-    
-    display: -webkit-flex;
-    
-    display: -ms-flexbox;
-    
-    display: flex;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: rgba(255,255,255,1);
-    
-    padding: 7px 30px;
-    
-    z-index: 30;
-    opacity: 1;
-  
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 7px 30px;
+  z-index: 30;
+  opacity: 1;
 }
 
 .header-home {
   opacity: 0;
-  
   animation: header-appear 1s 6s;
   animation-fill-mode: forwards;
 }
 
 @keyframes header-appear {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header-container {
-    position: relative;
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-    
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-    position: relative;
+  position: relative;
 }
 
 .logo {
-    width: 50px;
-    display: inline-block;
-    vertical-align: middle;
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .name {
-    margin: 0 30px;
-    margin-left: 15px;
-    font-family: Raleway;
-    font-weight: 300;
-    font-size: 23px;
-    letter-spacing: 2px;
-    
-    line-height: 29px;
-    
-    
-    display: inline-block;
-    vertical-align: middle;
+  margin: 0 30px;
+  margin-left: 15px;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 23px;
+  letter-spacing: 2px;
+  line-height: 29px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .home-list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .home-projects {
-    font-family: Raleway;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 300;
-    
-    padding: 7px 17px;
-    
+  font-family: Raleway;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding: 7px 17px;
 }
 
 .home-projects:hover {
-    color: rgba(244, 98, 77, 1);
+  color: rgba(244, 98, 77, 1);
 }
 
 .about-selected {
-    color: rgba(244, 98, 77, 1);
+  color: rgba(244, 98, 77, 1);
 }
 
 .contact-last {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 #menu-mobile {
-    display: none;
+  display: none;
 }
 
 
@@ -157,422 +152,399 @@ header {
 /********************** CONTACT BOX **********************/
 
 .contact-box {
-    
-    position: absolute;
-    top: 64px;
-    right: 94px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    
-    background-color: white;
-    
-    width: 315px;
-    height: 0;
-    overflow: hidden;
-    
-    padding: 0px 30px;
-    border-top: 1px solid rgba(244, 98, 77, 1);
-    box-shadow: 0px 5px 15px lightgrey;
-    
-    opacity: 0;
-    
-    z-index: 44;
-    display: block;
-  
+  position: absolute;
+  top: 64px;
+  right: 94px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  background-color: white;
+  width: 315px;
+  height: 0;
+  overflow: hidden;
+  padding: 0px 30px;
+  border-top: 1px solid rgba(244, 98, 77, 1);
+  box-shadow: 0px 5px 15px lightgrey;
+  opacity: 0;
+  z-index: 44;
+  display: block;
 }
 
 .animation-contact-box {
-    
-    display: flex;
-    
-    -webkit-animation-name: contact;
-    animation-name: contact;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  display: flex;
+  -webkit-animation-name: contact;
+  animation-name: contact;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .no-animation-contact-box {
-    display: block;
-    -webkit-animation-name: no-contact;
-    animation-name: no-contact;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    
+  display: block;
+  -webkit-animation-name: no-contact;
+  animation-name: no-contact;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
-
-
 
 @keyframes contact {
-    0% {opacity: 0; height: 0; padding: 0 30px;}
-    100% {opacity: 1; height: 170px; padding: 20px 30px;}
+  0% {
+    opacity: 0;
+    height: 0;
+    padding: 0 30px;
+  }
+  100% {
+    opacity: 1;
+    height: 170px;
+    padding: 20px 30px;
+  }
 }
 
-
 @keyframes no-contact {
-    0% {opacity: 1; height: 170px; padding: 20px 30px;/*display: flex; right: 0;*/}
-    100% {opacity: 0; height: 0; padding: 0 30px;/*display: none; right: -400px;*/}
+  0% {
+    opacity: 1;
+    height: 170px;
+    padding: 20px 30px;
+    /*display: flex; right: 0;*/
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    padding: 0 30px;
+    /*display: none; right: -400px;*/
+  }
 }
 
 .contact-intro {
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 300; 
-    
-    margin-top: 16px;
-    margin-bottom: 10px;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-bottom: 10px;
 }
 
 .contact-medium {
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 100; 
-    
-    margin-bottom: 20px;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-bottom: 20px;
 }
 
 .medium {
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 14px;
-    letter-spacing: 0.6px;
-    font-weight: 100; 
-    
-    color: rgba(244, 98, 77, 1);
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  font-weight: 100;
+  color: rgba(244, 98, 77, 1);
 }
 
 .medium:hover {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .phone {
-    letter-spacing: 1.3px;
+  letter-spacing: 1.3px;
 }
 
 .linkedin-link-contact {
-    display: block;
+  display: block;
 }
 
 .icon-linkedin-contact {
-    width: 20px;
-    margin-top: 7px;
+  width: 20px;
+  margin-top: 7px;
 }
+
+
+
+
+
+
 
 
 
 /********************** LIST PROJECT PAGE **********************/
 
 .header-projects {
-    background-color: white;
-    
-    z-index: 4;
+  background-color: white;
+  z-index: 4;
 }
 
 .projects {
-    color: rgba(244, 98, 77, 1);
+  color: rgba(244, 98, 77, 1);
 }
 
 .name {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .wrapper {
-    position: relative;
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    
-    height: 100vh;
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
 }
+
+
+
+
+
+
 
 
 
 /************ FILTERS SELECTION *************/
 
 .filter-selection {
-    
-    position: fixed;
-    display: block;
-    margin: 0 auto;
-    
-    padding-top: 70px;
-    padding-bottom: 10px;
-    top: 60px;
-    width: 100%;
-    left: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    
-    background-color: white;
-    z-index: 3;
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  top: 60px;
+  width: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 3;
 }
 
 .filter {
-    display: inline-block;
-    
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 15px;
-    font-weight: 200;
-    padding: 8px 25px;
-    margin: 0 1%;
+  display: inline-block;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 15px;
+  font-weight: 200;
+  padding: 8px 25px;
+  margin: 0 1%;
 }
 
 .filter-effect {
-    color: black;
-} 
+  color: black;
+}
 
 .filter-effect:hover {
-    text-decoration: line-through;
-    color: rgba(244, 98, 77, 1);
+  text-decoration: line-through;
+  color: rgba(244, 98, 77, 1);
 }
 
 .all {
-    color: rgba(244, 98, 77, 1);
-    text-decoration: none;
+  color: rgba(244, 98, 77, 1);
+  text-decoration: none;
 }
+
+
+
+
+
+
+
 
 /************ COVERS *************/
 
-
 .cover-container {
-    position: relative;
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 38px;
-    
-    opacity: 1;
-    
-    -webkit-transition: opacity 0.5s;
-    
-    transition: opacity 0.5s;
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 38px;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .list-projects {
-    max-width: 1280px;
-    width: 95%;
-    margin: 0 auto;
-    
-    position: relative;
-    top: 180px;
-    
-    display: -webkit-box;
-    
-    display: -webkit-flex;
-    
-    display: -ms-flexbox;
-    
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-content: flex-start;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  top: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
 }
 
 .project-cover {
-    position: relative;
-    width: 100%;  
-    
+  position: relative;
+  width: 100%;
 }
 
 .cover-container:hover .overlay {
-    opacity: 1;
- 
+  opacity: 1;
 }
 
 .overlay {
-    position: absolute;
-    margin: auto;
-    top: 2.5%;
-    left: 2.5%;
-    width: 95%;
-    height: 95%;
-    
-    background-color: rgba(255, 255, 255, 0.9);
-    opacity: 0;
-    
-    -webkit-transition: opacity 1s;
-    
-    transition: opacity 1s;
+  position: absolute;
+  margin: auto;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .project-title {
-    position: relative;
-    top: 40%;
-    left: 6%;
-    font-family: Raleway;
-    font-weight: 200;
-    font-size: 25px;
+  position: relative;
+  top: 40%;
+  left: 6%;
+  font-family: Raleway;
+  font-weight: 200;
+  font-size: 25px;
 }
 
 .category-label {
-    position: absolute;
-    top: 55%;
-    left: 6%;
-    font-family: Raleway;
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-weight: 300;
+  position: absolute;
+  top: 55%;
+  left: 6%;
+  font-family: Raleway;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .category-inside {
-    color: rgba(244, 98, 77, 1);
-    margin-right: 10px;
+  color: rgba(244, 98, 77, 1);
+  margin-right: 10px;
 }
 
 .graphic {
-    right: 15%;
-    margin-right: 10px;
+  right: 15%;
+  margin-right: 10px;
 }
 
-/*.view-more {
-    position: absolute;
-    top: 75%;
-    left: 6%;
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 1em;
-    font-weight: 200;
-    
-    padding: 3px 20px;
-    background-color: white;
-    color: rgba(244, 98, 77, 1);
-    outline: 1px solid rgba(244, 98, 77, 1);
-    
-    -webkit-transition: 0.5s;
-    
-    transition: 0.5s;
 
-}
 
-.view-more:hover {
-    background-color: rgba(244, 98, 77, 1);
-    color: white;
-}*/
+
+
+
+
+
+
 
 /************************* NEW ABOUT PAGE ****************************/
 
-
-
 #blurred-image-container {
-    display:block;
-    padding:0;
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    z-index:-1;
+  display: block;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
-.img-about { 
-    position: absolute;
-    background:url(../img/home/foto-home-white-80.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    
-  
-    -webkit-filter: blur(30px) brightness(1);
-    -ms-filter: blur(30px) brightness(1);
-    -o-filter: blur(30px) brightness(1);
-    filter: blur(30px) brightness(1);
+.img-about {
+  position: absolute;
+  background: url(../img/home/foto-home-white-80.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-filter: blur(30px) brightness(1);
+  -ms-filter: blur(30px) brightness(1);
+  -o-filter: blur(30px) brightness(1);
+  filter: blur(30px) brightness(1);
 }
 
 .img-about.not-blurred-image {
-    opacity:0;
-  
-    -webkit-filter: blur(0px) brightness(1);
-    -ms-filter: blur(0px) brightness(1);
-    -o-filter: blur(0px) brightness(1);
-    filter: blur(0px) brightness(1);
+  opacity: 0;
+  -webkit-filter: blur(0px) brightness(1);
+  -ms-filter: blur(0px) brightness(1);
+  -o-filter: blur(0px) brightness(1);
+  filter: blur(0px) brightness(1);
 }
 
 .about-overlay {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    display: block;
-    z-index: 25;
-  
-    background-color: rgba(255,255,255,1);
-    opacity: 1;
-  
-    animation: overlay-disappear 1.5s 6s;
-    animation-fill-mode: forwards;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: block;
+  z-index: 25;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  animation: overlay-disappear 1.5s 6s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes overlay-disappear {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .content {
-    padding:150px 50px;
-    color:black;
-    text-align:right;
-    position: relative;
-    right: 10%;
+  padding: 150px 50px;
+  color: black;
+  text-align: right;
+  position: relative;
+  right: 10%;
 }
 
-
 .personality {
-    position: absolute;
-    display: block;
-    top: 40%;
-    left: 50%;
-    width: 650px;
-  
-    margin: 0 auto;
-    margin-left: -325px;
-    opacity: 0;
-  
-    z-index: 26;
-    
-    
-    animation: quote-appear 1.5s 1s;
-    animation-fill-mode: forwards;
-    
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 50%;
+  width: 650px;
+  margin: 0 auto;
+  margin-left: -325px;
+  opacity: 0;
+  z-index: 26;
+  animation: quote-appear 1.5s 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes quote-appear {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 .cv {
   position: relative;
@@ -580,28 +552,22 @@ header {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  
   width: 170px;
   height: 35px;
-  
   z-index: 35;
-  
   font-size: 14px;
   font-family: 'Raleway', 'sans-serif';
   letter-spacing: 1px;
   font-weight: 300;
-  
   top: 40px;
   background-color: #fafafa;
   box-shadow: 2px 2px 5px lightgrey;
   overflow: hidden;
-  
 }
 
 .cta-cv {
   z-index: 40;
   color: black;
-  
   transition: all .5s;
 }
 
@@ -612,7 +578,6 @@ header {
   bottom: 0;
   left: -100%;
   background-color: rgba(244, 98, 77, 1);
-  
   transition: all .5s;
 }
 
@@ -624,95 +589,92 @@ header {
   color: white;
 }
 
+
+
+
+
+
+
+
 /********************** HOME QUOTE STUFF ***********************/
 
-
 .home-quote {
-    opacity: 1;
-    
-    padding: 5%;
-    
-    position: relative;
-    
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 300;
-  
-    text-align: center;
-    
+  opacity: 1;
+  padding: 5%;
+  position: relative;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-align: center;
 }
 
-
 .walt-disney {
-    display: block;
-    position: absolute;
-    
-    left: 40%;
-    margin-top: 20px;
-    
-    padding-top: 30px;
-    
-    font-size: 11px;
-    font-weight: 500;
-  
-    opacity: 1;
-  
-    animation: disney-disappear .7s 6s;
-    animation-fill-mode: forwards;
+  display: block;
+  position: absolute;
+  left: 40%;
+  margin-top: 20px;
+  padding-top: 30px;
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 1;
+  animation: disney-disappear .7s 6s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes disney-disappear {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .cta {
-    display: block;
-    position: absolute;
-    
-    left: 28%;
-    margin-top: 20px;
-    
-    padding-top: 30px;
-    
-    font-size: 11px;
-    font-weight: 500;
-    
-    animation: CTA-appear 1s 6.6s;
-    animation-fill-mode: forwards;
-  
-    opacity: 0;
-  
+  display: block;
+  position: absolute;
+  left: 28%;
+  margin-top: 20px;
+  padding-top: 30px;
+  font-size: 11px;
+  font-weight: 500;
+  animation: CTA-appear 1s 6.6s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes CTA-appear {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .go-down {
   position: relative;
   display: block;
   margin: 0 auto;
-  
   bottom: 0;
   top: 55px;
-  
   width: 1px;
   height: 250px;
   overflow: hidden;
   background-color: lightgrey;
   opacity: 0;
-  
   animation: appear-down-animation 1s 7.3s ease-in-out;
   animation-fill-mode: forwards;
-  
 }
 
 @keyframes appear-down-animation {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .go-down-element {
@@ -722,16 +684,26 @@ header {
   height: 100px;
   top: -100px;
   background-color: rgba(244, 98, 77, 1);
-  
   animation: down-animation 2.6s 7.3s ease-in-out;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
 
 @keyframes down-animation {
-  0% {top: -100px;}
-  100% {top: 250px;}
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 250px;
+  }
 }
+
+
+
+
+
+
+
 
 /*********** content ************/
 
@@ -763,7 +735,6 @@ header {
   height: 1.5px;
   background-color: rgba(244, 98, 77, 1);
   width: 100px;
-  
   margin-top: 5px;
 }
 
@@ -777,12 +748,18 @@ header {
   top: 20px;
 }
 
-
 .second-level {
   position: relative;
   display: block;
   top: 400px;
 }
+
+
+
+
+
+
+
 
 
 /************************ SKILL CONTAINER *******************/
@@ -798,12 +775,10 @@ header {
   display: inline-block;
   width: 60px;
   height: 60px;
-  
   outline: 0px solid black;
   margin-right: 15px;
   margin-bottom: 15px;
   box-shadow: 1px 1px 2px lightgrey;
-  
   border-radius: 50%;
   overflow: hidden;
 }
@@ -815,7 +790,6 @@ header {
   background-color: #e6e6e6;
   width: 0%;
   height: 100%;
-
 }
 
 .skill-ai {
@@ -824,8 +798,12 @@ header {
 }
 
 @keyframes grow-level {
-  0% {width: 0;}
-  100% {width: 90%;}
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
 }
 
 .skill-ps {
@@ -834,8 +812,12 @@ header {
 }
 
 @keyframes grow-level {
-  0% {width: 0;}
-  100% {width: 90%;}
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
 }
 
 .skill-id {
@@ -849,8 +831,12 @@ header {
 }
 
 @keyframes grow-ae {
-  0% {width: 0;}
-  100% {width: 40%;}
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
 }
 
 .skill-html {
@@ -859,8 +845,12 @@ header {
 }
 
 @keyframes grow-html {
-  0% {width: 0;}
-  100% {width: 80%;}
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 .skill-css {
@@ -874,8 +864,12 @@ header {
 }
 
 @keyframes grow-js {
-  0% {width: 0;}
-  100% {width: 40%;}
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
 }
 
 .skill-sketch {
@@ -889,12 +883,10 @@ header {
   top: 5px;
   left: 28%;
   line-height: 50px;
-  
   font-family: 'Raleway', 'sans-serif';
   font-size: 24px;
   font-weight: 200;
   color: black;
-  
 }
 
 .html-name {
@@ -922,13 +914,16 @@ header {
 
 
 
+
+
+
+
 /**************** THIRD LEVEL *****************/
 
 .third-level {
   display: block;
   position: relative;
   top: 800px;
-  
   font-family: 'Raleway', 'sans-serif';
   font-weight: 300;
   letter-spacing: .2px;
@@ -946,7 +941,6 @@ header {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  
   font-family: 'Raleway', 'sans-serif';
   font-size: 14px;
   font-weight: 300;
@@ -960,9 +954,7 @@ header {
   color: white;
   background-color: rgba(244, 98, 77, 0.7);
   opacity: 0;
-  
   overflow: hidden;
-  
   animation: ball-appear .5s;
   animation-fill-mode: forwards;
 }
@@ -976,7 +968,6 @@ header {
   opacity: 0;
   overflow: hidden;
   background-color: rgba(221, 83, 88, 0.6);
-  
   animation: ball-appear .5s .5s;
   animation-fill-mode: forwards;
 }
@@ -992,7 +983,6 @@ header {
   opacity: 0;
   overflow: hidden;
   background-color: rgba(146, 26, 69, 0.6);
-  
   animation: ball-appear .5s 1s;
   animation-fill-mode: forwards;
 }
@@ -1007,7 +997,6 @@ header {
   opacity: 0;
   overflow: hidden;
   background-color: rgba(82, 60, 109, 0.6);
-  
   animation: ball-appear .5s 1.5s;
   animation-fill-mode: forwards;
 }
@@ -1024,7 +1013,6 @@ header {
   opacity: 0;
   overflow: hidden;
   background-color: rgba(233, 189, 174, 0.7);
-  
   animation: ball-appear .5s 2s;
   animation-fill-mode: forwards;
 }
@@ -1040,15 +1028,27 @@ header {
   opacity: 0;
   overflow: hidden;
   background-color: rgba(60, 64, 124, 0.6);
-  
   animation: ball-appear .5s 2.5s;
   animation-fill-mode: forwards;
 }
 
 @keyframes ball-appear {
-  0% {transform: scale(0); opacity: 0;}
-  100% {transform: scale(1); opacity: 1;}
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
+
+
+
+
+
+
+
 
 /**************** LAST LEVEL *****************/
 
@@ -1062,7 +1062,6 @@ header {
   display: block;
   position: relative;
   top: 1600px;
-  
   font-family: 'Raleway', 'sans-serif';
   font-weight: 300;
   letter-spacing: .2px;
@@ -1071,7 +1070,6 @@ header {
 .key-description {
   margin: 0;
   margin-right: 5px;
-  
 }
 
 .keyword {
@@ -1082,13 +1080,11 @@ header {
 .draw {
   color: transparent;
   background-color: transparent;
-  
   transition: all .5s .5s;
 }
 
 .key-draw {
   background-color: transparent;
-  
   transition: all .5s;
 }
 
@@ -1097,21 +1093,18 @@ header {
   background-color: transparent;
 }
 
-.draw:hover .key-draw{
+.draw:hover .key-draw {
   color: rgba(244, 98, 77, 1);
-  
 }
 
 .key-road {
   background-color: transparent;
-  
   transition: all .5s;
 }
 
 .road {
   color: transparent;
   background-color: transparent;
-  
   transition: all .5s .5s;
 }
 
@@ -1127,13 +1120,11 @@ header {
 .run {
   color: transparent;
   background-color: transparent;
-  
   transition: all .5s .5s;
 }
 
 .key-run {
   background-color: transparent;
-  
   transition: all .5s;
 }
 
@@ -1142,20 +1133,18 @@ header {
   background-color: transparent;
 }
 
-.run:hover .key-run{
+.run:hover .key-run {
   color: rgba(244, 98, 77, 1);
 }
 
 .vespa {
   color: transparent;
   background-color: transparent;
-  
   transition: all .5s .5s;
 }
 
 .key-vespa {
   background-color: transparent;
-  
   transition: all .5s;
 }
 
@@ -1164,22 +1153,19 @@ header {
   background-color: transparent;
 }
 
-.vespa:hover .key-vespa{
+.vespa:hover .key-vespa {
   color: rgba(244, 98, 77, 1);
 }
 
 .choco {
   color: transparent;
   background-color: transparent;
-  
   margin-left: 30px;
-  
   transition: all .5s .5s;
 }
 
 .key-choco {
   background-color: transparent;
-  
   transition: all .5s;
 }
 
@@ -1188,11 +1174,9 @@ header {
   background-color: transparent;
 }
 
-.choco:hover .key-choco{
+.choco:hover .key-choco {
   color: rgba(244, 98, 77, 1);
 }
-
-
 
 
 
@@ -1202,116 +1186,94 @@ header {
 
 
 /**************** FOOTER STUFF *****************/
-.foot-container {
-    
-    position: relative;
-    bottom: 0;
-    
-    width: 100%;
-    height: 150px;
-    
-    border-top: 1.9px solid lightgrey;
-    
-    
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-    margin-top: 30px;
-    margin-bottom: 80px;
 
+.foot-container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  border-top: 1.9px solid lightgrey;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 30px;
+  margin-bottom: 80px;
 }
 
 .foot-contacts {
-    display: inline-block;
-    padding: 0;
-    
+  display: inline-block;
+  padding: 0;
 }
 
 .foot-text-contacts {
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 10px;
-    
-    font-family: raleway;
-    font-weight: 100;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  font-family: raleway;
+  font-weight: 100;
 }
 
 .logo-foot {
-    display: inline-block;
-    margin: 20px auto;
-    padding-right: 10px;
-    border-right: 1px solid darkgrey;
-    
-    width: 90px;
-    
-    vertical-align: middle;
+  display: inline-block;
+  margin: 20px auto;
+  padding-right: 10px;
+  border-right: 1px solid darkgrey;
+  width: 90px;
+  vertical-align: middle;
 }
 
 .foot-links {
-    position: relative;
-    display: block;
-    
-    bottom: 22px;
-    
+  position: relative;
+  display: block;
+  bottom: 22px;
 }
 
 .copy {
-    display: block;
-    font-family: 'Raleway', 'sans-serif';
-    font-weight: 100;
-    font-size: 13px;
-
-    position: relative;
-    
- 
+  display: block;
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 100;
+  font-size: 13px;
+  position: relative;
 }
 
 .foot-list-page {
-    position: relative;
-    
-    max-width: 1280px;
-    width: 97%;
-    
-    margin: 60px auto;
-    
+  position: relative;
+  max-width: 1280px;
+  width: 97%;
+  margin: 60px auto;
 }
 
 .linkedin-link {
-    display: block;
+  display: block;
 }
 
 .follow {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .icon-label {
-    font-family: 'Raleway', 'sans-serif';
-    font-weight: 100;
-    font-size: 16px;
-
-    position: relative;
-    display: none;
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 100;
+  font-size: 16px;
+  position: relative;
+  display: none;
 }
 
 .icon-linkedin {
-    display: inline-block;
-    width: 25px;
-    display: block;
-    margin: 10px;
-    margin-right: 0;
-    
-    
+  display: inline-block;
+  width: 25px;
+  display: block;
+  margin: 10px;
+  margin-right: 0;
 }
 
 .linkedin-inside {
-    display: none;
+  display: none;
 }
-
 
 .foot-home {
   position: absolute;
@@ -1320,142 +1282,127 @@ header {
   width: 100%;
   height: 180px;
   background-color: white;
-  
   margin: 0 auto;
   left: 50%;
   margin-left: -640px;
   padding: 20px;
   padding-top: 0;
   padding-bottom: 20px;
-  
 }
+
+
+
+
+
+
 
 
 /**************** SINGLE PROJECT PAGE *****************/
 
 .project-main-title {
-    position: fixed;
-    
-    top: 20px;
-    background-color: white;
-    max-width: 1280px;
-    width: 1280px; 
-    
-    left: 50%; 
-    margin-left: -640px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    
-    
-    font-family: Raleway;
-    font-size: 44px;
-    letter-spacing: 2px;
-    font-weight: 300;
-   
-    padding: 20px;
-    padding-top: 80px;
-    padding-bottom: 0;
-    border-bottom: 1.5px solid rgba(244, 98, 77, 1);
-    
-    z-index: 1;  
-    
-    transition: 300ms ease-in-out;
-}
-
-.collapsed {
-   height: 0;
-   padding-top: 0;
-   overflow: hidden;
-   
+  position: fixed;
+  top: 20px;
+  background-color: white;
+  max-width: 1280px;
+  width: 1280px;
+  left: 50%;
+  margin-left: -640px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-size: 44px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding: 20px;
+  padding-top: 80px;
+  padding-bottom: 0;
+  border-bottom: 1.5px solid rgba(244, 98, 77, 1);
+  z-index: 1;
   transition: 300ms ease-in-out;
 }
 
-
+.collapsed {
+  height: 0;
+  padding-top: 0;
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+}
 
 .project-wrapper {
-    position: relative;
-    top: 190px;
-    max-width: 1280px;
-    width: 90%;
-    margin: 0 auto;
+  position: relative;
+  top: 190px;
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .text-container {
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    
-    width: 70%;
-    margin-bottom: 50px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 70%;
+  margin-bottom: 50px;
 }
 
 .subtitle {
-    position: relative;
-    display: block;
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 18px;
-    font-weight: 200;
-    letter-spacing: 2px;
-    color: rgba(244, 98, 77, 1);
-    
-    padding: 20px 0;
-    margin-top: 10px;
-    text-align: center;
+  position: relative;
+  display: block;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: rgba(244, 98, 77, 1);
+  padding: 20px 0;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .project-description {
-    display: block;
-    position: relative;
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 16px;
-    font-weight: 200;
-    line-height: 1.4em;
-    
-    width: 100%;
-    margin-left: 0;
-    display: inline-block;
-    vertical-align: top;
+  display: block;
+  position: relative;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4em;
+  width: 100%;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .img-container {
-    position: relative;
-    
-    
-    width: 100%;
-    margin: 20px 0;
-    
-   /* background-image: url(links/PROJECTS-links/osteria/osteria-first-mockup.png);
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  /* background-image: url(links/PROJECTS-links/osteria/osteria-first-mockup.png);
     background-size: 110%;
     background-position: 0px -30px;
     background-repeat: no-repeat;*/
 }
 
-
 .osteria-first-mockup {
-    position: relative;
-    top: 0px;
-    width: 100%;
+  position: relative;
+  top: 0px;
+  width: 100%;
 }
 
 .osteria-gif {
-    position: relative;
-    width: 100%;
-    
-    margin-top: 50px;
-    margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #osteria-example {
-    width: 100%;
-    margin: 50px 0;  
+  width: 100%;
+  margin: 50px 0;
 }
-
 
 
 
@@ -1467,104 +1414,97 @@ header {
 /********************** SAMSUNG PAGE **********************/
 
 .iop-step {
-    width: 100%;
-    margin-top: 50px;
-    
-    text-align: left;
-    
+  width: 100%;
+  margin-top: 50px;
+  text-align: left;
 }
 
 #video-embed {
-    width: 640px;
-    display: block;
-    position: relative;
-    margin: 20px auto;
-    margin-top: 40px;
+  width: 640px;
+  display: block;
+  position: relative;
+  margin: 20px auto;
+  margin-top: 40px;
 }
-
 
 .iop-first-mockup {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 650px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 650px;
 }
 
-
 .step-border {
-    border-top: 1px solid lightgray;
-    padding-top: 20px;
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
 }
 
 .detail-title {
-    position: relative;
-    display: block;
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 18px;
-    font-weight: 200;
-    letter-spacing: 2px;
-    color: rgba(244, 98, 77, 1);
-    
-    padding: 20px 20px;
-    margin-top: 10px;
-    text-align: center;
+  position: relative;
+  display: block;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: rgba(244, 98, 77, 1);
+  padding: 20px 20px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .step-description {
-    margin: 10px auto;
-    margin-bottom: 20px;
+  margin: 10px auto;
+  margin-bottom: 20px;
 }
 
 .productsection-description {
-    width: 60%;
-    display: inline-block;
+  width: 60%;
+  display: inline-block;
 }
 
 .product-screen {
-    margin-left: 40px;
-    
+  margin-left: 40px;
 }
 
 .portrait-screen {
-    width: 200px;
-    display: inline-block;
+  width: 200px;
+  display: inline-block;
 }
 
 .screenlogin-details {
-    width: 70%;
-    margin: 0;
-    margin-left: 17%;
+  width: 70%;
+  margin: 0;
+  margin-left: 17%;
 }
 
 .store-screen {
-    display: inline-block;
-    position: relative;
-    width: 49.2%;
-    padding: 0;
-    height: 450px;
-    margin: 0 auto;
-    margin-right:1%;
-    margin-top: 30px;
-    min-width: 180px;
+  display: inline-block;
+  position: relative;
+  width: 49.2%;
+  padding: 0;
+  height: 450px;
+  margin: 0 auto;
+  margin-right: 1%;
+  margin-top: 30px;
+  min-width: 180px;
 }
 
 .store-screen-last {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .event-screen {
-    width: 30%;
-    min-width: 100px;
-    margin-top: 20px;
-    margin-right: 3%;
-    
-    box-shadow: 5px 5px 10px 1px lightgrey;
-    
+  width: 30%;
+  min-width: 100px;
+  margin-top: 20px;
+  margin-right: 3%;
+  box-shadow: 5px 5px 10px 1px lightgrey;
 }
 
 .event-screen-last {
-    margin-right: 0;
+  margin-right: 0;
 }
+
 
 
 
@@ -1575,27 +1515,24 @@ header {
 /**************** ATM PAGE *****************/
 
 .atm-description {
-    position: relative;
-    display: inline-block;
-    
-    width: 60%;
-    padding: 0;
-    
-    top: 40px;
-    
-    margin-left: 0;
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  padding: 0;
+  top: 40px;
+  margin-left: 0;
 }
-
-
 
 #atm-video {
-    position: relative;
-    display: inline-block;
-    left: 50px;
-    width: 320px;
-    
-    margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  left: 50px;
+  width: 320px;
+  margin-bottom: 30px;
 }
+
+
+
 
 
 
@@ -1604,18 +1541,64 @@ header {
 /************ FLORA PAGE *************/
 
 #flora-video {
-    width: 320px;
-    position: relative;
-    display: block;
-    
-    margin: 0 auto;
+  width: 320px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
 .flora-firstline {
-    text-align: center;
+  text-align: center;
 }
 
 
+
+
+
+
+
+
+/************ DRAWINGS PAGE *************/
+
+.img-drawings {
+  width: 100%;
+}
+
+.pattern {
+  height: 350px;
+  overflow: hidden;
+  display: inline-block;
+  width: 49%;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.smalto {
+  width: 80%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: auto;
+}
+
+.draw-description {
+  margin-top: 10px;
+}
+
+.drawing-tool {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid black;
+}
+
+.shoe {
+  width: 160%;
+  left: -30%;
+  top: -60px;
+}
 
 
 
@@ -1627,118 +1610,88 @@ header {
 /************ BOTTOM BAR *************/
 
 .bottom-bar {
-    position: fixed;
-    
-    width: 100%;
-    height: 40px;
-    left: 0;
-    background-color: rgba(255,255,255,0.8);
-    
-    bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0;
 }
 
 .down {
-    height: 0;
-    overflow: hidden;
+  height: 0;
+  overflow: hidden;
 }
 
 .container-bottombar {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-    height: 40px;
-    
-    
-    
-    display: -webkit-box;
-    
-    display: -webkit-flex;
-    
-    display: -ms-flexbox;
-    
-    display: flex;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;  
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .icon-bottombar {
-    width: 15px;
-    height: 25px;
-    display: inline-block;
-    vertical-align: middle;
+  width: 15px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .text-bar {
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 14px;
-    font-weight: 300;
-    margin: 0 10px;
-    text-align: right;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 10px;
+  text-align: right;
 }
 
 .center-icon {
-    width: 35px;
-    height: 30px;
-    
-    border-top: 1px solid rgba(244, 98, 77, 1);
-    border-bottom: 1px solid rgba(244, 98, 77, 1);
-    
-    position: relative;
+  width: 35px;
+  height: 30px;
+  border-top: 1px solid rgba(244, 98, 77, 1);
+  border-bottom: 1px solid rgba(244, 98, 77, 1);
+  position: relative;
 }
 
-
 .center-textbar {
-    position: relative;
-    margin: 0 auto;
-    width: 35px;
-    
-    text-align: center;
-    
-    line-height: 30px;
+  position: relative;
+  margin: 0 auto;
+  width: 35px;
+  text-align: center;
+  line-height: 30px;
 }
 
 .previous-text-bar {
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 14px;
-    font-weight: 300;
-    margin: 0 10px;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 10px;
 }
-
 
 .previous-mobile {
-    display: none;
+  display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1748,32 +1701,24 @@ header {
 
 
 /************ 1413px ************/
+
 @media(max-width: 1413px) {
-    #atm-video {
-        position: relative;
-        display: inline-block;
-        margin-top: 5%;
-        width: 35%;
-       
-        
-        
-    }
-    
-    .atm-description {
-        position: relative;
-        display: inline-block;
-        margin: 0 auto; 
-        margin-bottom: 10px;
-        width: 55%;
-    }
-    
-   
-    
-      .contact-box {
-        right: 47px;
-    }
-  
-  
+  #atm-video {
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+    width: 35%;
+  }
+  .atm-description {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 55%;
+  }
+  .contact-box {
+    right: 47px;
+  }
 }
 
 
@@ -1784,21 +1729,19 @@ header {
 
 
 /************ 1300px ************/
+
 @media(max-width: 1300px) {
-    .productsection-description {
-        display: block;
-        width: 100%;
-    }
-    
-    .product-screen {
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .contact-box {
-        right: 47px;
-    }
-  
+  .productsection-description {
+    display: block;
+    width: 100%;
+  }
+  .product-screen {
+    display: block;
+    margin: 0 auto;
+  }
+  .contact-box {
+    right: 47px;
+  }
   .foot-home {
     margin-left: 0;
     left: 0;
@@ -1811,66 +1754,51 @@ header {
 
 
 
+
 /************ 1048px IPAD ************/
+
 @media(max-width: 1048px) {
- 
-    
-    .cover-container {
-        margin-top: 30px;
-    }
-    
-    .overlay {
-        position: relative;
-        left: 0;
-        width: 100%;
-        height: 70px;
-
-        background-color: rgba(255, 255, 255, 1);
-        opacity: 1;
-
-        -webkit-transition: opacity 1s;
-
-        transition: opacity 1s;
-    }
-    
-    .project-title {
-        position: absolute;
-        top: 17%;
-        left: 6%;
-        font-family: 'Raleway', 'sans-serif';
-        font-size: 1.1em;
-        padding-bottom: 6px;
-        /*border-bottom: 1px solid rgba(244, 98, 77, 1);*/
-    }
-    
-    .category-label {
-        display: block;
-        position: absolute;
-        top: 63%;
-        left: 6%;
-        font-family: 'Raleway', 'sans-serif';
-        font-size: 0.7em;
-        color: black;
-
-    }
-
-
-    .view-more {
-        display: none;
-
-    }
-    
-     .productsection-description {
-        width: 100%;
-    }
-    
-    
-    .contact-box {
-        right: 47px;
-    }
+  .cover-container {
+    margin-top: 30px;
+  }
+  .overlay {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+  .project-title {
+    position: absolute;
+    top: 17%;
+    left: 6%;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 1.1em;
+    padding-bottom: 6px;
+    /*border-bottom: 1px solid rgba(244, 98, 77, 1);*/
+  }
+  .category-label {
+    display: block;
+    position: absolute;
+    top: 63%;
+    left: 6%;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 0.7em;
+    color: black;
+  }
+  .view-more {
+    display: none;
+  }
+  .productsection-description {
+    width: 100%;
+  }
+  .contact-box {
+    right: 47px;
+  }
 }
-
-
 
 
 
@@ -1882,232 +1810,206 @@ header {
 /************ 940px IPAD ************/
 
 @media(max-width: 940px) {
-    
-    header {
-        padding: 10px 20px;
-        
-    }
-    
-    .header-container {
-        position: relative;
-        max-width: 1280px;
-        width: 100%;
-        margin: 0 auto;
-
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .home-projects {
-        font-family: Raleway;
-        font-size: 13px;
-        letter-spacing: 2px;
-        font-weight: 300;
-
-        padding: 1px 12px;
-        border-right: 0px solid #e0e0e0;
-
-    }
-    
-    .home-list {
-       display: flex;
-    }
-    
-    .name {
-        display: none;
-    }
-  
-    .logo {
-      width: 45px;
-    }
-    
-    .contact-last {
-        padding-right: 0;
-        border-right: 0;
-    }
-    
-    .contact-box {
-        display: block;
-        width: 100%;
-        right: 0;
-        top: 64px;
-        text-align: center;
-        
-        border-top: 1px solid rgba(244, 98, 77, 1);
-        z-index: 44;
-    }
-  
-  
+  header {
+    padding: 10px 20px;
+  }
+  .header-container {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home-projects {
+    font-family: Raleway;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding: 1px 12px;
+    border-right: 0px solid #e0e0e0;
+  }
+  .home-list {
+    display: flex;
+  }
+  .name {
+    display: none;
+  }
+  .logo {
+    width: 45px;
+  }
+  .contact-last {
+    padding-right: 0;
+    border-right: 0;
+  }
+  .contact-box {
+    display: block;
+    width: 100%;
+    right: 0;
+    top: 64px;
+    text-align: center;
+    border-top: 1px solid rgba(244, 98, 77, 1);
+    z-index: 44;
+  }
   .personality {
     display: block;
     width: 500px;
     margin-left: -250px;
   }
-  
   .home-slash {
     display: none;
   }
-  
-    .home-quote {
-      font-size: 16px;
+  .home-quote {
+    font-size: 16px;
   }
-
-
   .cta {
-      display: block;
-      position: absolute;
-
-      left: 22%;
-      margin-top: 20px;
-
-      padding-top: 30px;
-
-      font-size: 11px;
-      font-weight: 500;
-
-      animation: CTA-appear 1s 6.6s;
-      animation-fill-mode: forwards;
-
-      opacity: 0;
-
+    display: block;
+    position: absolute;
+    left: 22%;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-size: 11px;
+    font-weight: 500;
+    animation: CTA-appear 1s 6.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
-    
-   
-    /**************** ATM PAGE *****************/
-
-    .atm-description {
-        position: relative;
-        display: inline-block;
-
-        width: 57%;
-        padding: 0;
-        /* border-left: 1px dashed lightgrey; */
-        top: 40px;
-
-        margin-left: 0;
-        font-size: 14px;
-        line-height: 23px;
-    }
-
-
-
-    #atm-video {
-        position: relative;
-        display: inline-block;
-        left: 30px;
-        width: 40%;
-
-        margin-bottom: 30px;
-        margin-top: 15px;
-    }
-
-    
-    
-    
-    /************ PROJECT PAGE ********/
-    
-    .cover-container {
-        position: relative;
-        width: 45%;
-        margin: 0 auto;
-        margin-top: 15px;
-    }
-    
-    .overlay {
-        
-        margin-top: 10px;
-        left: 0;
-    }
-    
-    .twinings-last {
-        margin-left: 18.406px;
-    }
-    
-    .project-title {
-        font-size: 1.1em;
-    }
-    
-    
-    /*********** SINGLE PROJECT PAGE *************/
-    
-    .text-container {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-        flex-flow: column;
-        position: relative;
-        width: 85%;
-    }
-    
-    
-    /**************** FOOTER STUFF *****************/
-
-    .foot-container {
-        display: block;
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-
-    }
-
-    .foot-contacts {
-        position: relative;
-        display:block;
-        margin: 10px auto;
-        width: auto;
-        padding: 0;
-        
-        float: right;
-
-    }
-
-    .foot-text-contacts {
-        position: relative;
-        width: 250px;
-        font-size: 12px;
-        vertical-align: top;
-        top: 20px;
-
-    }
-    
-    .foot-contact-intro {
-        display: none;
-    }
-
-    .logo-foot {
-        display: inline-block;
-        margin: 20px auto;
-        padding-right: 10px;
-        border-right: 1px solid darkgrey;
-
-        width: 80px;
-
-        vertical-align: middle;
-    }
-
-    .copy {
-        display: none;
-    }
-    
-    .linkedin-outside {
-        display: none;
-    }
-    
-    .linkedin-inside {
-        display: block;
-        position: relative;
-        margin-left: 0;
-        margin-top: 5px;
-        width: 20px
-    }
-
-    
+  
+  
+  
+  
+  
+  
+  /**************** ATM PAGE *****************/
+  .atm-description {
+    position: relative;
+    display: inline-block;
+    width: 57%;
+    padding: 0;
+    /* border-left: 1px dashed lightgrey; */
+    top: 40px;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  #atm-video {
+    position: relative;
+    display: inline-block;
+    left: 30px;
+    width: 40%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /************ PROJECT PAGE ********/
+  .cover-container {
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .overlay {
+    margin-top: 10px;
+    left: 0;
+  }
+  .twinings-last {
+    margin-left: 18.406px;
+  }
+  .project-title {
+    font-size: 1.1em;
+  }
+  
+  
+  
+  
+  
+  
+  /*********** SINGLE PROJECT PAGE *************/
+  .text-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    position: relative;
+    width: 85%;
+  }
+  
+  
+  
+  
+  
+  
+  /**************** FOOTER STUFF *****************/
+  .foot-container {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .foot-contacts {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    width: auto;
+    padding: 0;
+    float: right;
+  }
+  .foot-text-contacts {
+    position: relative;
+    width: 250px;
+    font-size: 12px;
+    vertical-align: top;
+    top: 20px;
+  }
+  .foot-contact-intro {
+    display: none;
+  }
+  .logo-foot {
+    display: inline-block;
+    margin: 20px auto;
+    padding-right: 10px;
+    border-right: 1px solid darkgrey;
+    width: 80px;
+    vertical-align: middle;
+  }
+  .copy {
+    display: none;
+  }
+  .linkedin-outside {
+    display: none;
+  }
+  .linkedin-inside {
+    display: block;
+    position: relative;
+    margin-left: 0;
+    margin-top: 5px;
+    width: 20px
+  }
+  .pattern {
+    height: 450px;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+    margin-bottom: 15px;
+  }
+  .pattern-img {
+    top: -100px;
+  }
 }
+
 
 
 
@@ -2117,40 +2019,34 @@ header {
 /************ 768px IPAD ************/
 
 @media(max-width: 768px) {
+  .logo {
+    width: 45px;
+  }
   
-    .logo {
-      width: 45px;
-    }
+  
+  
+  
   
   /**************** ATM PAGE *****************/
-
-    .atm-description {
-        position: relative;
-        display: block;
-
-        width: 100%;
-        padding: 0;
-        /* border-left: 1px dashed lightgrey; */
-        top: 40px;
-
-        margin: 0 auto;
-        font-size: 14px;
-        line-height: 23px;
-    }
-
-
-
-    #atm-video {
-        position: relative;
-        display: block;
-        
-        width: 60%;
-        
-        margin: 50px auto;
-        margin-bottom: 20px;
-    }
+  .atm-description {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    /* border-left: 1px dashed lightgrey; */
+    top: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  #atm-video {
+    position: relative;
+    display: block;
+    width: 60%;
+    margin: 50px auto;
+    margin-bottom: 20px;
+  }
 }
-
 
 
 
@@ -2162,525 +2058,436 @@ header {
 /******************************** 568px IPhone6 ***********************************/
 
 @media(max-width: 568px) {
-    
-    .home-wrapper {
-        background-position: -320px 0;
-    }
-    
-    .name {
-        display: none;
-        width: 55px;
-        font-size: 20px;
-        line-height: 24px;
-    }
-    
-    .filter-selection {
-        position: relative;
-        display: block;
-        width: 100%; 
-        top: 0;
-        left: 0; 
-        margin-left: 0;
-        margin: 0 auto;
-        font-size: 0.9em;
-        padding: 50px 0;
-        padding-bottom: 10px;
-        text-align: center;
-        
-    }
-  
+  .home-wrapper {
+    background-position: -320px 0;
+  }
+  .name {
+    display: none;
+    width: 55px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .filter-selection {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    margin: 0 auto;
+    font-size: 0.9em;
+    padding: 50px 0;
+    padding-bottom: 10px;
+    text-align: center;
+  }
   .logo {
     width: 45px;
   }
-    
-    .filter {
-        padding: 8px 15px;
-    }
-    
-    .list-projects { 
-        top: 60px;
-    }
-    
-    .cover-container {
-        position: relative;
-        width: 99%;
-        margin: 0 auto;
-        margin-top: 10px;
- 
-    }
-    
-    .overlay {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 70px;
-        
-        top: -10px;
-        left: 0;
-        opacity: 1;
-        
-    }
-    
-    .project-title {
-        font-size: 18px;
-    }
-    
-    
-    
-    
-    /*** ABOUT PAGE  ******************************************/
-    
-    .personality {
-      display: block;
-      width: 310px;
-      margin-left: -155px;
-    }
-
-    .home-slash {
-      display: none;
-    }
-
-    .home-quote {
-      font-size: 13px;
-      padding: 2% 0;
-    }
-
-    .walt-disney {
-      left: 28%;
-      margin-top: 20px;
-      padding-top: 10px;
-      font-size: 10px;
-    }
-
-    .cta {
-      left: 8%;
-      margin-top: 20px;
-      padding-top: 10px;
-      font-size: 10px;
-    }
+  .filter {
+    padding: 8px 15px;
+  }
+  .list-projects {
+    top: 60px;
+  }
+  .cover-container {
+    position: relative;
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .overlay {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: -10px;
+    left: 0;
+    opacity: 1;
+  }
+  .project-title {
+    font-size: 18px;
+  }
   
   
-    .about-content {
-      right: 2%;
-      top: 150%;
-      width: 65%;
-      
-    }
-  
-    .about-description {
-      font-size: 14px;
-    }
-  
-    .about-title {
-      font-family: Raleway;
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 35px;
-    }
-  
-    .container-skill-box {
-      
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-    }
-  
-    .skill-name {
-      font-size: 20px;
-      top: 0;
-    }
-  
-    .html-name {
-      font-size: 15px;
-      left: 5px;
-      top: 0;
-    }
-
-    .css-name {
-      font-size: 15px;
-      left: 10px;
-      top: 0;
-    }
-  
-    .group-title {
-      font-size: 14px;
-      margin-bottom: 7px;
-    }
-
-    .group-skills {
-      margin-bottom: 20px;
-    }
   
   
+  
+  
+  /*** ABOUT PAGE  ******************************************/
+  .personality {
+    display: block;
+    width: 310px;
+    margin-left: -155px;
+  }
+  .home-slash {
+    display: none;
+  }
+  .home-quote {
+    font-size: 13px;
+    padding: 2% 0;
+  }
+  .walt-disney {
+    left: 28%;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 10px;
+  }
+  .cta {
+    left: 8%;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 10px;
+  }
+  .about-content {
+    right: 2%;
+    top: 150%;
+    width: 65%;
+  }
+  .about-description {
+    font-size: 14px;
+  }
+  .about-title {
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .container-skill-box {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .skill-name {
+    font-size: 20px;
+    top: 0;
+  }
+  .html-name {
+    font-size: 15px;
+    left: 5px;
+    top: 0;
+  }
+  .css-name {
+    font-size: 15px;
+    left: 10px;
+    top: 0;
+  }
+  .group-title {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .group-skills {
+    margin-bottom: 20px;
+  }
   .team {
     left: 10px;
   }
-  
   .optimism {
-    
-      top: 300px;
-      left: 100px;
-      
-    }
+    top: 300px;
+    left: 100px;
+  }
+  
+  
+  
+  
   
   
   /**************** LAST LEVEL *****************/
-
-.last-container {
-  width: 95%;
-  top: 40px;
-  
-}
-
-.last-level {
-  display: block;
-  position: relative;
-  top: 1600px;
-  
-  font-family: 'Raleway', 'sans-serif';
-  font-weight: 300;
-  letter-spacing: .2px;
-}
-
-.key-description {
-  margin: 0;
-  margin-right: 30px;
-  font-size: 13px;
-  
-}
-
-.keyword {
-  font-weight: 500;
-  color: black;
-  font-size: 15px;
-}
-
-.draw {
-  color: transparent;
-  background-color: transparent;
-  
-  transition: all .5s .5s;
-}
-
-.key-draw {
-  background-color: transparent;
-  
-  transition: all .5s;
-}
-
-.draw:hover {
-  color: black;
-  background-color: transparent;
-}
-
-.draw:hover .key-draw{
-  color: rgba(244, 98, 77, 1);
-  
-}
-  
+  .last-container {
+    width: 95%;
+    top: 40px;
+  }
+  .last-level {
+    display: block;
+    position: relative;
+    top: 1600px;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 300;
+    letter-spacing: .2px;
+  }
+  .key-description {
+    margin: 0;
+    margin-right: 30px;
+    font-size: 13px;
+  }
+  .keyword {
+    font-weight: 500;
+    color: black;
+    font-size: 15px;
+  }
+  .draw {
+    color: transparent;
+    background-color: transparent;
+    transition: all .5s .5s;
+  }
+  .key-draw {
+    background-color: transparent;
+    transition: all .5s;
+  }
+  .draw:hover {
+    color: black;
+    background-color: transparent;
+  }
+  .draw:hover .key-draw {
+    color: rgba(244, 98, 77, 1);
+  }
   .key-road {
     background-color: transparent;
-  margin-left: 20px;
-  
-  transition: all .5s;
+    margin-left: 20px;
+    transition: all .5s;
   }
-  
   .road {
     color: transparent;
-  background-color: transparent;
-  
-  transition: all .5s .5s;
+    background-color: transparent;
+    transition: all .5s .5s;
   }
-
-.run {
-  color: transparent;
-  background-color: transparent;
-  
-  transition: all .5s .5s;
-}
-  
-.road:hover {
-  color: black;
-  background-color: transparent;
-}
-
-.road:hover .key-road{
-  color: rgba(244, 98, 77, 1);
-  
-}
-  
-
-.key-run {
-  background-color: transparent;
-  margin-left: -20px;
-  
-  transition: all .5s;
-}
-
-.run:hover {
-  color: black;
-  background-color: transparent;
-}
-
-.run:hover .key-run{
-  color: rgba(244, 98, 77, 1);
-}
-
-.vespa {
-  color: transparent;
-  background-color: transparent;
-  margin-left: 10px;
-  transition: all .5s .5s;
-}
-
-.key-vespa {
-  background-color: transparent;
-  
-  transition: all .5s;
-}
-
-.vespa:hover {
-  color: black;
-  background-color: transparent;
-}
-
-.vespa:hover .key-vespa{
-  color: rgba(244, 98, 77, 1);
-}
-
-.choco {
-  color: transparent;
-  background-color: transparent;
-  
-  margin-left: 30px;
-  
-  transition: all .5s .5s;
-}
-
-.key-choco {
-  background-color: transparent;
-  
-  transition: all .5s;
-}
-
-.choco:hover {
-  color: black;
-  background-color: transparent;
-}
-
-.choco:hover .key-choco{
-  color: rgba(244, 98, 77, 1);
-}
+  .run {
+    color: transparent;
+    background-color: transparent;
+    transition: all .5s .5s;
+  }
+  .road:hover {
+    color: black;
+    background-color: transparent;
+  }
+  .road:hover .key-road {
+    color: rgba(244, 98, 77, 1);
+  }
+  .key-run {
+    background-color: transparent;
+    margin-left: -20px;
+    transition: all .5s;
+  }
+  .run:hover {
+    color: black;
+    background-color: transparent;
+  }
+  .run:hover .key-run {
+    color: rgba(244, 98, 77, 1);
+  }
+  .vespa {
+    color: transparent;
+    background-color: transparent;
+    margin-left: 10px;
+    transition: all .5s .5s;
+  }
+  .key-vespa {
+    background-color: transparent;
+    transition: all .5s;
+  }
+  .vespa:hover {
+    color: black;
+    background-color: transparent;
+  }
+  .vespa:hover .key-vespa {
+    color: rgba(244, 98, 77, 1);
+  }
+  .choco {
+    color: transparent;
+    background-color: transparent;
+    margin-left: 30px;
+    transition: all .5s .5s;
+  }
+  .key-choco {
+    background-color: transparent;
+    transition: all .5s;
+  }
+  .choco:hover {
+    color: black;
+    background-color: transparent;
+  }
+  .choco:hover .key-choco {
+    color: rgba(244, 98, 77, 1);
+  }
   
   
-    
-    /*** SINGLE PROJECT PAGE *******************************************/
-    
-    .project-main-title {
-        font-size: 25px;
-        padding-bottom: 5px;
-    }
-    
-    .project-wrapper{
-        width: 100%;
-    }
-    
-    .text-container {
-        top: -40px;
-        width: 100%;
-    }
-    
-    .img-container {
-        width: 100%;
-        padding: 0px;
-    }
-    
-    .project-description {
-        width: 100%;
-        margin: auto;
-        
-        padding: 0 10px;
-        font-size: 14px;
-    }
   
-   .subtitle {
-        font-size: 16px;
-        font-weight: 300;
-        letter-spacing: 1px;
-        padding: 10px 0;
-   }
-    
-    .step-description {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        
-        padding: 0 20px;
-        
-    }
   
-    .store-screen {
-      height: auto;
-    }
   
-    .iop-first-mockup {
-        width: 90%;
-    }
-    
-    
-
-    .logo-foot {
-        display: block;
-        margin: 20px auto;
-        margin-bottom: 0;
-        width: 150px;
-        padding: 20px;
-        padding-bottom: 0;
-    }
-    
-    
-    
-    .previous-text-bar {
-        
-        display: none;
-        
-    }
-    
-    
-    .text-bar {
-        position: relative;
-        display: inline-block;
-        font-family: 'Raleway', 'sans-serif';
-        font-size: 15px;
-        width: auto;
-        font-weight: 100;
-        margin: 0 10px;
-    }
-    
-    .previous-mobile {
-        display: inline-block;
-        font-size: 15px;
-        width: auto;
-        font-weight: 100;
-        margin: 0 10px;
-    }
-    
-    .center-icon {
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
-
-        border-top: 0;
-        border-bottom: 0;
-
-        position: relative;
-        
-    }
-
-
-    .center-textbar {
-        margin: 0 auto;
-        position: relative;
-        
-        
-        width: 28px;
-        line-height: 28px;
-        text-align: center;
-    }
-    
-    
-    
-    .store-screen {
-        position: relative;
-        display: block;
-        width: 90%;
-        padding: 0;
-        margin: 0 auto;
-        margin-top: 10px;
-        min-width: 200px;
-    }
-    
-    
-/*** FOOTER STUFF *******************************************/
-
-    .foot-container {
-      display: block;
-      margin-top: 50px;
-      margin-bottom: 30px;
-    }
-    
-    .foot-contacts {
-      position: relative;
-      display: block;
-      margin: 30px auto;
-      width: 100%;
-      padding-right: 10px;
-      text-align: right;
-      font-size: 12px;
-    }
-
-    .foot-text-list {
-      font-size: 12px;
-      text-align: center;
-      padding-left: 0;
-      position: relative;
-      margin: auto;
-    }
-
-    .foot-text-contacts {
-      width: auto;
-      display: block;
-      
-      text-align: center;
-      padding-left: 0;
-      position: relative;
-      margin: auto;
-      
-      font-size: 13px;
-    }
-
-    .logo-foot {
-      display: block;
-      margin: auto;
-      padding: 0;
-      border-right: 0;
-      width: 80px;
-    }
-
-    .copy {
-      display: none;
-    }
-
-    .foot-list-page {
-      position: relative;
-      max-width: 1280px;
-      width: 100%;
-      margin: 60px auto;
-    }
-
-    .logo-foot-list {
-      width: 70px;
-    }
-
   
+  /*** SINGLE PROJECT PAGE *******************************************/
+  .project-main-title {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+  .project-wrapper {
+    width: 100%;
+  }
+  .text-container {
+    top: -40px;
+    width: 100%;
+  }
+  .img-container {
+    width: 100%;
+    padding: 0px;
+  }
+  .project-description {
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  .subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 10px 0;
+  }
+  .step-description {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  .store-screen {
+    height: auto;
+  }
+  .iop-first-mockup {
+    width: 90%;
+  }
+  .logo-foot {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 0;
+    width: 150px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .previous-text-bar {
+    display: none;
+  }
+  .text-bar {
+    position: relative;
+    display: inline-block;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 15px;
+    width: auto;
+    font-weight: 100;
+    margin: 0 10px;
+  }
+  .previous-mobile {
+    display: inline-block;
+    font-size: 15px;
+    width: auto;
+    font-weight: 100;
+    margin: 0 10px;
+  }
+  .center-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border-top: 0;
+    border-bottom: 0;
+    position: relative;
+  }
+  .center-textbar {
+    margin: 0 auto;
+    position: relative;
+    width: 28px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .store-screen {
+    position: relative;
+    display: block;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    min-width: 200px;
+  }
+  .pattern {
+    height: 350px;
+  }
+  .pattern-img {
+    top: 0;
+  }
+  .draw-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .shoe {
+    width: 160%;
+    left: -30%;
+    top: -60px;
+  }
+  .smalto {
+    width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  
+  
+  
+  
+  
+  /*** FOOTER STUFF *******************************************/
+  .foot-container {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .foot-contacts {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 12px;
+  }
+  .foot-text-list {
+    font-size: 12px;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    margin: auto;
+  }
+  .foot-text-contacts {
+    width: auto;
+    display: block;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    margin: auto;
+    font-size: 13px;
+  }
+  .logo-foot {
+    display: block;
+    margin: auto;
+    padding: 0;
+    border-right: 0;
+    width: 80px;
+  }
+  .copy {
+    display: none;
+  }
+  .foot-list-page {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    margin: 60px auto;
+  }
+  .logo-foot-list {
+    width: 70px;
+  }
   .linkedin-inside {
     margin: auto;
     margin-left: auto;
     margin-top: 20px;
   }
-
-  
   .medium {
     font-size: 13px;
   }
-
-  
   .foot-home {
     height: 220px;
   }
-    
-    
 }
+
+
+
 
 
 
@@ -2688,28 +2495,22 @@ header {
 /************************************** 320px IPhone6 **************************************/
 
 @media(max-width: 320px) {
- 
   header {
-   width: 320px;
-   padding: 5px 15px;
-   box-shadow: 0px 0px 5px lightgrey;
+    width: 320px;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 5px lightgrey;
   }
-  
   .logo {
     width: 50px;
   }
-
   .home-projects {
     font-size: 12px;
     letter-spacing: 1px;
     padding: 7px 10px;
   }
-
   .contact-last {
     padding-right: 0;
   }
-
-  
   .filter-selection {
     width: 100%;
     left: 0;
@@ -2718,250 +2519,194 @@ header {
     padding-bottom: 0;
     padding-left: 0;
   }
-  
   .filter {
     font-size: 13px;
   }
-  
-  
-  
-
-    
-
-  
-    .project-main-title {
-        font-size: 22px;
-        letter-spacing: 1px;
-        padding-bottom: 5px;
-    }
-  
-    .iop-first-mockup {
-      width: 90%;
-    }
-    
-    .language {
-        font-size: 16px; 
-    }
-
-    .level {
-        font-size: 14px;  
-    }
-    
-    
-    
-    .event-screen {
-        width: 29%;
-        min-width: 70px;
-        margin-top: 20px;
-        margin-right: 2%;
-        margin-left: 1%;
-
-    }
-    
-    #atm-video {
-        position: relative;
-        display: block;
-        margin: 15px auto;
-        top: 25px;
-        left: 0;
-        
-    }
-    
-    .atm-description {
-        position: relative;
-        display: block;
-        margin: 0 auto; 
-        margin-bottom: 40px;
-        width: 100%;
-    }
-    
-    .atm-punto-elenco {
-        text-align: right;
-        margin-right: 20px;
-        display: block;
-        margin: 0 auto; 
-        width: 90%;
-        font-size: 11px;
-
-    }
-
-    .atm-left {
-        margin-right: 0;
-        margin: 0 auto;
-
-        font-size: 11px;
-
-
-        border-left: 0;
-        text-align: left;
-        
-    }
-    
-    
-  
-    /*************** ABOUT ******************/
-  
-  .choco {
-   
-    margin-left: 0;
-
+  .project-main-title {
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+  }
+  .iop-first-mockup {
+    width: 90%;
+  }
+  .language {
+    font-size: 16px;
+  }
+  .level {
+    font-size: 14px;
+  }
+  .event-screen {
+    width: 29%;
+    min-width: 70px;
+    margin-top: 20px;
+    margin-right: 2%;
+    margin-left: 1%;
+  }
+  #atm-video {
+    position: relative;
+    display: block;
+    margin: 15px auto;
+    top: 25px;
+    left: 0;
+  }
+  .atm-description {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .atm-punto-elenco {
+    text-align: right;
+    margin-right: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 11px;
+  }
+  .atm-left {
+    margin-right: 0;
+    margin: 0 auto;
+    font-size: 11px;
+    border-left: 0;
+    text-align: left;
   }
   
+  
+  
+  
+  
+  
+  /*************** ABOUT ******************/
+  .choco {
+    margin-left: 0;
+  }
   .vespa {
     margin-left: 0;
   }
-  
   .precision {
     top: 295px;
     left: 80px;
   }
-    
-  
   .optimism {
     top: 50px;
     left: 120px;
   }
-    
-    
-    
-    
-    /*** BOTTOM BAR ***************************************/
-
-    .bottom-bar {
-        width: 100%;
-        height: 40px;
-    }
-
-    .container-bottombar {
-        width: 100%;
-        height: 40px; 
-    }
-
-    .icon-bottombar {
-        width: 10px;
-    }
-
-    
-    .previous-text-bar {
-        position: relative;
-        display: none;
-        font-family: 'Raleway', 'sans-serif';
-        font-size: 12px;
-        font-weight: 100;
-        margin: 0 10px;
-    }
-    
-    
-    .text-bar {
-        position: relative;
-        display: inline-block;
-        font-family: 'Raleway', 'sans-serif';
-        font-size: 12px;
-        font-weight: 100;
-        margin: 0 10px;
-    }
-    
-    .previous-mobile {
-        display: inline;
-    }
-
-
-    .center-icon {
-        width: 30px;
-        height: 30px;
-        
-
-        border-top: 0;
-        border-bottom: 0;
-
-        position: relative;
-        
-    }
-
-
-    .center-textbar {
-        margin: 0 auto;
-        position: relative;
-        
-        line-height: 33px;
-        vertical-align: middle;
-        text-align: center;
-    }
-    
-/*** FOOTER STUFF *******************************************/
-
-    
   
-    .foot-container {
-      display: block;
-      margin-top: 50px;
-      margin-bottom: 30px;
-      
-    }
-    
-    .foot-contacts {
-      position: relative;
-      display: block;
-      margin: 20px auto;
-      width: 100%;
-      padding-right: 10px;
-      text-align: right;
-      font-size: 12px;
-    }
-
-    .foot-text-list {
-      font-size: 12px;
-      text-align: center;
-      padding-left: 0;
-      position: relative;
-      margin: auto;
-    }
-
-    .foot-text-contacts {
-      width: auto;
-      display: block;
-      
-      text-align: center;
-      padding-left: 0;
-      position: relative;
-      margin: auto;
-      
-      font-size: 13px;
-    }
-
-    .logo-foot {
-      display: block;
-      margin: auto;
-      padding: 0;
-      border-right: 0;
-      width: 80px;
-    }
-
-    .copy {
-      display: none;
-    }
-
-    .foot-list-page {
-      position: relative;
-      max-width: 1280px;
-      width: 100%;
-      margin: 60px auto;
-    }
-
-    .logo-foot-list {
-      width: 70px;
-    }
-
   
+  
+  
+  
+  
+  /*** BOTTOM BAR ***************************************/
+  .bottom-bar {
+    width: 100%;
+    height: 40px;
+  }
+  .container-bottombar {
+    width: 100%;
+    height: 40px;
+  }
+  .icon-bottombar {
+    width: 10px;
+  }
+  .previous-text-bar {
+    position: relative;
+    display: none;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 12px;
+    font-weight: 100;
+    margin: 0 10px;
+  }
+  .text-bar {
+    position: relative;
+    display: inline-block;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 12px;
+    font-weight: 100;
+    margin: 0 10px;
+  }
+  .previous-mobile {
+    display: inline;
+  }
+  .center-icon {
+    width: 30px;
+    height: 30px;
+    border-top: 0;
+    border-bottom: 0;
+    position: relative;
+  }
+  .center-textbar {
+    margin: 0 auto;
+    position: relative;
+    line-height: 33px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*** FOOTER STUFF *******************************************/
+  .foot-container {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .foot-contacts {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 12px;
+  }
+  .foot-text-list {
+    font-size: 12px;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    margin: auto;
+  }
+  .foot-text-contacts {
+    width: auto;
+    display: block;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    margin: auto;
+    font-size: 13px;
+  }
+  .logo-foot {
+    display: block;
+    margin: auto;
+    padding: 0;
+    border-right: 0;
+    width: 80px;
+  }
+  .copy {
+    display: none;
+  }
+  .foot-list-page {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    margin: 60px auto;
+  }
+  .logo-foot-list {
+    width: 70px;
+  }
   .linkedin-inside {
     margin: auto;
     margin-left: auto;
     margin-top: 20px;
   }
-
-  
   .medium {
     font-size: 13px;
   }
-    
 }
