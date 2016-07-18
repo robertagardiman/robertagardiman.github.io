@@ -19,7 +19,7 @@ window.onscroll = function (e) {
 };
 
 
-//click contact appear the box
+//click contact appear/disappear the box
 
 var contactbox = document.getElementById("contact-box");
 var contactlink = document.getElementById("contact-link");
@@ -28,9 +28,20 @@ contactlink.addEventListener("click", openContactBox);
 
 function openContactBox() {
   
-  contactbox.classList.toggle("animation-contact-box");
+  if(contactbox.classList.contains("animation-contact-box")) {
+    contactbox.classList.add("no-animation-contact-box");
+    contactbox.classList.remove("animation-contact-box");
+  }else{
+    //alert("dentro");
+    contactbox.classList.add("animation-contact-box");
+    contactbox.classList.remove("no-animation-contact-box");
+  }
+  
   
 }
+
+
+
 
 $(document).ready(function() {
   
