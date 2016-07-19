@@ -61,6 +61,12 @@ header {
   animation-fill-mode: forwards;
 }
 
+.header-about {
+  opacity: 1;
+  animation: header-appear 0.1s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes header-appear {
   0% {
     opacity: 0;
@@ -369,6 +375,7 @@ header {
 .cover-container {
   position: relative;
   width: 30%;
+  height: 100%;
   margin: 0 auto;
   margin-top: 38px;
   opacity: 1;
@@ -645,6 +652,12 @@ header {
   opacity: 0;
 }
 
+.about-cta {
+  animation: CTA-appear 0.1s 1s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
 @keyframes CTA-appear {
   0% {
     opacity: 0;
@@ -669,6 +682,12 @@ header {
   animation-fill-mode: forwards;
 }
 
+.go-down-about {
+  opacity: 1;
+  animation: appear-down-animation 0.1s 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
 @keyframes appear-down-animation {
   0% {
     opacity: 0;
@@ -686,6 +705,12 @@ header {
   top: -100px;
   background-color: rgba(244, 98, 77, 1);
   animation: down-animation 2.6s 7.3s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.element-about {
+  animation: down-animation 2.6s 1.3s ease-in-out;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
