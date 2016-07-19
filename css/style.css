@@ -33,6 +33,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,7 +51,7 @@ header {
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
   padding: 7px 30px;
-  z-index: 30;
+  z-index: 50;
   opacity: 1;
 }
 
@@ -793,7 +794,7 @@ header {
 }
 
 .skill-ai {
-  animation: grow-level 1s 3s;
+  animation: grow-level 1s 2s;
   animation-fill-mode: forwards;
 }
 
@@ -807,7 +808,7 @@ header {
 }
 
 .skill-ps {
-  animation: grow-level 1s 3s;
+  animation: grow-level 1s 2s;
   animation-fill-mode: forwards;
 }
 
@@ -821,12 +822,12 @@ header {
 }
 
 .skill-id {
-  animation: grow-level 1s 3s;
+  animation: grow-level 1s 2s;
   animation-fill-mode: forwards;
 }
 
 .skill-ae {
-  animation: grow-ae .6s 3s;
+  animation: grow-ae .6s 2s;
   animation-fill-mode: forwards;
 }
 
@@ -840,7 +841,7 @@ header {
 }
 
 .skill-html {
-  animation: grow-html 1s 3s;
+  animation: grow-html 1s 2s;
   animation-fill-mode: forwards;
 }
 
@@ -854,12 +855,12 @@ header {
 }
 
 .skill-css {
-  animation: grow-html 1s 3s;
+  animation: grow-html 1s 2s;
   animation-fill-mode: forwards;
 }
 
 .skill-js {
-  animation: grow-js 1s 3s;
+  animation: grow-js 1s 2s;
   animation-fill-mode: forwards;
 }
 
@@ -873,7 +874,7 @@ header {
 }
 
 .skill-sketch {
-  animation: grow-html 1s 6s;
+  animation: grow-html 1s 2s;
   animation-fill-mode: forwards;
 }
 

@@ -51,6 +51,11 @@ $(document).ready(function() {
         console.log(opacityVal);
         $('.not-blurred-image').css('opacity', opacityVal);
     });
+  
+    if (document.cookie.replace(/(?:(?:^|.*;\s*)doSomethingOnlyOnce\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+      alert("Do something here!");
+      document.cookie = "doSomethingOnlyOnce=true";
+    }
 });
 
 // Attach a listener to the window
