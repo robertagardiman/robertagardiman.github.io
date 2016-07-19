@@ -2732,8 +2732,14 @@ header {
     position: relative;
     max-width: 1280px;
     width: 100%;
+    
     margin: 60px auto;
   }
+  
+  .foot-list-page-drawing {
+    top: -50px;
+  }
+  
   .logo-foot-list {
     width: 70px;
   }
