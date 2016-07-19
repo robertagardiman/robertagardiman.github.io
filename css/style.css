@@ -2433,6 +2433,7 @@ header {
   .draw-description {
     margin-top: 10px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   .shoe {
     width: 160%;
@@ -2603,6 +2604,12 @@ header {
   }
   
   
+  .draw-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
   
   
   
@@ -2684,7 +2691,7 @@ header {
   .foot-container {
     display: block;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .foot-contacts {
     position: relative;
