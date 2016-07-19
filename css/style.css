@@ -1079,7 +1079,7 @@ header {
 /**************** LAST LEVEL *****************/
 
 .last-container {
-  width: 70%;
+  width: 90%;
   position: relative;
   top: 20px;
 }
@@ -1984,6 +1984,7 @@ header {
     display: block;
     width: 100%;
     margin-top: 30px;
+    top: 4500px;
     margin-bottom: 30px;
   }
   .foot-contacts {
@@ -2075,6 +2076,9 @@ header {
     margin: 50px auto;
     margin-bottom: 20px;
   }
+  
+  
+  
 }
 
 
@@ -2244,33 +2248,29 @@ header {
     font-size: 15px;
   }
   .draw {
-    color: transparent;
-    background-color: transparent;
-    transition: all .5s .5s;
-  }
-  .key-draw {
-    background-color: transparent;
-    transition: all .5s;
-  }
-  .draw:hover {
     color: black;
     background-color: transparent;
+    
   }
-  .draw:hover .key-draw {
+  .key-draw {
     color: rgba(244, 98, 77, 1);
-  }
-  .key-road {
     background-color: transparent;
-    margin-left: 20px;
-    transition: all .5s;
+    
+  }
+  
+  .key-road {
+    color: rgba(244, 98, 77, 1);
+    background-color: transparent;
+    margin-left: 0px;
+    
   }
   .road {
-    color: transparent;
+    color: black;
     background-color: transparent;
-    transition: all .5s .5s;
+    
   }
   .run {
-    color: transparent;
+    color: black;
     background-color: transparent;
     transition: all .5s .5s;
   }
@@ -2282,6 +2282,7 @@ header {
     color: rgba(244, 98, 77, 1);
   }
   .key-run {
+    color: rgba(244, 98, 77, 1);
     background-color: transparent;
     margin-left: -20px;
     transition: all .5s;
@@ -2294,12 +2295,13 @@ header {
     color: rgba(244, 98, 77, 1);
   }
   .vespa {
-    color: transparent;
+    color: black;
     background-color: transparent;
-    margin-left: 10px;
+    margin-left: 0px;
     transition: all .5s .5s;
   }
   .key-vespa {
+    color: rgba(244, 98, 77, 1);
     background-color: transparent;
     transition: all .5s;
   }
@@ -2311,12 +2313,13 @@ header {
     color: rgba(244, 98, 77, 1);
   }
   .choco {
-    color: transparent;
+    color: black;
     background-color: transparent;
-    margin-left: 30px;
+    margin-left: 0px;
     transition: all .5s .5s;
   }
   .key-choco {
+    color: rgba(244, 98, 77, 1);
     background-color: transparent;
     transition: all .5s;
   }
@@ -2457,7 +2460,8 @@ header {
   .foot-container {
     display: block;
     margin-top: 50px;
-    margin-bottom: 30px;
+    top: 4500px;
+    margin-bottom: 0px;
   }
   .foot-contacts {
     position: relative;
@@ -2610,9 +2614,6 @@ header {
     padding-bottom: 20px;
     font-size: 12px;
   }
-  
-  
-  
   
   
   .contact-box {
