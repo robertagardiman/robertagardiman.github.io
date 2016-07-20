@@ -1984,7 +1984,6 @@ header {
     display: block;
     width: 100%;
     margin-top: 30px;
-    top: 4500px;
     margin-bottom: 30px;
   }
   .foot-contacts {
@@ -2460,7 +2459,7 @@ header {
   .foot-container {
     display: block;
     margin-top: 50px;
-    top: 4500px;
+    
     margin-bottom: 0px;
   }
   .foot-contacts {
