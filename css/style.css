@@ -307,6 +307,10 @@ header {
 }
 
 
+.no-selected {
+  visibility: hidden;
+}
+
 
 
 
