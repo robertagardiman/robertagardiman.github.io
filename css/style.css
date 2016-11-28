@@ -49,8 +49,8 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 1);
   padding: 7px 30px;
+  padding-top: 20px;
   z-index: 50;
   opacity: 1;
 }
@@ -65,6 +65,10 @@ header {
   opacity: 1;
   animation: header-appear 0.1s;
   animation-fill-mode: forwards;
+}
+
+header.project-list {
+  background-color: white;
 }
 
 @keyframes header-appear {
@@ -136,8 +140,8 @@ header {
   color: rgba(244, 98, 77, 1);
 }
 
-.contact-last {
-  margin-right: 0;
+.projects-last {
+  padding-right: 0;
 }
 
 .hamburger {
@@ -181,57 +185,7 @@ header {
   display: block;
 }
 
-.animation-contact-box {
-  display: flex;
-  -webkit-animation-name: contact;
-  animation-name: contact;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
 
-.no-animation-contact-box {
-  display: block;
-  -webkit-animation-name: no-contact;
-  animation-name: no-contact;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@keyframes contact {
-  0% {
-    opacity: 0;
-    height: 0;
-    padding: 0 30px;
-  }
-  100% {
-    opacity: 1;
-    height: 170px;
-    padding: 20px 30px;
-  }
-}
-
-@keyframes no-contact {
-  0% {
-    opacity: 1;
-    height: 170px;
-    padding: 20px 30px;
-    /*display: flex; right: 0;*/
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-    padding: 0 30px;
-    /*display: none; right: -400px;*/
-  }
-}
 
 .contact-intro {
   font-family: 'Raleway', 'sans-serif';
@@ -291,7 +245,7 @@ header {
 }
 
 .projects {
-  color: rgba(244, 98, 77, 1);
+  color: #ff5a5f;
 }
 
 .name {
@@ -378,10 +332,10 @@ header {
 
 .cover-container {
   position: relative;
-  width: 30%;
+  width: 32.5%;
   height: 100%;
   margin: 0 auto;
-  margin-top: 38px;
+  margin-top: .5%;
   opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -391,6 +345,7 @@ header {
   max-width: 1280px;
   width: 95%;
   margin: 0 auto;
+  margin-top: 1.5%;
   position: relative;
   top: 180px;
   display: -webkit-box;
@@ -1330,31 +1285,11 @@ header {
 /**************** SINGLE PROJECT PAGE *****************/
 
 .project-main-title {
-  position: fixed;
-  top: 20px;
-  background-color: white;
-  max-width: 1280px;
-  width: 1280px;
-  left: 50%;
-  margin-left: -640px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-family: Raleway;
-  font-size: 44px;
-  letter-spacing: 2px;
-  font-weight: 300;
-  padding: 20px;
-  padding-top: 80px;
-  padding-bottom: 0;
-  border-bottom: 1.5px solid rgba(244, 98, 77, 1);
-  z-index: 1;
-  transition: 300ms ease-in-out;
+  font-family: Didot;
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 94px;
+  letter-spacing: -1px;
 }
 
 .collapsed {
@@ -1366,7 +1301,7 @@ header {
 
 .project-wrapper {
   position: relative;
-  top: 190px;
+  top: 150px;
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
@@ -1383,43 +1318,96 @@ header {
 .subtitle {
   position: relative;
   display: block;
-  font-family: 'Raleway', 'sans-serif';
-  font-size: 18px;
-  font-weight: 200;
-  letter-spacing: 2px;
-  color: rgba(244, 98, 77, 1);
-  padding: 20px 0;
+  font-family: 'Didot';
+  font-size: 48px;
+  font-weight: 600;
+  color: black;
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
 }
 
-.project-description {
-  display: block;
+
+
+.brief-box {
   position: relative;
-  font-family: 'Raleway', 'sans-serif';
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 1.4em;
-  width: 100%;
-  margin-left: 0;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 50vw;
+}
+
+.step-box {
+  position: relative;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 50vw;
+}
+
+.products-step-box {
+  margin-left: 8%;
+  margin-right: 0;
   display: inline-block;
   vertical-align: top;
 }
 
-.img-container {
+.subtitle-line {
   position: relative;
-  width: 100%;
-  margin: 20px 0;
-  /* background-image: url(links/PROJECTS-links/osteria/osteria-first-mockup.png);
-    background-size: 110%;
-    background-position: 0px -30px;
-    background-repeat: no-repeat;*/
+  display: inline-block;
+  background-color: rgba(244, 98, 77, 1);
+  height: 2.5px;
+  width: 90px;
+  margin-top: 35px;
+  margin-right: 20px;
+  margin-left: 10px;
+  vertical-align: top;
+  border-radius: 1.25px;
+}
+
+.step-box-line {
+  margin-top: 15px;
+}
+
+.project-description {
+  position: relative;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #a3adb9;
+  width: 80%;
+  margin-left: 0;
+  margin-top: 27px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.step-box-description {
+  margin-top: 9px;
 }
 
 .osteria-first-mockup {
-  position: relative;
-  top: 0px;
   width: 100%;
+}
+
+.img-intro-osteria {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin: 20px 0;
+  background-image: url("../img/osteria/osteria-first-mockup.jpg");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-detail-osteria {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin: 20px 0;
+  background-image: url("../img/osteria/iphone2-osteria-details.jpg");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .osteria-gif {
@@ -1465,8 +1453,8 @@ header {
 }
 
 .step-border {
-  border-top: 1px solid lightgray;
-  padding-top: 20px;
+  border-top: 1px solid rgba(225,225,225,0.5);
+  padding-top: 50px;
 }
 
 .detail-title {
@@ -1497,7 +1485,7 @@ header {
 }
 
 .portrait-screen {
-  width: 200px;
+  width: 300px;
   display: inline-block;
 }
 
@@ -1507,14 +1495,18 @@ header {
   margin-left: 17%;
 }
 
+.store-screen-box {
+  text-align: center;
+}
+
 .store-screen {
   display: inline-block;
   position: relative;
-  width: 49.2%;
+  width: 40%;
   padding: 0;
-  height: 450px;
+  height: 500px;
   margin: 0 auto;
-  margin-right: 1%;
+  margin-right: 5%;
   margin-top: 30px;
   min-width: 180px;
 }
@@ -1523,9 +1515,14 @@ header {
   margin-right: 0;
 }
 
+.event-screen-box {
+  text-align: center;
+}
+
 .event-screen {
   width: 30%;
   min-width: 100px;
+  max-width: 300px;
   margin-top: 20px;
   margin-right: 3%;
   box-shadow: 5px 5px 10px 1px lightgrey;
@@ -1643,7 +1640,7 @@ header {
 /************ BOTTOM BAR *************/
 
 .bottom-bar {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 40px;
   left: 0;

@@ -4,42 +4,19 @@ var title = document.getElementById("title");
 
 var pageOffset2 = window.pageYOffset;
 
-//evento quando scrolli
-window.onscroll = function (e) {
-  // prendi posizione dello scroll
-  var pageOffset = window.pageYOffset;
-  // se la posizione attuale e minore di quela precedente
-  if (pageOffset > pageOffset2) {
-    title.classList.add("collapsed");
-  } else {
-    title.classList.remove("collapsed");
-  };
-  // predi posizione per dopo
-  pageOffset2 = window.pageYOffset;
-};
-
-
-//click contact appear/disappear the box
-
-var contactbox = document.getElementById("contact-box");
-var contactlink = document.getElementById("contact-link");
-
-contactlink.addEventListener("click", openContactBox);
-
-function openContactBox() {
-  
-  if(contactbox.classList.contains("animation-contact-box")) {
-    contactbox.classList.add("no-animation-contact-box");
-    contactbox.classList.remove("animation-contact-box");
-  }else{
-    //alert("dentro");
-    contactbox.classList.add("animation-contact-box");
-    contactbox.classList.remove("no-animation-contact-box");
-  }
-  
-  
-}
-
+// //evento quando scrolli
+// window.onscroll = function (e) {
+//   // prendi posizione dello scroll
+//   var pageOffset = window.pageYOffset;
+//   // se la posizione attuale e minore di quela precedente
+//   if (pageOffset > pageOffset2) {
+//     title.classList.add("collapsed");
+//   } else {
+//     title.classList.remove("collapsed");
+//   };
+//   // predi posizione per dopo
+//   pageOffset2 = window.pageYOffset;
+// };
 
 
 
