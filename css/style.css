@@ -6,7 +6,22 @@ a {
   color: black;
 }
 
+/********************** CUSTOM SCROLL BAR **********************/
 
+::-webkit-scrollbar {
+    width: 9px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #eeedeb;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid #eeedeb;
+    background-color: rgba(82, 61, 108, 1);
+}
 
 
 
@@ -49,10 +64,11 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 7px 30px;
-  padding-top: 20px;
+  padding: 10px 30px;
   z-index: 50;
   opacity: 1;
+
+  background-color: rgba(255,255,255,0.7);
 }
 
 .header-home {
@@ -1302,7 +1318,7 @@ header.project-list {
 .project-wrapper {
   position: relative;
   top: 150px;
-  max-width: 1280px;
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1338,6 +1354,7 @@ header.project-list {
 .step-box {
   position: relative;
   margin: auto;
+  margin-top: 30px;
   margin-bottom: 30px;
   width: 50vw;
 }
@@ -1433,7 +1450,7 @@ header.project-list {
 
 .iop-step {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 150px;
   text-align: left;
 }
 
@@ -1556,6 +1573,7 @@ header.project-list {
   left: 50px;
   width: 320px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 
@@ -1587,6 +1605,15 @@ header.project-list {
 
 /************ DRAWINGS PAGE *************/
 
+.img-container {
+  height: 500px;
+  overflow: hidden;
+}
+
+.last-img {
+  margin-bottom: 200px;
+}
+
 .img-drawings {
   width: 100%;
 }
@@ -1609,19 +1636,29 @@ header.project-list {
 }
 
 .draw-description {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   padding-bottom: 20px;
-  border-bottom: 1px solid lightgrey;
+  width: 100%;
+
+  font-family: Didot;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 94px;
+  letter-spacing: -1px;
+  color: black;
+ 
 }
 
+
 .drawing-tool {
+  font-family: Raleway;
   font-size: 13px;
   font-weight: 300;
   letter-spacing: 1px;
   margin-left: 15px;
   padding-left: 15px;
   border-left: 1px solid black;
+  color: #a3adb9;
 }
 
 .shoe {
@@ -1642,7 +1679,7 @@ header.project-list {
 .bottom-bar {
   position: relative;
   width: 100%;
-  height: 40px;
+  height: auto;
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   bottom: 0;
@@ -1657,8 +1694,8 @@ header.project-list {
   position: relative;
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
-  height: 40px;
+  width: 100%;
+  height: 300px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1675,22 +1712,121 @@ header.project-list {
   align-items: center;
 }
 
-.icon-bottombar {
+.container-bottombar a.prev-next {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+a.prev-next.previous-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+a.prev-next.next-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.previous-item {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+
+.next-item {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+}
+
+.container-bottombar a.top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.arrow-orange {
+  width: 100px;
+  height: 2px;
+  background-color: rgba(244, 98, 77, 1);
+  z-index: 1; 
+}
+
+/*.icon-bottombar {
   width: 15px;
   height: 25px;
   display: inline-block;
   vertical-align: middle;
+  z-index: 1;
+}*/
+
+.previous-black-overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  transition: all .5s;
+}
+
+.previous-black-overlay:hover {
+  background-color: transparent;
+}
+
+.next-black-overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  transition: all .5s;
+}
+
+.next-black-overlay:hover {
+  background-color: transparent;
 }
 
 .text-bar {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 100px;
   font-family: 'Raleway', 'sans-serif';
   font-size: 14px;
   font-weight: 300;
-  margin: 0 10px;
+  letter-spacing: 1px;
+  margin: 5px 10px;
   text-align: right;
+  z-index: 1;
+  color: white;
+}
+
+.text-bar-project {
+  font-family: 'Didot';
+  font-size: 27px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  margin: 10px 10px;
+  z-index: 1;
 }
 
 .center-icon {
@@ -1699,15 +1835,9 @@ header.project-list {
   border-top: 1px solid rgba(244, 98, 77, 1);
   border-bottom: 1px solid rgba(244, 98, 77, 1);
   position: relative;
+
 }
 
-.center-textbar {
-  position: relative;
-  margin: 0 auto;
-  width: 35px;
-  text-align: center;
-  line-height: 30px;
-}
 
 .previous-text-bar {
   position: relative;
@@ -1716,11 +1846,15 @@ header.project-list {
   font-family: 'Raleway', 'sans-serif';
   font-size: 14px;
   font-weight: 300;
-  margin: 0 10px;
+  margin: 5px 10px;
+  color: white;
+  z-index: 1;
 }
 
 .previous-mobile {
   display: none;
+  color: white;
+  margin: 5px 10px;
 }
 
 
@@ -2352,6 +2486,7 @@ header.project-list {
     width: 100%;
     padding: 0px;
   }
+
   .project-description {
     width: 100%;
     margin: auto;

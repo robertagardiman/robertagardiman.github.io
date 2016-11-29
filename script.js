@@ -58,3 +58,50 @@ window.onscroll = function(e) {
     levelSkills[8].classList.add("skill-ai"); // invision
   }
 }
+
+
+
+//SMOOTH SCROLL
+
+function smoothScrollTo(destination, parent, time) {
+   var scroll = init();
+   requestAnimationFrame(shouldScroll);
+
+   function init() {
+       var start = parent.scrollTop;
+       var ticks = time || 30;
+       var i = 0;
+       return {
+           positionY: function () {
+               return (destination - start) * i / ticks + start;
+           }, 
+           isFinished: function () {
+               return i++ >= ticks;
+           }
+       };
+   }
+
+   function shouldScroll() {
+       if(scroll.isFinished()) return;
+       parent.scrollTop = scroll.positionY();
+       requestAnimationFrame(shouldScroll);
+   }
+}
+
+function selected(elem, parent) {
+   for(var i = 0; i < parent.children.length; i++) {
+       parent.children[i].classList.remove('is-selected');
+   }
+   elem.classList.add('is-selected');
+   return elem;
+}
+
+
+if (document.querySelector('#scroll-top') != null){
+    document.querySelector('#scroll-top').addEventListener('click', function(e){
+
+        smoothScrollTo(window.innerHeight, document.body, 20);
+
+    });
+
+}
