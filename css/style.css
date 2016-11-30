@@ -406,8 +406,8 @@ header.project-list {
   position: relative;
   top: 40%;
   left: 6%;
-  font-family: Raleway;
-  font-weight: 200;
+  font-family: Didot;
+  font-weight: 600;
   font-size: 25px;
 }
 
@@ -1876,6 +1876,7 @@ a.prev-next.next-item {
   display: none;
   color: white;
   margin: 5px 10px;
+  color: black;
 }
 
 
@@ -1960,15 +1961,14 @@ a.prev-next.next-item {
     position: absolute;
     top: 17%;
     left: 6%;
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 1.1em;
+    font-size: 27px;
     padding-bottom: 6px;
     /*border-bottom: 1px solid rgba(244, 98, 77, 1);*/
   }
   .category-label {
     display: block;
     position: absolute;
-    top: 63%;
+    top: 83%;
     left: 6%;
     font-family: 'Raleway', 'sans-serif';
     font-size: 0.7em;
@@ -2100,6 +2100,7 @@ a.prev-next.next-item {
     width: 45%;
     margin: 0 auto;
     margin-top: 15px;
+    margin-bottom: 30px;
   }
   .overlay {
     margin-top: 10px;
@@ -2109,7 +2110,7 @@ a.prev-next.next-item {
     margin-left: 18.406px;
   }
   .project-title {
-    font-size: 1.1em;
+    font-size: 27px;
   }
   
   
@@ -2245,7 +2246,7 @@ a.prev-next.next-item {
 
 /******************************** 568px IPhone6 ***********************************/
 
-@media(max-width: 568px) {
+@media(max-width: 650px) {
   .home-wrapper {
     background-position: -320px 0;
   }
@@ -2282,6 +2283,7 @@ a.prev-next.next-item {
     width: 99%;
     margin: 0 auto;
     margin-top: 10px;
+    margin-bottom: 30px;
   }
   .overlay {
     display: block;
@@ -2293,7 +2295,7 @@ a.prev-next.next-item {
     opacity: 1;
   }
   .project-title {
-    font-size: 18px;
+    font-size: 27px;
   }
   
   
@@ -2492,9 +2494,26 @@ a.prev-next.next-item {
   
   
   /*** SINGLE PROJECT PAGE *******************************************/
+  
+  .brief-box {
+    width: 90vw;
+  }
+
+  .step-box {
+    width: 90vw;
+  }
+
+  .subtitle-line {
+    margin-bottom: 20px;
+  }
+
+  .step-box-line {
+    margin-top: 0;
+  }
+
   .project-main-title {
-    font-size: 25px;
-    padding-bottom: 5px;
+    font-size: 35px;
+    line-height: 0;
   }
   .project-wrapper {
     width: 100%;
@@ -2513,12 +2532,12 @@ a.prev-next.next-item {
     width: 100%;
     margin: auto;
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .subtitle {
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -.7px;
     padding: 10px 0;
   }
   .step-description {
@@ -2527,6 +2546,26 @@ a.prev-next.next-item {
     margin-bottom: 20px;
     padding: 0 20px;
   }
+
+  .iop-step {
+    margin-top: 50px;
+  }
+
+  .img-intro-osteria {
+    width: 100vw;
+    height: 300px;
+    margin: 0;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .img-detail-osteria {
+    height: 300px;
+    background-size: 100%;
+  }
+
+
   .store-screen {
     height: auto;
   }
@@ -2559,6 +2598,7 @@ a.prev-next.next-item {
     width: auto;
     font-weight: 100;
     margin: 0 10px;
+    color: black;
   }
   .center-icon {
     width: 30px;
@@ -2608,9 +2648,41 @@ a.prev-next.next-item {
     margin: auto;
   }
   
+
+  /*** BOTTOMBAR STUFF *******************************************/
   
+  .container-bottombar {
+    height: 200px;
+  }
+
+  .text-bar-project {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
   
-  
+  .next-black-overlay {
+    background-color: white;
+  }
+
+  .text-bar-project {
+    color: black;
+    padding: 5px 5px;
+  }
+
+  .text-bar {
+    color: black;
+    padding: 5px 5px;
+  }
+
+  .previous-black-overlay {
+    background-color: white;
+  }
+
+  .arrow-orange {
+    background-color: rgba(255,90,95,1);
+  }
+
+
   
   
   /*** FOOTER STUFF *******************************************/
@@ -2806,7 +2878,7 @@ a.prev-next.next-item {
   }
   .container-bottombar {
     width: 100%;
-    height: 40px;
+    height: 200px;
   }
   .icon-bottombar {
     width: 10px;
@@ -2829,6 +2901,7 @@ a.prev-next.next-item {
   }
   .previous-mobile {
     display: inline;
+    color: black;
   }
   .center-icon {
     width: 30px;
