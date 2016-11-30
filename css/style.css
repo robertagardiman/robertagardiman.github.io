@@ -1595,10 +1595,27 @@ header.project-list {
   position: relative;
   display: block;
   margin: 0 auto;
+  margin-bottom: 150px;
 }
 
 .flora-firstline {
   text-align: center;
+}
+
+img.osteria-first-mockup.flora-gif {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+.flora-img-container {
+  overflow: hidden;
+  height: auto;
+}
+
+.flora-ipad {
+  width: 150%;
+  margin-left: -30px; 
 }
 
 
@@ -2228,9 +2245,10 @@ a.prev-next.next-item {
   #atm-video {
     position: relative;
     display: block;
-    width: 60%;
+    width: 90%;
     margin: 50px auto;
     margin-bottom: 20px;
+    left: 0;
   }
   
   
@@ -2505,10 +2523,12 @@ a.prev-next.next-item {
 
   .subtitle-line {
     margin-bottom: 20px;
+    margin-left: 0;
   }
 
   .step-box-line {
     margin-top: 0;
+    margin-left: 0;
   }
 
   .project-main-title {
@@ -2525,6 +2545,7 @@ a.prev-next.next-item {
   .img-container {
     width: 100%;
     padding: 0px;
+    height: 250px;
   }
 
 
@@ -2532,6 +2553,7 @@ a.prev-next.next-item {
     width: 100%;
     margin: auto;
     padding: 0 10px;
+    padding-left: 0;
     font-size: 18px;
   }
   .subtitle {
@@ -2545,6 +2567,7 @@ a.prev-next.next-item {
     margin: 0 auto;
     margin-bottom: 20px;
     padding: 0 20px;
+    padding-left: 0;
   }
 
   .iop-step {
@@ -2558,6 +2581,11 @@ a.prev-next.next-item {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .flora-img-container {
+    overflow: hidden;
+    height: auto;
   }
 
   .img-detail-osteria {
