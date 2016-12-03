@@ -1419,6 +1419,10 @@ header.project-list {
   
 }
 
+.img-bottega-project {
+  margin-bottom: 5%;
+}
+
 .img-intro-osteria {
   position: relative;
   width: 100%;
@@ -1701,7 +1705,15 @@ img.osteria-first-mockup.flora-gif {
 }
 
 
+/************* BOTTEGA ***************/
 
+.last-img-container {
+  margin-bottom: 350px;
+}
+
+.bottega-last-image {
+  margin-top: -20%;
+}
 
 
 
@@ -2553,12 +2565,7 @@ a.prev-next.next-item {
     top: -40px;
     width: 100%;
   }
-  .img-container {
-    width: 100%;
-    padding: 0px;
-    height: 250px;
-  }
-
+  
 
   .project-description {
     width: 100%;
@@ -2685,6 +2692,16 @@ a.prev-next.next-item {
     display: block;
     overflow: hidden;
     margin: auto;
+  }
+  
+  .img-container {
+    width: 100%;
+    padding: 0px;
+    height: 250px;
+  }
+
+  .osteria-first-mockup {
+    width: 100%;
   }
   
 
