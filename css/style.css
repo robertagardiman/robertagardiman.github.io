@@ -2279,6 +2279,28 @@ a.prev-next.next-item {
 }
 
 
+  /***********  NIKE *************/
+  
+  .img-nike {
+    margin-top: -20%;
+  }
+  
+.img-app-nike {
+  width: 30%;
+  position: relative;
+  display: inline-block;
+}
+
+.manifesto-container {
+  height: auto;
+}
+
+.manifesto-nike {
+  width: 55%;
+  display: block;
+  margin: auto;
+}
+
 
 
 
@@ -2704,6 +2726,9 @@ a.prev-next.next-item {
     width: 100%;
   }
   
+  
+  
+
 
   /*** BOTTOMBAR STUFF *******************************************/
   
