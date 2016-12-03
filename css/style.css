@@ -1409,6 +1409,14 @@ header.project-list {
   width: 100%;
 }
 
+.bottega-first-img {
+  width: 70%;
+  margin: auto;
+  margin-top: -20%;
+  display: block;
+  
+}
+
 .img-intro-osteria {
   position: relative;
   width: 100%;
@@ -1630,6 +1638,7 @@ img.osteria-first-mockup.flora-gif {
 .img-container {
   height: 500px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .last-img {
