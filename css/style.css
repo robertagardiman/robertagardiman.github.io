@@ -1364,7 +1364,7 @@ header.project-list {
 }
 
 .products-step-box {
-  margin-left: 8%;
+  margin-left: 10%;
   margin-right: 0;
   display: inline-block;
   vertical-align: top;
@@ -1406,7 +1406,9 @@ header.project-list {
 }
 
 .osteria-first-mockup {
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  display: block;
 }
 
 .bottega-first-img {
@@ -2271,7 +2273,7 @@ a.prev-next.next-item {
 
 
 
-/******************************** 568px IPhone6 ***********************************/
+/******************************** 650px IPhone6 ***********************************/
 
 @media(max-width: 650px) {
   .home-wrapper {
@@ -2699,6 +2701,8 @@ a.prev-next.next-item {
   
   .next-black-overlay {
     background-color: white;
+    border: 3px solid white;
+    box-sizing: content-box;
   }
 
   .text-bar-project {
@@ -2713,6 +2717,8 @@ a.prev-next.next-item {
 
   .previous-black-overlay {
     background-color: white;
+    border: 3px solid white;
+    box-sizing: content-box;
   }
 
   .arrow-orange {
