@@ -1454,8 +1454,9 @@ header.project-list {
 }
 
 #osteria-example {
-  width: 100%;
-  margin: 50px 0;
+  width: 80%;
+  display: block;
+  margin: 50px auto;
 }
 
 
@@ -1623,12 +1624,15 @@ img.osteria-first-mockup.flora-gif {
 }
 
 .flora-img-container {
+  width: 80%;
+  display: block;
+  margin: auto;
   overflow: hidden;
-  height: auto;
+  height: 50%;
 }
 
 .flora-ipad {
-  width: 150%;
+  width: 100%;
   margin-left: -30px; 
 }
 
@@ -1642,7 +1646,7 @@ img.osteria-first-mockup.flora-gif {
 /************ DRAWINGS PAGE *************/
 
 .img-container {
-  height: 500px;
+  height: 40%;
   overflow: hidden;
   margin-bottom: 50px;
 }
