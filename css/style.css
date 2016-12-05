@@ -6,7 +6,22 @@ a {
   color: black;
 }
 
+/********************** CUSTOM SCROLL BAR **********************/
 
+::-webkit-scrollbar {
+    width: 9px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #eeedeb;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid #eeedeb;
+    background-color: rgba(82, 61, 108, 1);
+}
 
 
 
@@ -49,15 +64,16 @@ header {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 1);
-  padding: 7px 30px;
+  padding: 10px 30px;
   z-index: 50;
   opacity: 1;
+
+  background-color: rgba(255,255,255,0.3);
 }
 
 .header-home {
   opacity: 0;
-  animation: header-appear 1s 6s;
+  animation: header-appear 1s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -65,6 +81,10 @@ header {
   opacity: 1;
   animation: header-appear 0.1s;
   animation-fill-mode: forwards;
+}
+
+header.project-list {
+  background-color: white;
 }
 
 @keyframes header-appear {
@@ -136,8 +156,8 @@ header {
   color: rgba(244, 98, 77, 1);
 }
 
-.contact-last {
-  margin-right: 0;
+.projects-last {
+  padding-right: 0;
 }
 
 .hamburger {
@@ -181,57 +201,7 @@ header {
   display: block;
 }
 
-.animation-contact-box {
-  display: flex;
-  -webkit-animation-name: contact;
-  animation-name: contact;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
 
-.no-animation-contact-box {
-  display: block;
-  -webkit-animation-name: no-contact;
-  animation-name: no-contact;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@keyframes contact {
-  0% {
-    opacity: 0;
-    height: 0;
-    padding: 0 30px;
-  }
-  100% {
-    opacity: 1;
-    height: 170px;
-    padding: 20px 30px;
-  }
-}
-
-@keyframes no-contact {
-  0% {
-    opacity: 1;
-    height: 170px;
-    padding: 20px 30px;
-    /*display: flex; right: 0;*/
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-    padding: 0 30px;
-    /*display: none; right: -400px;*/
-  }
-}
 
 .contact-intro {
   font-family: 'Raleway', 'sans-serif';
@@ -251,7 +221,7 @@ header {
 }
 
 .medium {
-  font-family: 'Raleway', 'sans-serif';
+  font-family: 'avenir', 'sans-serif';
   font-size: 14px;
   letter-spacing: 0.6px;
   font-weight: 100;
@@ -291,7 +261,7 @@ header {
 }
 
 .projects {
-  color: rgba(244, 98, 77, 1);
+  color: #ff5a5f;
 }
 
 .name {
@@ -304,6 +274,7 @@ header {
   width: 100%;
   margin: 0 auto;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 
@@ -378,10 +349,10 @@ header {
 
 .cover-container {
   position: relative;
-  width: 30%;
+  width: 32.5%;
   height: 100%;
   margin: 0 auto;
-  margin-top: 38px;
+  margin-top: .5%;
   opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -391,6 +362,7 @@ header {
   max-width: 1280px;
   width: 95%;
   margin: 0 auto;
+  margin-top: 1.5%;
   position: relative;
   top: 180px;
   display: -webkit-box;
@@ -435,8 +407,8 @@ header {
   position: relative;
   top: 40%;
   left: 6%;
-  font-family: Raleway;
-  font-weight: 200;
+  font-family: Didot;
+  font-weight: 600;
   font-size: 25px;
 }
 
@@ -514,7 +486,7 @@ header {
   z-index: 25;
   background-color: rgba(255, 255, 255, 1);
   opacity: 1;
-  animation: overlay-disappear 1.5s 6s;
+  animation: overlay-disappear 1.5s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -630,7 +602,7 @@ header {
   font-size: 11px;
   font-weight: 500;
   opacity: 1;
-  animation: disney-disappear .7s 6s;
+  animation: disney-disappear .4s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -646,12 +618,12 @@ header {
 .cta {
   display: block;
   position: absolute;
-  left: 28%;
+  left: 35%;
   margin-top: 20px;
   padding-top: 30px;
   font-size: 11px;
   font-weight: 500;
-  animation: CTA-appear 1s 6.6s;
+  animation: CTA-appear 1s 3.6s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -682,7 +654,7 @@ header {
   overflow: hidden;
   background-color: lightgrey;
   opacity: 0;
-  animation: appear-down-animation 1s 7.3s ease-in-out;
+  animation: appear-down-animation 1s 4.3s ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -708,7 +680,7 @@ header {
   height: 100px;
   top: -100px;
   background-color: rgba(244, 98, 77, 1);
-  animation: down-animation 2.6s 7.3s ease-in-out;
+  animation: down-animation 2.6s 4.3s ease-in-out;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
@@ -754,9 +726,9 @@ header {
 }
 
 .about-title {
-  font-family: Raleway;
+  font-family: Didot;
   font-weight: 300;
-  font-size: 44px;
+  font-size: 50px;
 }
 
 .orange-rule {
@@ -770,8 +742,7 @@ header {
 
 .about-description {
   font-family: 'Raleway', 'sans-serif';
-  font-size: 18px;
-  letter-spacing: 0.5px;
+  font-size: 16px;
   font-weight: 300;
   position: relative;
   display: block;
@@ -1256,7 +1227,7 @@ header {
 .foot-links {
   position: relative;
   display: block;
-  bottom: 22px;
+  
 }
 
 .copy {
@@ -1328,33 +1299,17 @@ header {
 
 
 /**************** SINGLE PROJECT PAGE *****************/
+.last-image {
+    margin-bottom: 200px;
+  }
+
 
 .project-main-title {
-  position: fixed;
-  top: 20px;
-  background-color: white;
-  max-width: 1280px;
-  width: 1280px;
-  left: 50%;
-  margin-left: -640px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-family: Raleway;
-  font-size: 44px;
-  letter-spacing: 2px;
-  font-weight: 300;
-  padding: 20px;
-  padding-top: 80px;
-  padding-bottom: 0;
-  border-bottom: 1.5px solid rgba(244, 98, 77, 1);
-  z-index: 1;
-  transition: 300ms ease-in-out;
+  font-family: Didot;
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 94px;
+  letter-spacing: -1px;
 }
 
 .collapsed {
@@ -1366,8 +1321,8 @@ header {
 
 .project-wrapper {
   position: relative;
-  top: 190px;
-  max-width: 1280px;
+  top: 150px;
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1383,55 +1338,127 @@ header {
 .subtitle {
   position: relative;
   display: block;
-  font-family: 'Raleway', 'sans-serif';
-  font-size: 18px;
-  font-weight: 200;
-  letter-spacing: 2px;
-  color: rgba(244, 98, 77, 1);
-  padding: 20px 0;
+  font-family: 'Didot';
+  font-size: 48px;
+  font-weight: 600;
+  color: black;
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
 }
 
-.project-description {
-  display: block;
+
+
+.brief-box {
   position: relative;
-  font-family: 'Raleway', 'sans-serif';
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 1.4em;
-  width: 100%;
-  margin-left: 0;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 50vw;
+}
+
+.step-box {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 45vw;
+}
+
+.products-step-box {
+  margin-left: 9%;
+  margin-right: 0;
   display: inline-block;
   vertical-align: top;
 }
 
-.img-container {
+.subtitle-line {
   position: relative;
-  width: 100%;
-  margin: 20px 0;
-  /* background-image: url(links/PROJECTS-links/osteria/osteria-first-mockup.png);
-    background-size: 110%;
-    background-position: 0px -30px;
-    background-repeat: no-repeat;*/
+  display: inline-block;
+  background-color: rgba(244, 98, 77, 1);
+  height: 2.5px;
+  width: 90px;
+  margin-top: 35px;
+  margin-right: 20px;
+  margin-left: 10px;
+  vertical-align: top;
+  border-radius: 1.25px;
+}
+
+.step-box-line {
+  margin-top: 15px;
+}
+
+.project-description {
+  position: relative;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #a3adb9;
+  width: 80%;
+  margin-left: 0;
+  margin-top: 27px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.step-box-description {
+  margin-top: 9px;
 }
 
 .osteria-first-mockup {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.bottega-first-img {
+  width: 70%;
+  margin: auto;
+  margin-top: -20%;
+  display: block;
+  
+}
+
+.img-bottega-project {
+  margin-bottom: 5%;
+}
+
+.img-intro-osteria {
   position: relative;
-  top: 0px;
   width: 100%;
+  height: 700px;
+  margin: 20px 0;
+  background-image: url("../img/osteria/osteria-first-mockup.jpg");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-detail-osteria {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin: 20px 0;
+  margin-bottom: 200px;
+  background-image: url("../img/osteria/iphone2-osteria-details.jpg");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .osteria-gif {
   position: relative;
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 #osteria-example {
-  width: 100%;
-  margin: 50px 0;
+  width: 80%;
+  display: block;
+  margin: 50px auto;
 }
 
 
@@ -1444,8 +1471,10 @@ header {
 /********************** SAMSUNG PAGE **********************/
 
 .iop-step {
-  width: 100%;
-  margin-top: 50px;
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
   text-align: left;
 }
 
@@ -1465,8 +1494,8 @@ header {
 }
 
 .step-border {
-  border-top: 1px solid lightgray;
-  padding-top: 20px;
+  border-top: 1px solid rgba(225,225,225,0.5);
+  padding-top: 50px;
 }
 
 .detail-title {
@@ -1497,7 +1526,7 @@ header {
 }
 
 .portrait-screen {
-  width: 200px;
+  width: 300px;
   display: inline-block;
 }
 
@@ -1507,14 +1536,18 @@ header {
   margin-left: 17%;
 }
 
+.store-screen-box {
+  text-align: center;
+}
+
 .store-screen {
   display: inline-block;
   position: relative;
-  width: 49.2%;
+  width: 40%;
   padding: 0;
-  height: 450px;
+  height: 500px;
   margin: 0 auto;
-  margin-right: 1%;
+  margin-right: 5%;
   margin-top: 30px;
   min-width: 180px;
 }
@@ -1523,9 +1556,14 @@ header {
   margin-right: 0;
 }
 
+.event-screen-box {
+  text-align: center;
+}
+
 .event-screen {
   width: 30%;
   min-width: 100px;
+  max-width: 300px;
   margin-top: 20px;
   margin-right: 3%;
   box-shadow: 5px 5px 10px 1px lightgrey;
@@ -1559,6 +1597,20 @@ header {
   left: 50px;
   width: 320px;
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.proto-link {
+  display: block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .5px;
+  font-weight: 400;
+}
+
+.proto-link:hover {
+  text-decoration: line-through;
 }
 
 
@@ -1575,10 +1627,30 @@ header {
   position: relative;
   display: block;
   margin: 0 auto;
+  margin-bottom: 150px;
 }
 
 .flora-firstline {
   text-align: center;
+}
+
+img.osteria-first-mockup.flora-gif {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+.flora-img-container {
+  width: 80%;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  height: 50%;
+}
+
+.flora-ipad {
+  width: 100%;
+  margin-left: -30px; 
 }
 
 
@@ -1590,8 +1662,18 @@ header {
 
 /************ DRAWINGS PAGE *************/
 
+.img-container {
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.last-img {
+  margin-bottom: 200px;
+}
+
 .img-drawings {
-  width: 100%;
+  width: 80%;
 }
 
 .pattern {
@@ -1604,7 +1686,7 @@ header {
 }
 
 .smalto {
-  width: 80%;
+  width: 40%;
   position: relative;
   display: block;
   overflow: hidden;
@@ -1612,30 +1694,75 @@ header {
 }
 
 .draw-description {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: 30px auto;
   padding-bottom: 20px;
-  border-bottom: 1px solid lightgrey;
+  width: 80%;
+
+  font-family: Didot;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 94px;
+  letter-spacing: -1px;
+  color: black;
+  text-align: center;
+ 
 }
 
+.last-draw-desc {
+  margin-top: -30px;
+  margin-bottom: 150px;
+}
+
+
 .drawing-tool {
+  font-family: Raleway;
   font-size: 13px;
   font-weight: 300;
   letter-spacing: 1px;
   margin-left: 15px;
   padding-left: 15px;
   border-left: 1px solid black;
+  color: #a3adb9;
 }
 
 .shoe {
-  width: 160%;
+  width: 100%;
   left: -30%;
   top: -60px;
 }
 
 
+/************* BOTTEGA ***************/
+
+.last-img-container {
+  margin-bottom: 350px;
+}
+
+.bottega-last-image {
+  margin-top: -20%;
+}
 
 
+/*************** NIKE *****************/
+
+.nike-social-img {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.nike-instagram {
+  margin-top: 10px;
+  width: 45%;
+  height: 100%;
+}
+
+.nike-social-container {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 150px;
+}
 
 
 
@@ -1643,9 +1770,9 @@ header {
 /************ BOTTOM BAR *************/
 
 .bottom-bar {
-  position: fixed;
+  position: relative;
   width: 100%;
-  height: 40px;
+  height: auto;
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   bottom: 0;
@@ -1660,8 +1787,8 @@ header {
   position: relative;
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
-  height: 40px;
+  width: 100%;
+  height: 300px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1678,22 +1805,136 @@ header {
   align-items: center;
 }
 
-.icon-bottombar {
+.container-bottombar a.prev-next {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+a.prev-next.previous-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+a.prev-next.next-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.previous-item {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+
+.next-item {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+}
+
+.container-bottombar a.top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.top-line {
+  display: block;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(244, 98, 77, 1);
+
+  transition: all .5s;
+}
+
+.container-bottombar a.top:hover .top-line {
+  width: 30px;
+}
+
+.arrow-orange {
+  width: 100px;
+  height: 2px;
+  background-color: rgba(244, 98, 77, 1);
+  z-index: 1; 
+}
+
+/*.icon-bottombar {
   width: 15px;
   height: 25px;
   display: inline-block;
   vertical-align: middle;
+  z-index: 1;
+}*/
+
+.previous-black-overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  transition: all .5s;
+}
+
+.previous-black-overlay:hover {
+  background-color: transparent;
+}
+
+.next-black-overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  transition: all .5s;
+}
+
+.next-black-overlay:hover {
+  background-color: transparent;
 }
 
 .text-bar {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 100px;
   font-family: 'Raleway', 'sans-serif';
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
-  margin: 0 10px;
+  letter-spacing: 1px;
+  margin: 5px 10px;
   text-align: right;
+  z-index: 1;
+  color: white;
+}
+
+.text-bar-project {
+  font-family: 'Didot';
+  font-size: 27px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  margin: 10px 10px;
+  z-index: 1;
 }
 
 .center-icon {
@@ -1702,28 +1943,28 @@ header {
   border-top: 1px solid rgba(244, 98, 77, 1);
   border-bottom: 1px solid rgba(244, 98, 77, 1);
   position: relative;
+
 }
 
-.center-textbar {
-  position: relative;
-  margin: 0 auto;
-  width: 35px;
-  text-align: center;
-  line-height: 30px;
-}
 
 .previous-text-bar {
   position: relative;
   display: inline-block;
   width: 100px;
   font-family: 'Raleway', 'sans-serif';
-  font-size: 14px;
+  font-size: 12px;
+  letter-spacing: 1px;
   font-weight: 300;
-  margin: 0 10px;
+  margin: 5px 10px;
+  color: white;
+  z-index: 1;
 }
 
 .previous-mobile {
   display: none;
+  color: white;
+  margin: 5px 10px;
+  color: black;
 }
 
 
@@ -1808,15 +2049,14 @@ header {
     position: absolute;
     top: 17%;
     left: 6%;
-    font-family: 'Raleway', 'sans-serif';
-    font-size: 1.1em;
+    font-size: 27px;
     padding-bottom: 6px;
     /*border-bottom: 1px solid rgba(244, 98, 77, 1);*/
   }
   .category-label {
     display: block;
     position: absolute;
-    top: 63%;
+    top: 83%;
     left: 6%;
     font-family: 'Raleway', 'sans-serif';
     font-size: 0.7em;
@@ -1948,6 +2188,7 @@ header {
     width: 45%;
     margin: 0 auto;
     margin-top: 15px;
+    margin-bottom: 30px;
   }
   .overlay {
     margin-top: 10px;
@@ -1957,7 +2198,7 @@ header {
     margin-left: 18.406px;
   }
   .project-title {
-    font-size: 1.1em;
+    font-size: 27px;
   }
   
   
@@ -2075,13 +2316,37 @@ header {
   #atm-video {
     position: relative;
     display: block;
-    width: 60%;
+    width: 90%;
     margin: 50px auto;
     margin-bottom: 20px;
+    left: 0;
   }
   
   
   
+}
+
+
+  /***********  NIKE *************/
+  
+  .img-nike {
+    margin-top: -20%;
+  }
+  
+.img-app-nike {
+  width: 30%;
+  position: relative;
+  display: inline-block;
+}
+
+.manifesto-container {
+  height: auto;
+}
+
+.manifesto-nike {
+  width: 55%;
+  display: block;
+  margin: auto;
 }
 
 
@@ -2090,10 +2355,9 @@ header {
 
 
 
+/******************************** 650px IPhone6 ***********************************/
 
-/******************************** 568px IPhone6 ***********************************/
-
-@media(max-width: 568px) {
+@media(max-width: 650px) {
   .home-wrapper {
     background-position: -320px 0;
   }
@@ -2130,6 +2394,7 @@ header {
     width: 99%;
     margin: 0 auto;
     margin-top: 10px;
+    margin-bottom: 30px;
   }
   .overlay {
     display: block;
@@ -2141,7 +2406,7 @@ header {
     opacity: 1;
   }
   .project-title {
-    font-size: 18px;
+    font-size: 27px;
   }
   
   
@@ -2340,9 +2605,28 @@ header {
   
   
   /*** SINGLE PROJECT PAGE *******************************************/
+  
+  .brief-box {
+    width: 90vw;
+  }
+
+  .step-box {
+    width: 90vw;
+  }
+
+  .subtitle-line {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .step-box-line {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
   .project-main-title {
-    font-size: 25px;
-    padding-bottom: 5px;
+    font-size: 35px;
+    line-height: 0;
   }
   .project-wrapper {
     width: 100%;
@@ -2351,20 +2635,19 @@ header {
     top: -40px;
     width: 100%;
   }
-  .img-container {
-    width: 100%;
-    padding: 0px;
-  }
+  
+
   .project-description {
     width: 100%;
     margin: auto;
     padding: 0 10px;
-    font-size: 14px;
+    padding-left: 0;
+    font-size: 18px;
   }
   .subtitle {
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -.7px;
     padding: 10px 0;
   }
   .step-description {
@@ -2372,7 +2655,37 @@ header {
     margin: 0 auto;
     margin-bottom: 20px;
     padding: 0 20px;
+    padding-left: 0;
   }
+
+  .iop-step {
+    margin-top: 50px;
+  }
+
+  .img-intro-osteria {
+    width: 100vw;
+    height: 300px;
+    margin: 0;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .flora-img-container {
+    overflow: hidden;
+    height: auto;
+  }
+
+  .img-detail-osteria {
+    height: 300px;
+    background-size: 100%;
+  }
+
+  .img-app-nike {
+    width: 100%;
+    
+  }
+
   .store-screen {
     height: auto;
   }
@@ -2405,6 +2718,7 @@ header {
     width: auto;
     font-weight: 100;
     margin: 0 10px;
+    color: black;
   }
   .center-icon {
     width: 30px;
@@ -2454,9 +2768,58 @@ header {
     margin: auto;
   }
   
+  .img-container {
+    width: 100%;
+    padding: 0px;
+    height: 250px;
+  }
+
+  .osteria-first-mockup {
+    width: 100%;
+  }
   
   
   
+
+
+  /*** BOTTOMBAR STUFF *******************************************/
+  
+  .container-bottombar {
+    height: 200px;
+  }
+
+  .text-bar-project {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  .next-black-overlay {
+    background-color: white;
+    border: 3px solid white;
+    box-sizing: content-box;
+  }
+
+  .text-bar-project {
+    color: black;
+    padding: 5px 5px;
+  }
+
+  .text-bar {
+    color: black;
+    padding: 5px 5px;
+  }
+
+  .previous-black-overlay {
+    background-color: white;
+    border: 3px solid white;
+    box-sizing: content-box;
+  }
+
+  .arrow-orange {
+    background-color: rgba(255,90,95,1);
+  }
+
+
   
   
   /*** FOOTER STUFF *******************************************/
@@ -2652,7 +3015,7 @@ header {
   }
   .container-bottombar {
     width: 100%;
-    height: 40px;
+    height: 200px;
   }
   .icon-bottombar {
     width: 10px;
@@ -2675,6 +3038,7 @@ header {
   }
   .previous-mobile {
     display: inline;
+    color: black;
   }
   .center-icon {
     width: 30px;
