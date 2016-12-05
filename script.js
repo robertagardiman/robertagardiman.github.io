@@ -20,11 +20,11 @@ var pageOffset2 = window.pageYOffset;
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   
-    $(window).scroll(function(e) {
+    $(window).scroll(function (e) {
         var s = $(window).scrollTop(),
-            opacityVal = (s / 2000);
+            opacityVal = (s/2000);
         console.log(opacityVal);
         $('.not-blurred-image').css('opacity', opacityVal);
     });

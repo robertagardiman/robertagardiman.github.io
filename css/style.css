@@ -464,10 +464,12 @@ header.project-list {
   bottom: 0;
   left: 0;
   right: 0;
+/*
   -webkit-filter: blur(30px) brightness(1);
   -ms-filter: blur(30px) brightness(1);
   -o-filter: blur(30px) brightness(1);
   filter: blur(30px) brightness(1);
+*/
 }
 
 .img-about.not-blurred-image {
@@ -618,7 +620,7 @@ header.project-list {
 .cta {
   display: block;
   position: absolute;
-  left: 35%;
+  left: 38.5%;
   margin-top: 20px;
   padding-top: 30px;
   font-size: 11px;
@@ -1613,6 +1615,9 @@ header.project-list {
   text-decoration: line-through;
 }
 
+.last-step-travel-card {
+  margin-bottom: 150px;
+}
 
 
 
