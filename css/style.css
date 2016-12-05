@@ -68,12 +68,12 @@ header {
   z-index: 50;
   opacity: 1;
 
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.3);
 }
 
 .header-home {
   opacity: 0;
-  animation: header-appear 1s 6s;
+  animation: header-appear 1s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -221,7 +221,7 @@ header.project-list {
 }
 
 .medium {
-  font-family: 'Raleway', 'sans-serif';
+  font-family: 'avenir', 'sans-serif';
   font-size: 14px;
   letter-spacing: 0.6px;
   font-weight: 100;
@@ -274,6 +274,7 @@ header.project-list {
   width: 100%;
   margin: 0 auto;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 
@@ -485,7 +486,7 @@ header.project-list {
   z-index: 25;
   background-color: rgba(255, 255, 255, 1);
   opacity: 1;
-  animation: overlay-disappear 1.5s 6s;
+  animation: overlay-disappear 1.5s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -601,7 +602,7 @@ header.project-list {
   font-size: 11px;
   font-weight: 500;
   opacity: 1;
-  animation: disney-disappear .7s 6s;
+  animation: disney-disappear .4s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -617,12 +618,12 @@ header.project-list {
 .cta {
   display: block;
   position: absolute;
-  left: 28%;
+  left: 35%;
   margin-top: 20px;
   padding-top: 30px;
   font-size: 11px;
   font-weight: 500;
-  animation: CTA-appear 1s 6.6s;
+  animation: CTA-appear 1s 3.6s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -653,7 +654,7 @@ header.project-list {
   overflow: hidden;
   background-color: lightgrey;
   opacity: 0;
-  animation: appear-down-animation 1s 7.3s ease-in-out;
+  animation: appear-down-animation 1s 4.3s ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -679,7 +680,7 @@ header.project-list {
   height: 100px;
   top: -100px;
   background-color: rgba(244, 98, 77, 1);
-  animation: down-animation 2.6s 7.3s ease-in-out;
+  animation: down-animation 2.6s 4.3s ease-in-out;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
@@ -725,9 +726,9 @@ header.project-list {
 }
 
 .about-title {
-  font-family: Raleway;
+  font-family: Didot;
   font-weight: 300;
-  font-size: 44px;
+  font-size: 50px;
 }
 
 .orange-rule {
@@ -741,8 +742,7 @@ header.project-list {
 
 .about-description {
   font-family: 'Raleway', 'sans-serif';
-  font-size: 18px;
-  letter-spacing: 0.5px;
+  font-size: 16px;
   font-weight: 300;
   position: relative;
   display: block;
@@ -1227,7 +1227,7 @@ header.project-list {
 .foot-links {
   position: relative;
   display: block;
-  bottom: 22px;
+  
 }
 
 .copy {
@@ -1360,11 +1360,11 @@ header.project-list {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 50vw;
+  width: 45vw;
 }
 
 .products-step-box {
-  margin-left: 10%;
+  margin-left: 9%;
   margin-right: 0;
   display: inline-block;
   vertical-align: top;
@@ -1448,7 +1448,9 @@ header.project-list {
 
 .osteria-gif {
   position: relative;
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -1469,8 +1471,10 @@ header.project-list {
 /********************** SAMSUNG PAGE **********************/
 
 .iop-step {
-  width: 100%;
-  margin-top: 150px;
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
   text-align: left;
 }
 
@@ -1596,6 +1600,19 @@ header.project-list {
   margin-top: 30px;
 }
 
+.proto-link {
+  display: block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .5px;
+  font-weight: 400;
+}
+
+.proto-link:hover {
+  text-decoration: line-through;
+}
+
 
 
 
@@ -1646,7 +1663,7 @@ img.osteria-first-mockup.flora-gif {
 /************ DRAWINGS PAGE *************/
 
 .img-container {
-  height: 40%;
+  height: 500px;
   overflow: hidden;
   margin-bottom: 50px;
 }
@@ -1656,7 +1673,7 @@ img.osteria-first-mockup.flora-gif {
 }
 
 .img-drawings {
-  width: 100%;
+  width: 80%;
 }
 
 .pattern {
@@ -1669,7 +1686,7 @@ img.osteria-first-mockup.flora-gif {
 }
 
 .smalto {
-  width: 80%;
+  width: 40%;
   position: relative;
   display: block;
   overflow: hidden;
@@ -1677,9 +1694,9 @@ img.osteria-first-mockup.flora-gif {
 }
 
 .draw-description {
-  margin: 30px 0;
+  margin: 30px auto;
   padding-bottom: 20px;
-  width: 100%;
+  width: 80%;
 
   font-family: Didot;
   font-weight: 600;
@@ -1687,7 +1704,13 @@ img.osteria-first-mockup.flora-gif {
   line-height: 94px;
   letter-spacing: -1px;
   color: black;
+  text-align: center;
  
+}
+
+.last-draw-desc {
+  margin-top: -30px;
+  margin-bottom: 150px;
 }
 
 
@@ -1703,7 +1726,7 @@ img.osteria-first-mockup.flora-gif {
 }
 
 .shoe {
-  width: 160%;
+  width: 100%;
   left: -30%;
   top: -60px;
 }
@@ -1719,6 +1742,27 @@ img.osteria-first-mockup.flora-gif {
   margin-top: -20%;
 }
 
+
+/*************** NIKE *****************/
+
+.nike-social-img {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.nike-instagram {
+  margin-top: 10px;
+  width: 45%;
+  height: 100%;
+}
+
+.nike-social-container {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 150px;
+}
 
 
 
@@ -2637,6 +2681,10 @@ a.prev-next.next-item {
     background-size: 100%;
   }
 
+  .img-app-nike {
+    width: 100%;
+    
+  }
 
   .store-screen {
     height: auto;
