@@ -2,6 +2,9 @@ export default class AppController {
   /* @ngInject */
   constructor($state){
     this.state = $state;
+    if(window.location == 'robertagardiman.com') {
+      $window.location = 'robertagardiman.com/dist/#!/home'
+    }
   }
 
   setActive(pageName){

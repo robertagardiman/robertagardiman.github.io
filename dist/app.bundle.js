@@ -29566,6 +29566,9 @@ var AppController = function () {
     _classCallCheck(this, AppController);
 
     this.state = $state;
+    if (window.location == 'robertagardiman.com') {
+      $window.location = 'robertagardiman.com/dist/#!/home';
+    }
   }
 
   _createClass(AppController, [{
@@ -29608,12 +29611,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = [{
-  state: '/',
-  config: {
-    url: '/home',
-    template: '<home></home>'
-  }
-}, {
   state: 'Home',
   config: {
     url: '/home',

@@ -1,12 +1,5 @@
 export default [
   {
-    state: '/',
-    config: {
-      url: '/home',
-      template: '<home></home>'
-    }
-  },
-  {
     state: 'Home',
     config: {
       url: '/home',
