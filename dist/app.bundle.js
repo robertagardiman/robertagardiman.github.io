@@ -29566,8 +29566,9 @@ var AppController = function () {
     _classCallCheck(this, AppController);
 
     this.state = $state;
-    if (window.location == 'robertagardiman.com') {
-      $window.location = 'robertagardiman.com/dist/#!/home';
+    console.log(window.location);
+    if (window.location.host == 'robertagardiman.com') {
+      window.location.host = 'robertagardiman.com/dist/#!/home';
     }
   }
 
