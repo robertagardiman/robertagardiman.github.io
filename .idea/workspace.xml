@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7fe0de3e-706f-4a0e-a940-7d0d7f819c34" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.bundle.js" afterPath="$PROJECT_DIR$/dist/app.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.js" afterPath="$PROJECT_DIR$/src/app/app.module.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,18 +67,18 @@
       <file leaf-file-name="app.routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+            <state relative-caret-position="92">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.module.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.module.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/app.module.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+              <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -96,14 +97,14 @@
       <file leaf-file-name="app.template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <state relative-caret-position="391">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
@@ -146,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/app/app.routes.js" />
         <option value="$PROJECT_DIR$/src/app/app.controller.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app/app.module.js" />
       </list>
     </option>
   </component>
@@ -254,12 +256,12 @@
       <workItem from="1513941320613" duration="2822000" />
       <workItem from="1514881172115" duration="1759000" />
       <workItem from="1514971070690" duration="8736000" />
-      <workItem from="1514995852290" duration="1900000" />
+      <workItem from="1514995852290" duration="2212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29201000" />
+    <option name="totallyTimeSpent" value="29513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="846" extended-state="6" />
@@ -272,7 +274,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3392857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25824177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -603,18 +605,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.routes.js">
+    <entry file="file://$PROJECT_DIR$/../robertagardiman.github copia.io/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        <state relative-caret-position="300">
+          <caret line="17" column="93" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="93" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.js">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="276">
+          <caret line="12" column="95" lean-forward="false" selection-start-line="12" selection-start-column="95" selection-end-line="12" selection-end-column="95" />
           <folding />
         </state>
       </provider>
@@ -629,24 +631,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state relative-caret-position="391">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../robertagardiman.github copia.io/index.html">
+    <entry file="file://$PROJECT_DIR$/src/app/app.routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="93" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="93" />
+        <state relative-caret-position="92">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="95" lean-forward="false" selection-start-line="12" selection-start-column="95" selection-end-line="12" selection-end-column="95" />
+        <state relative-caret-position="161">
+          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
           <folding />
         </state>
       </provider>

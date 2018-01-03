@@ -9349,6 +9349,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 /* @ngInject */
 function Config($stateProvider, $urlRouterProvider, $compileProvider) {
   _app2.default.forEach(function (route) {
+    $stateProvider.state("robertagardiman.com", { url: '/home' });
     $stateProvider.state(route.state, route.config);
     $urlRouterProvider.otherwise('/home');
   });
