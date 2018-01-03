@@ -5,12 +5,6 @@ export default [
       url: '/home',
       template: '<home></home>'
     }
-  },{
-    state: 'robertagardiman.com',
-    config: {
-      url: '/home',
-      template: '<home></home>'
-    }
   },
   {
     state: 'Projects',
