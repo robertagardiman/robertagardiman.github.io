@@ -2,10 +2,6 @@ export default class AppController {
   /* @ngInject */
   constructor($state){
     this.state = $state;
-    console.log(window.location);
-    if(window.location.host == 'robertagardiman.com') {
-      window.location.host = 'robertagardiman.com/dist/#!/home'
-    }
   }
 
   setActive(pageName){
