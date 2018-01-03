@@ -14,8 +14,6 @@ import ProjectsService from './projects/projects.service';
 /* @ngInject */
 function Config($stateProvider, $urlRouterProvider, $compileProvider) {
   routes.forEach(function(route){
-    $stateProvider
-      .state("robertagardiman.com", { url : '/home'})
     $stateProvider.state(route.state, route.config);
     $urlRouterProvider.otherwise('/home');
   })
