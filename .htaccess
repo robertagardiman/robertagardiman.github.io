@@ -5,5 +5,5 @@
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^.*$ - [NC,L]
 
-    RewriteRule ^(.*) /index.html [NC,L]
+    RewriteRule ^(.*) /dist/index.html [NC,L]
 </IfModule>
