@@ -1,0 +1,33 @@
+<div class="about__img-container"></div>
+
+<article id="about__container">
+  <h1>Roberta.</h1>
+  <div class="about__content">
+    <div class="about__item">
+      <h3>profile</h3>
+      <p>I'm a creative thinker specialised in Web and Digital Design, based in Milan. I've always been a curious person, ready to take on challenges that will make me grow as a designer. I'm happy to do everyday the a job I love.</p>
+    </div>
+    <div class="about__item">
+      <h3>skills</h3>
+      <ul class="about__skills">
+        <li ng-repeat="skill in $ctrl.skills">
+          <div class="about__skill__level">
+            <svg class="progress" width="60" height="60" viewBox="0 0 120 120">
+              <circle class="progress__meter" cx="60" cy="60" r="54" stroke-width="4" />
+              <circle class="progress__value" cx="60" cy="60" r="54" stroke-width="4" />
+            </svg>
+            <img src="{{ skill.icon }}" alt="">
+          </div>
+          <div class="about__skills--overlay">
+            <p class="about__skill__name">{{ skill.name }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="about__item">
+      <h3>contact</h3>
+      <p>mail / <a href="mailto:roberta.gardiman@gmail.com">roberta.gardiman@gmail.com</a></p>
+    </div>
+  </div>
+
+</article>
