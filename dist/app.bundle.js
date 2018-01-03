@@ -29608,6 +29608,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = [{
+  state: '/',
+  config: {
+    url: '/home',
+    template: '<home></home>'
+  }
+}, {
   state: 'Home',
   config: {
     url: '/home',
