@@ -16,7 +16,7 @@ export default class DetailController{
   }
 
   getNextProj(item, projects){
-    const currentProjectIndex = projects.findIndex(p => p.id == this.item.id);
+    const currentProjectIndex = projects.findIndex(p => p.id === this.item.id);
     let nextProject = projects[currentProjectIndex + 1];
     if(!nextProject){
       nextProject = projects[0];
