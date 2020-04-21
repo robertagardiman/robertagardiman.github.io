@@ -5,18 +5,18 @@ export default class DetailController{
     this._projectsService = ProjectsService;
   }
   $onInit(){
-    this.slug = this.state.params.slug;
-    this.item = this._projectsService.activeProject; //current project
+    const currentProjectSlug = this.state.params.slug;
+    // this.currentProject = this._projectsService.activeProject;
 
     this._projectsService.getProjects().then((projects) => {
-      this.item = projects.find(p => p.slug == this.slug);
-      this.nextProjectTitle = this.getNextProj(this.item, projects);
-      this.prevProjectTitle = this.getPrevProj(this.item, projects);
+      this.currentProject = projects.find(p => p.slug == currentProjectSlug);
+      this.nextProjectTitle = this.getNextProj(this.currentProject, projects);
+      this.prevProjectTitle = this.getPrevProj(this.currentProject, projects);
     })
   }
 
-  getNextProj(item, projects){
-    const currentProjectIndex = projects.findIndex(p => p.id === this.item.id);
+  getNextProj(currentProject, projects){
+    const currentProjectIndex = projects.findIndex(p => p.id === this.currentProject.id);
     let nextProject = projects[currentProjectIndex + 1];
     if(!nextProject){
       nextProject = projects[0];
@@ -24,9 +24,9 @@ export default class DetailController{
     return nextProject.title;
   }
 
-  next(item){
+  next(currentProject){
     this._projectsService.getProjects().then((projects) => {
-      const currentProjectIndex = projects.findIndex(p => p.id == this.item.id);
+      const currentProjectIndex = projects.findIndex(p => p.id == this.currentProject.id);
       let nextProject = projects[currentProjectIndex + 1];
       if(!nextProject){
         nextProject = projects[0];
@@ -35,8 +35,8 @@ export default class DetailController{
     })
   }
 
-  getPrevProj(item, projects) {
-    const currentProjectIndex = projects.findIndex(p => p.id == this.item.id);
+  getPrevProj(currentProject, projects) {
+    const currentProjectIndex = projects.findIndex(p => p.id == this.currentProject.id);
     let prevProject = projects[currentProjectIndex - 1];
     if(!prevProject){
       prevProject = projects[projects.length - 1];
@@ -44,9 +44,9 @@ export default class DetailController{
     return prevProject.title;
   }
 
-  prev(item){
+  prev(currentProject){
     this._projectsService.getProjects().then((projects) => {
-      const currentProjectIndex = projects.findIndex(p => p.id == this.item.id);
+      const currentProjectIndex = projects.findIndex(p => p.id == this.currentProject.id);
       let prevProject = projects[currentProjectIndex - 1];
       if(!prevProject){
         prevProject = projects[projects.length - 1];

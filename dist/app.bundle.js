@@ -10719,7 +10719,7 @@ module.exports = "<header ng-class=\"{transparent: $ctrl.setActive('home')}\">\n
 /* 67 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"detail__intro\">\n  <h1>{{ $ctrl.item.title }}</h1>\n  <img class=\"divider\" ng-src=\"/assets/divider.svg\" alt=\"\">\n  <p>{{ $ctrl.item.subtitle }}</p>\n  <a ng-if=\"$ctrl.item.link\" href=\"{{ $ctrl.item.link }}\" target=\"_blank\">\n    {{ $ctrl.item.link_name }}\n    <div class=\"hover-line\"></div>\n  </a>\n</article>\n\n<article class=\"detail__content\">\n  <img ng-if=\"$ctrl.item.slug != 'nike-for-rio'\" ng-src=\"{{ $ctrl.item.images.cover }}\" alt=\"cover image\">\n  <video ng-if=\"$ctrl.item.slug == 'samsung'\" src=\"{{ $ctrl.item.videos.video_1 }}\" controls poster=\"{{ $ctrl.item.images.cover }}\"></video>\n  <video ng-if=\"$ctrl.item.slug == 'nike-for-rio'\" src=\"{{ $ctrl.item.videos.video_1 }}\" controls poster=\"{{ $ctrl.item.images.cover }}\"></video>\n  <div class=\"detail__item--text\">\n    <h3>{{ $ctrl.item.concept }}</h3>\n    <p>{{ $ctrl.item.concept_description }}</p>\n  </div>\n  <video ng-if=\"$ctrl.item.slug == 'osteria-francescana'\" src=\"{{ $ctrl.item.videos.video_1 }}\" controls poster=\"{{ $ctrl.item.images.thumb }}\"></video>\n  <img ng-src=\"{{ $ctrl.item.images.photo_1 }}\" ng-class=\"{ autoWidth: $ctrl.item.slug == 'nike-for-rio' }\" alt=\"\">\n  <img ng-if=\"$ctrl.item.slug != 'osteria-francescana'\" ng-src=\"{{ $ctrl.item.images.photo_2 }}\" alt=\"\">\n  <div class=\"detail__item--text\">\n    <p>{{ $ctrl.item.description }}</p>\n  </div>\n  <video ng-if=\"$ctrl.item.slug == 'osteria-francescana'\" src=\"{{ $ctrl.item.videos.video_2 }}\" controls poster=\"{{ $ctrl.item.images.thumb }}\"></video>\n  <img ng-src=\"{{ $ctrl.item.images.photo_3 }}\" alt=\"\">\n  <!--<img ng-src=\"{{ $ctrl.item.images.photo_3 }}\" alt=\"\">-->\n  <div class=\"detail__item--text\">\n    <!--<p>{{ $ctrl.item.description_1 }}</p>-->\n    <p>{{ $ctrl.item.description_2 }}</p>\n  </div>\n  <img ng-src=\"{{ $ctrl.item.images.photo_4 }}\" alt=\"\">\n  <div class=\"detail__item--text\">\n    <p>{{ $ctrl.item.description_3 }}</p>\n  </div>\n  <img ng-if=\"$ctrl.item.slug == 'rayban-us'\" ng-src=\"{{ $ctrl.item.images.gif }}\" alt=\"\" class=\"gif\">\n</article>\n\n<article class=\"detail__nav\">\n  <div class=\"detail__nav--btn detail__nav--btn--prev\" ng-click=\"$ctrl.prev()\">\n    <span>Prev</span>\n    <p>{{ $ctrl.prevProjectTitle}}</p>\n    <div class=\"detail__btn--overlay\"></div>\n  </div>\n  <div class=\"detail__nav--btn detail__nav--btn--next\" ng-click=\"$ctrl.next(item)\">\n    <span>Next</span>\n    <p>{{ $ctrl.nextProjectTitle}}</p>\n    <div class=\"detail__btn--overlay\"></div>\n  </div>\n</article>\n";
+module.exports = "<article ng-if=\"$ctrl.currentProject\" class=\"detail__intro\">\n  <h1>{{ $ctrl.currentProject.title }}</h1>\n  <img class=\"divider\" ng-src=\"/assets/divider.svg\" alt=\"\">\n  <p>{{ $ctrl.currentProject.subtitle }}</p>\n  <a ng-if=\"$ctrl.currentProject.link\" href=\"{{ $ctrl.currentProject.link }}\" target=\"_blank\">\n    {{ $ctrl.currentProject.link_name }}\n    <div class=\"hover-line\"></div>\n  </a>\n</article>\n\n<article ng-if=\"$ctrl.currentProject\" class=\"detail__content\">\n  <img ng-if=\"$ctrl.currentProject.slug != 'nike-for-rio'\" ng-src=\"{{ $ctrl.currentProject.images.cover }}\" alt=\"cover image\">\n  <video ng-if=\"$ctrl.currentProject.slug == 'samsung'\" src=\"{{ $ctrl.currentProject.videos.video_1 }}\" controls poster=\"{{ $ctrl.currentProject.images.cover }}\"></video>\n  <video ng-if=\"$ctrl.currentProject.slug == 'nike-for-rio'\" src=\"{{ $ctrl.currentProject.videos.video_1 }}\" controls poster=\"{{ $ctrl.currentProject.images.cover }}\"></video>\n  <div class=\"detail__item--text\">\n    <h3>{{ $ctrl.currentProject.concept }}</h3>\n    <p>{{ $ctrl.currentProject.concept_description }}</p>\n  </div>\n  <video ng-if=\"$ctrl.currentProject.slug == 'osteria-francescana'\" src=\"{{ $ctrl.currentProject.videos.video_1 }}\" controls poster=\"{{ $ctrl.currentProject.images.thumb }}\"></video>\n  <img ng-src=\"{{ $ctrl.currentProject.images.photo_1 }}\" ng-class=\"{ autoWidth: $ctrl.currentProject.slug == 'nike-for-rio' }\" alt=\"\">\n  <img ng-if=\"$ctrl.currentProject.slug != 'osteria-francescana'\" ng-src=\"{{ $ctrl.currentProject.images.photo_2 }}\" alt=\"\">\n  <div class=\"detail__item--text\">\n    <p>{{ $ctrl.currentProject.description }}</p>\n  </div>\n  <video ng-if=\"$ctrl.currentProject.slug == 'osteria-francescana'\" src=\"{{ $ctrl.currentProject.videos.video_2 }}\" controls poster=\"{{ $ctrl.currentProject.images.thumb }}\"></video>\n  <img ng-src=\"{{ $ctrl.currentProject.images.photo_3 }}\" alt=\"\">\n  <!--<img ng-src=\"{{ $ctrl.currentProject.images.photo_3 }}\" alt=\"\">-->\n  <div class=\"detail__item--text\">\n    <!--<p>{{ $ctrl.currentProject.description_1 }}</p>-->\n    <p>{{ $ctrl.currentProject.description_2 }}</p>\n  </div>\n  <img ng-src=\"{{ $ctrl.currentProject.images.photo_4 }}\" alt=\"\">\n  <div class=\"detail__item--text\">\n    <p>{{ $ctrl.currentProject.description_3 }}</p>\n  </div>\n  <img ng-if=\"$ctrl.currentProject.slug == 'rayban-us'\" ng-src=\"{{ $ctrl.currentProject.images.gif }}\" alt=\"\" class=\"gif\">\n</article>\n\n<article ng-if=\"$ctrl.currentProject\" class=\"detail__nav\">\n  <div class=\"detail__nav--btn detail__nav--btn--prev\" ng-click=\"$ctrl.prev()\">\n    <span>Prev</span>\n    <p>{{ $ctrl.prevProjectTitle}}</p>\n    <div class=\"detail__btn--overlay\"></div>\n  </div>\n  <div class=\"detail__nav--btn detail__nav--btn--next\" ng-click=\"$ctrl.next(item)\">\n    <span>Next</span>\n    <p>{{ $ctrl.nextProjectTitle}}</p>\n    <div class=\"detail__btn--overlay\"></div>\n  </div>\n</article>\n";
 
 /***/ }),
 /* 68 */
@@ -31731,24 +31731,24 @@ var DetailController = function () {
     value: function $onInit() {
       var _this = this;
 
-      this.slug = this.state.params.slug;
-      this.item = this._projectsService.activeProject; //current project
+      var currentProjectSlug = this.state.params.slug;
+      // this.currentProject = this._projectsService.activeProject;
 
       this._projectsService.getProjects().then(function (projects) {
-        _this.item = projects.find(function (p) {
-          return p.slug == _this.slug;
+        _this.currentProject = projects.find(function (p) {
+          return p.slug == currentProjectSlug;
         });
-        _this.nextProjectTitle = _this.getNextProj(_this.item, projects);
-        _this.prevProjectTitle = _this.getPrevProj(_this.item, projects);
+        _this.nextProjectTitle = _this.getNextProj(_this.currentProject, projects);
+        _this.prevProjectTitle = _this.getPrevProj(_this.currentProject, projects);
       });
     }
   }, {
     key: 'getNextProj',
-    value: function getNextProj(item, projects) {
+    value: function getNextProj(currentProject, projects) {
       var _this2 = this;
 
       var currentProjectIndex = projects.findIndex(function (p) {
-        return p.id === _this2.item.id;
+        return p.id === _this2.currentProject.id;
       });
       var nextProject = projects[currentProjectIndex + 1];
       if (!nextProject) {
@@ -31758,12 +31758,12 @@ var DetailController = function () {
     }
   }, {
     key: 'next',
-    value: function next(item) {
+    value: function next(currentProject) {
       var _this3 = this;
 
       this._projectsService.getProjects().then(function (projects) {
         var currentProjectIndex = projects.findIndex(function (p) {
-          return p.id == _this3.item.id;
+          return p.id == _this3.currentProject.id;
         });
         var nextProject = projects[currentProjectIndex + 1];
         if (!nextProject) {
@@ -31774,11 +31774,11 @@ var DetailController = function () {
     }
   }, {
     key: 'getPrevProj',
-    value: function getPrevProj(item, projects) {
+    value: function getPrevProj(currentProject, projects) {
       var _this4 = this;
 
       var currentProjectIndex = projects.findIndex(function (p) {
-        return p.id == _this4.item.id;
+        return p.id == _this4.currentProject.id;
       });
       var prevProject = projects[currentProjectIndex - 1];
       if (!prevProject) {
@@ -31788,12 +31788,12 @@ var DetailController = function () {
     }
   }, {
     key: 'prev',
-    value: function prev(item) {
+    value: function prev(currentProject) {
       var _this5 = this;
 
       this._projectsService.getProjects().then(function (projects) {
         var currentProjectIndex = projects.findIndex(function (p) {
-          return p.id == _this5.item.id;
+          return p.id == _this5.currentProject.id;
         });
         var prevProject = projects[currentProjectIndex - 1];
         if (!prevProject) {

@@ -1,42 +1,42 @@
-<article class="detail__intro">
-  <h1>{{ $ctrl.item.title }}</h1>
+<article ng-if="$ctrl.currentProject" class="detail__intro">
+  <h1>{{ $ctrl.currentProject.title }}</h1>
   <img class="divider" ng-src="/assets/divider.svg" alt="">
-  <p>{{ $ctrl.item.subtitle }}</p>
-  <a ng-if="$ctrl.item.link" href="{{ $ctrl.item.link }}" target="_blank">
-    {{ $ctrl.item.link_name }}
+  <p>{{ $ctrl.currentProject.subtitle }}</p>
+  <a ng-if="$ctrl.currentProject.link" href="{{ $ctrl.currentProject.link }}" target="_blank">
+    {{ $ctrl.currentProject.link_name }}
     <div class="hover-line"></div>
   </a>
 </article>
 
-<article class="detail__content">
-  <img ng-if="$ctrl.item.slug != 'nike-for-rio'" ng-src="{{ $ctrl.item.images.cover }}" alt="cover image">
-  <video ng-if="$ctrl.item.slug == 'samsung'" src="{{ $ctrl.item.videos.video_1 }}" controls poster="{{ $ctrl.item.images.cover }}"></video>
-  <video ng-if="$ctrl.item.slug == 'nike-for-rio'" src="{{ $ctrl.item.videos.video_1 }}" controls poster="{{ $ctrl.item.images.cover }}"></video>
+<article ng-if="$ctrl.currentProject" class="detail__content">
+  <img ng-if="$ctrl.currentProject.slug != 'nike-for-rio'" ng-src="{{ $ctrl.currentProject.images.cover }}" alt="cover image">
+  <video ng-if="$ctrl.currentProject.slug == 'samsung'" src="{{ $ctrl.currentProject.videos.video_1 }}" controls poster="{{ $ctrl.currentProject.images.cover }}"></video>
+  <video ng-if="$ctrl.currentProject.slug == 'nike-for-rio'" src="{{ $ctrl.currentProject.videos.video_1 }}" controls poster="{{ $ctrl.currentProject.images.cover }}"></video>
   <div class="detail__item--text">
-    <h3>{{ $ctrl.item.concept }}</h3>
-    <p>{{ $ctrl.item.concept_description }}</p>
+    <h3>{{ $ctrl.currentProject.concept }}</h3>
+    <p>{{ $ctrl.currentProject.concept_description }}</p>
   </div>
-  <video ng-if="$ctrl.item.slug == 'osteria-francescana'" src="{{ $ctrl.item.videos.video_1 }}" controls poster="{{ $ctrl.item.images.thumb }}"></video>
-  <img ng-src="{{ $ctrl.item.images.photo_1 }}" ng-class="{ autoWidth: $ctrl.item.slug == 'nike-for-rio' }" alt="">
-  <img ng-if="$ctrl.item.slug != 'osteria-francescana'" ng-src="{{ $ctrl.item.images.photo_2 }}" alt="">
+  <video ng-if="$ctrl.currentProject.slug == 'osteria-francescana'" src="{{ $ctrl.currentProject.videos.video_1 }}" controls poster="{{ $ctrl.currentProject.images.thumb }}"></video>
+  <img ng-src="{{ $ctrl.currentProject.images.photo_1 }}" ng-class="{ autoWidth: $ctrl.currentProject.slug == 'nike-for-rio' }" alt="">
+  <img ng-if="$ctrl.currentProject.slug != 'osteria-francescana'" ng-src="{{ $ctrl.currentProject.images.photo_2 }}" alt="">
   <div class="detail__item--text">
-    <p>{{ $ctrl.item.description }}</p>
+    <p>{{ $ctrl.currentProject.description }}</p>
   </div>
-  <video ng-if="$ctrl.item.slug == 'osteria-francescana'" src="{{ $ctrl.item.videos.video_2 }}" controls poster="{{ $ctrl.item.images.thumb }}"></video>
-  <img ng-src="{{ $ctrl.item.images.photo_3 }}" alt="">
-  <!--<img ng-src="{{ $ctrl.item.images.photo_3 }}" alt="">-->
+  <video ng-if="$ctrl.currentProject.slug == 'osteria-francescana'" src="{{ $ctrl.currentProject.videos.video_2 }}" controls poster="{{ $ctrl.currentProject.images.thumb }}"></video>
+  <img ng-src="{{ $ctrl.currentProject.images.photo_3 }}" alt="">
+  <!--<img ng-src="{{ $ctrl.currentProject.images.photo_3 }}" alt="">-->
   <div class="detail__item--text">
-    <!--<p>{{ $ctrl.item.description_1 }}</p>-->
-    <p>{{ $ctrl.item.description_2 }}</p>
+    <!--<p>{{ $ctrl.currentProject.description_1 }}</p>-->
+    <p>{{ $ctrl.currentProject.description_2 }}</p>
   </div>
-  <img ng-src="{{ $ctrl.item.images.photo_4 }}" alt="">
+  <img ng-src="{{ $ctrl.currentProject.images.photo_4 }}" alt="">
   <div class="detail__item--text">
-    <p>{{ $ctrl.item.description_3 }}</p>
+    <p>{{ $ctrl.currentProject.description_3 }}</p>
   </div>
-  <img ng-if="$ctrl.item.slug == 'rayban-us'" ng-src="{{ $ctrl.item.images.gif }}" alt="" class="gif">
+  <img ng-if="$ctrl.currentProject.slug == 'rayban-us'" ng-src="{{ $ctrl.currentProject.images.gif }}" alt="" class="gif">
 </article>
 
-<article class="detail__nav">
+<article ng-if="$ctrl.currentProject" class="detail__nav">
   <div class="detail__nav--btn detail__nav--btn--prev" ng-click="$ctrl.prev()">
     <span>Prev</span>
     <p>{{ $ctrl.prevProjectTitle}}</p>
