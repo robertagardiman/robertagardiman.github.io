@@ -31732,7 +31732,6 @@ var DetailController = function () {
       var _this = this;
 
       var currentProjectSlug = this.state.params.slug;
-      // this.currentProject = this._projectsService.activeProject;
 
       this._projectsService.getProjects().then(function (projects) {
         _this.currentProject = projects.find(function (p) {
