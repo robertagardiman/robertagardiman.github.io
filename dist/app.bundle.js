@@ -31442,24 +31442,28 @@ var AboutController = function () {
 
     this.skills = [{
       name: 'Html',
-      level: '90',
+      level: '100',
       icon: './../../../assets/loghi-skills/html-logo.svg'
     }, {
       name: 'Css',
-      level: '90',
+      level: '100',
       icon: './../../../assets/loghi-skills/css-logo.png'
     }, {
       name: 'Sass',
-      level: '90',
+      level: '100',
       icon: './../../../assets/loghi-skills/sass-logo.png'
     }, {
-      name: 'AngularJs',
-      level: '50',
+      name: 'Javascript',
+      level: '80',
+      icon: './../../../assets/loghi-skills/js-logo.png'
+    }, {
+      name: 'Angular',
+      level: '80',
       icon: './../../../assets/loghi-skills/angular-logo.png'
     }, {
-      name: 'Javascript',
-      level: '60',
-      icon: './../../../assets/loghi-skills/js-logo.png'
+      name: 'Typescript',
+      level: '80',
+      icon: './../../../assets/loghi-skills/ts-logo.png'
     }, {
       name: 'SketchApp',
       level: '100',
@@ -31473,9 +31477,9 @@ var AboutController = function () {
       level: '80',
       icon: './../../../assets/loghi-skills/illustrator-logo.png'
     }, {
-      name: 'A. Effects',
+      name: 'Adobe XD',
       level: '70',
-      icon: './../../../assets/loghi-skills/after-logo.png'
+      icon: './../../../assets/loghi-skills/xd-logo.png'
     }];
   }
 
