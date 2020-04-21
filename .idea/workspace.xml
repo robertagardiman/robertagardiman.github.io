@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fe0de3e-706f-4a0e-a940-7d0d7f819c34" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/projects/projects.data.old.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/about/about.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/about.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/style.bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/style.bundle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects-list/projects-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects-list/projects-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projects.data-old.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projects.data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projects.data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +49,7 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/projects" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -53,10 +57,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/projects" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -96,7 +101,7 @@
       <workItem from="1547222058581" duration="112000" />
       <workItem from="1570109691050" duration="6000" />
       <workItem from="1570110140994" duration="729000" />
-      <workItem from="1587484169585" duration="2163000" />
+      <workItem from="1587484169585" duration="4636000" />
     </task>
     <servers />
   </component>
