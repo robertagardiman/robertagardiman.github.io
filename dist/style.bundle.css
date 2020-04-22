@@ -152,7 +152,7 @@ header {
 projects-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 0 120px 0 120px;
   margin-bottom: 40px; }
@@ -166,11 +166,18 @@ projects-list {
       margin-top: 40px; } }
   projects-list item {
     position: relative;
-    width: 31%;
-    margin-bottom: 2%; }
+    width: 32%;
+    margin-bottom: 2%;
+    margin-right: 2%; }
+    projects-list item:nth-child(3n) {
+      margin-right: 0; }
     @media (max-width: 991px) {
       projects-list item {
-        width: 49%; } }
+        width: 49%; }
+        projects-list item:nth-child(2n) {
+          margin-right: 0; }
+        projects-list item:nth-child(3n) {
+          margin-right: 2%; } }
     projects-list item img {
       margin: 0;
       width: 100%;
