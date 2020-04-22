@@ -71,6 +71,9 @@ detail {
         font-size: 16px;
         letter-spacing: 1px;
       }
+      @media (max-width: $screen-xs-max) {
+        width: 90%;
+      }
     }
     img {
       width: 100%;
