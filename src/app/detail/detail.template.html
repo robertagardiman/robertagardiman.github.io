@@ -26,8 +26,8 @@
   <img ng-src="{{ $ctrl.currentProject.images.photo_3 }}" alt="">
   <!--<img ng-src="{{ $ctrl.currentProject.images.photo_3 }}" alt="">-->
   <div class="detail__item--text">
-    <!--<p>{{ $ctrl.currentProject.description_1 }}</p>-->
-    <p>{{ $ctrl.currentProject.description_2 }}</p>
+    <p ng-if="$ctrl.currentProject.description_1">{{ $ctrl.currentProject.description_1 }}</p>
+    <p ng-if="$ctrl.currentProject.description_2">{{ $ctrl.currentProject.description_2 }}</p>
   </div>
   <img ng-src="{{ $ctrl.currentProject.images.photo_4 }}" alt="">
   <div class="detail__item--text">
